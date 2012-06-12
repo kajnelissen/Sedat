@@ -1,4 +1,4 @@
-!(http://i.imgur.com/sRGIa.png)
+![Process flow](http://i.imgur.com/sRGIa.png)
 
 ## Description
 
