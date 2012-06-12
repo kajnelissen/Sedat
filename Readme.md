@@ -1,4 +1,4 @@
-(http://i.imgur.com/sRGIa.png)
+!(http://i.imgur.com/sRGIa.png)
 
 ## Description
 
@@ -6,7 +6,7 @@ A simple implementation of a computer production line in which hardware is assem
 
 ## Components
 
- - Filters
- - Pipes
- - Simulation
- - Gui
+* Filters
+* Pipes
+* Simulation
+* Gui
