@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PipeFilterImplementation")]
+[assembly: AssemblyTitle("Gui")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PipeFilterImplementation")]
+[assembly: AssemblyProduct("Gui")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("be6c8798-ba16-4441-bc87-f601ec1f3b4f")]
+[assembly: Guid("fe70d1ad-d4e3-44b0-bda4-f140c56041aa")]
 
 // Version information for an assembly consists of the following four values:
 //

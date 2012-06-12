@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PipeFilterImplementation.Properties
+namespace Gui.Properties
 {
 
 

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PipeFilterImplementation
+namespace Gui
 {
     public partial class MainWindow : Form
     {

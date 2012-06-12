@@ -1,4 +1,4 @@
-﻿namespace PipeFilterImplementation
+﻿namespace Gui
 {
     partial class MainWindow
     {
