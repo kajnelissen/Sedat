@@ -10,5 +10,9 @@ namespace Simulation
     /// </summary>
     public interface ISim
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        void Simulate();
     }
 }
