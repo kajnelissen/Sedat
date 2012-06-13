@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulation", "Simulation\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gui", "Gui\Gui.csproj", "{507DE6F7-B924-41A2-8875-B59A2BE9F28E}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagrams", "Diagrams\Diagrams.modelproj", "{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{507DE6F7-B924-41A2-8875-B59A2BE9F28E}.Release|Mixed Platforms.Build.0 = Release|x86
 		{507DE6F7-B924-41A2-8875-B59A2BE9F28E}.Release|x86.ActiveCfg = Release|x86
 		{507DE6F7-B924-41A2-8875-B59A2BE9F28E}.Release|x86.Build.0 = Release|x86
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AEE6FDF4-120D-4166-B0ED-F4512D7D3E19}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
