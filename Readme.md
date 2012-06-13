@@ -12,3 +12,5 @@ A simple implementation of a computer production line in which hardware is assem
 * Pipes
 * Simulation
 * Gui
+* Order
+* Unit Tests
