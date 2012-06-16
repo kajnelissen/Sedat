@@ -6,7 +6,8 @@ using System.Text;
 namespace Simulation
 {
     /// <summary>
-    /// 
+    /// Definieert een interface voor het simuleren
+    /// van processen.
     /// </summary>
     public interface ISim
     {

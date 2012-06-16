@@ -8,7 +8,16 @@ namespace Simulation
     /// <summary>
     /// 
     /// </summary>
-    public class SimpleSim : ISim
+    public class ProductionSim : ISim
     {
+        public ProductionSim()
+        { 
+            
+        }
+
+        public void Simulate()
+        { 
+            
+        }
     }
 }
