@@ -586,6 +586,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="8740aad6-62de-47b5-8591-fb09b895826d"
+            name="assembleerHardware"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -654,6 +662,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="5ef985d0-aa6f-49a0-bd15-d841321df8ed"
+            name="installSoftware"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -722,6 +738,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="6bf28b66-33d5-4982-8e98-45514f4f9d6f"
+            name="hardwareTest"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -790,6 +814,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="dddc3f06-e32d-4655-8d6f-3e5b96bee431"
+            name="softwareTest()"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1441,6 +1473,16 @@
         </appliedStereotypesInternal>
         <elementDefinition
           Id="edbd10ce-a9cd-4058-9d18-3cd3e966f453" />
+        <ownedOperationsInternal>
+          <operation
+            Id="dc158519-9101-4501-95af-e8fe8d71afab"
+            name="createOrder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1464,6 +1506,16 @@
               Id="b6356a08-6283-4187-b617-1e31f26fcd94" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c6157be6-d09b-493f-9096-a25ea4eb5961"
+            name="orderStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2210,6 +2262,32 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="1f1baf90-85bf-4d42-977e-8c6e91c40d45"
+            name="createLaptop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f3ab5ec4-8657-47f5-8c9b-94fb37be4445"
+            name="createDesktop"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="41a227d7-d182-4919-a692-a80f4fe70351"
+            name="CreateTablet"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2502,6 +2580,381 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b25c5bda-4114-4202-b05e-9ca3aedade14"
+        name="CreatorRequestor2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <elementDefinition
+          Id="7ccd5f25-21cb-4d8e-a28c-b1956843d3d4" />
+        <targetEnds>
+          <association
+            Id="b499e799-499e-4633-a358-00b58b73f9cd"
+            isDerived="false"
+            sourceEndRoleName="CreatorRequestor"
+            targetEndRoleName="IFactory"
+            isLeaf="false"
+            name="requests creation"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="3a9cb73a-0dd5-4e9c-9948-dd5125365869"
+              LastKnownName="IFactory2"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df037092-8b0d-4748-a45f-f2d076164442"
+                  name="CreatorRequestor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <elementDefinition
+                    Id="b8295156-9937-4b8f-885e-5ba168be6e12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b69875c-dd40-44d6-8e27-56503b61e8ad"
+                  name="IFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="68c800da-9562-479e-8b7b-c904aab213c4"
+                      name="Lower"
+                      value="*">
+                      <elementDefinition
+                        Id="cbcefebd-22f2-43b2-bda2-7f3d2ab2c700" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fb91fff1-697b-4118-876b-01c534860800"
+                      name="Upper"
+                      value="*">
+                      <elementDefinition
+                        Id="0d58de68-c1c1-43f2-98fb-dfdba9bcb593" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition
+                    Id="b1e37fc4-c38f-4f6d-b1d3-6187c8aa076e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition
+              Id="55cdf43b-0929-40f8-b71f-eec80caa8a67" />
+          </association>
+          <association
+            Id="690b281d-6003-418b-b0c0-539daf396824"
+            isDerived="false"
+            sourceEndRoleName="CreatorRequestor"
+            targetEndRoleName="AbstractProduct"
+            isLeaf="false"
+            name="uses"
+            isAbstract="false">
+            <classMoniker
+              Id="7c307d02-54d2-487b-994a-d6dd76a51e81"
+              LastKnownName="AbstractProduct1"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="274b68cb-bbc5-404c-8a4f-0d206d115e66"
+                  name="CreatorRequestor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <elementDefinition
+                    Id="73810d7f-1d8b-4c13-b19d-4ee548a15a9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4dc551f8-ccd5-45c0-8350-9c2f8cb933c2"
+                  name="AbstractProduct"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e36e5cb8-acb5-47de-a5a8-4f435c1767a8"
+                      name="Lower"
+                      value="*">
+                      <elementDefinition
+                        Id="8f71c269-5c6c-4baa-aa85-9aa8bd6aaad7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="71c285e2-6e69-4968-aa80-244c4c9873ae"
+                      name="Upper"
+                      value="*">
+                      <elementDefinition
+                        Id="dd218c81-4fbf-4b29-9999-e9008930e520" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition
+                    Id="a24b6998-6421-47e7-81f4-327a02dc60f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition
+              Id="57dfd921-bad9-45d7-ad2b-15703701b5cf" />
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3a9cb73a-0dd5-4e9c-9948-dd5125365869"
+        name="IFactory2"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="639d0bc3-15db-4323-b3ca-439fe6578b52"
+            name="IFactory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="2f9956cd-2235-4f8a-8b73-1f45b0b9572d" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="34fbf122-f14e-438a-99e9-ce444f5162b7" />
+        <ownedOperations>
+          <operation
+            Id="4f0b882b-718a-46e2-a86e-cd1722a3af47"
+            name="createProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="dc52f608-687e-473d-b9dc-3d2e59643ea4" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e76e355-c6e4-43e6-b259-04df8e89e1d2"
+        name="AbstractFactory1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2a4caedd-390e-4b26-8e90-558d3319ccee"
+            name="AbstractFactory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="fa01de25-2d3f-41bd-b0da-c420c6f3db22" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="0b90f1ff-a0f9-4742-b325-96d83981f783" />
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d449581d-05bb-4716-aeab-75f422df1991">
+            <interfaceMoniker
+              Id="3a9cb73a-0dd5-4e9c-9948-dd5125365869"
+              LastKnownName="IFactory2"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="0457b76a-d95b-4b5f-b39b-dc076b0d62bf" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9719f7c9-ab51-4b10-af5e-da797ad57cfc"
+            name="getFactory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="96be5696-5da7-42e8-89e1-77df6db6ae75" />
+          </operation>
+          <operation
+            Id="8bd98be7-6920-42b9-b6f3-5bbb57bc906b"
+            name="createProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="edd8e1f4-e305-445b-b437-121bb29436c0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7be96928-3ed4-4619-a707-a51c24c32fd0"
+        name="ConcreteFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <elementDefinition
+          Id="e462e9dd-988c-46a7-9279-51969edc39fa" />
+        <generalsInternal>
+          <generalization
+            Id="48e43377-03b0-433c-b6b5-a298f28a1b23"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8e76e355-c6e4-43e6-b259-04df8e89e1d2"
+              LastKnownName="AbstractFactory1"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="b0e8e4e8-6dee-4a67-8d7d-5a3b98a7c2f0" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b9d4699e-33f4-492c-98f0-4bfd686e0eca"
+            isDerived="false"
+            sourceEndRoleName="ConcreteFactory"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            name="creates"
+            isAbstract="false">
+            <classMoniker
+              Id="d0ca420d-0972-4277-a6a1-de4cf5acb765"
+              LastKnownName="Product1"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec41bace-93d9-4118-8eaa-f1c03122a0be"
+                  name="ConcreteFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <elementDefinition
+                    Id="39681db7-e059-435c-9b4e-320cd4c99948" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05bbcd5b-6503-4aa6-af34-069ade2eaeca"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6d0920eb-34fb-4e5a-971f-5c12ec2b8c41"
+                      name="Lower"
+                      value="*">
+                      <elementDefinition
+                        Id="2be1b708-0010-44c4-8fc7-ab54e910ca44" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="eb934555-2964-4457-9d9a-03ad6ab5934b"
+                      name="Upper"
+                      value="*">
+                      <elementDefinition
+                        Id="ab411f82-76cb-413a-861a-bff5e418d693" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition
+                    Id="878328ec-0de5-403b-a92e-6259cb92471f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition
+              Id="88005b0d-6d16-4597-bfd0-4ca496fa964c" />
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c307d02-54d2-487b-994a-d6dd76a51e81"
+        name="AbstractProduct1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6a5f66a1-9750-4b37-9650-24cde917211e"
+            name="AbstractProduct"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="01762477-d40a-417d-aa22-386974bb85ba" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="e78e6877-5ca9-4e79-9150-cea02226ef2d" />
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d0ca420d-0972-4277-a6a1-de4cf5acb765"
+        name="Product1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4ffa0106-e96b-4519-825d-a32f39d6bf31"
+            name="Product"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="307b3b83-0501-499c-9849-45bc5ca1c720" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="5a860183-8434-4fa5-9578-dd383c8eefeb" />
+        <generalsInternal>
+          <generalization
+            Id="8487be58-fd32-4453-8b75-af84ac613b01"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7c307d02-54d2-487b-994a-d6dd76a51e81"
+              LastKnownName="AbstractProduct1"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="3ea40b43-5d88-443c-8d78-57bcd0060968" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

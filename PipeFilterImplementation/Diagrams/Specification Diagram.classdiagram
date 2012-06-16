@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc7bc8e9-1f86-4a49-8a4f-4fd763ab3d3e" name="Specification Diagram" linkedPackageId="9625e4ab-7533-4b9c-865b-8011d42c9ef4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="669c67e0-e5c4-4c41-87c2-be2e69456492">
-      <profileInstance Id="97eb62a7-989c-4d72-8f1d-07a4f8792944" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c4d02151-0512-47f3-a7ba-d97d8d1f3037">
-      <profileInstance Id="9b1dbd61-3b0f-407a-9651-3cd2b7f2f15d" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="794d74ee-6230-44c1-b177-8debcb10080f" name="timer" isAbstract="false" isLeaf="false" cachedFullName="timer">
@@ -315,6 +301,9 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="3f6444e6-46f6-4922-8d4c-5305d21b2ef0" name="assembleerHardware" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8740aad6-62de-47b5-8591-fb09b895826d" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -353,6 +342,9 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="0ac0299b-6c75-4f40-be9d-b1896c62ec87" name="installSoftware" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ef985d0-aa6f-49a0-bd15-d841321df8ed" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -393,6 +385,9 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="d4efc775-bc7b-4093-aa8e-ef346acace8f" name="hardwareTest" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6bf28b66-33d5-4982-8e98-45514f4f9d6f" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -431,6 +426,9 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="97ac726b-1c5a-408e-9bbf-6161c27b257c" name="softwareTest()" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dddc3f06-e32d-4655-8d6f-3e5b96bee431" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -677,6 +675,11 @@
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="9ec5af2e-7d57-43ab-8755-94e5dbbe7ba3" />
+        <ownedOperationsInternal>
+          <operation Id="85ba5baf-7860-47d1-8bcb-0ef9e4284c61" name="createOrder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc158519-9101-4501-95af-e8fe8d71afab" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -688,6 +691,11 @@
             <elementDefinition Id="74af80eb-6ebb-4f14-a37d-d3f9e53bcd4d" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="dd784796-6d36-40e5-b674-282a57318e2c" name="orderStatus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6157be6-d09b-493f-9096-a25ea4eb5961" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -915,6 +923,17 @@
             <elementDefinition Id="921faaff-6f68-4ed9-a8c0-d4a24f9932bb" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="f7c07935-32ac-41ba-8a6e-d483a171be80" name="createLaptop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f1baf90-85bf-4d42-977e-8c6e91c40d45" />
+          </operation>
+          <operation Id="80dda7f1-f187-4462-874f-1f4fe4de0071" name="createDesktop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f3ab5ec4-8657-47f5-8c9b-94fb37be4445" />
+          </operation>
+          <operation Id="43711a4c-a7a3-473c-9770-82dc5a80d1ad" name="CreateTablet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="41a227d7-d182-4919-a692-a80f4fe70351" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -1035,5 +1054,19 @@
   </packagedElements>
   <package Id="9625e4ab-7533-4b9c-865b-8011d42c9ef4" name="Diagrams">
     <elementDefinition Id="64253cd8-9bec-4c7a-b756-d6667991616e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="669c67e0-e5c4-4c41-87c2-be2e69456492">
+        <profileInstance Id="97eb62a7-989c-4d72-8f1d-07a4f8792944" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c4d02151-0512-47f3-a7ba-d97d8d1f3037">
+        <profileInstance Id="9b1dbd61-3b0f-407a-9651-3cd2b7f2f15d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
