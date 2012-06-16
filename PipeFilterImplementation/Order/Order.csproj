@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>2097e5b4-8521-4c68-99e0-bb8858303619</ProjectGuid>
+    <ProjectGuid>{A1F07FB7-5E7C-4285-AF83-20DCAE5A9DC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Order</RootNamespace>
@@ -40,7 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AbstractOrder.cs" />
+    <Compile Include="DefaultOrderFactory.cs" />
+    <Compile Include="Desktop.cs" />
+    <Compile Include="IOrder.cs" />
+    <Compile Include="IOrderFactory.cs" />
+    <Compile Include="Laptop.cs" />
+    <Compile Include="OrderStatus.cs" />
+    <Compile Include="OrderType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

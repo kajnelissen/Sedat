@@ -6,12 +6,13 @@ using System.Text;
 namespace Order
 {
     /// <summary>
-    /// 
+    /// Implementeert alle basisfunctionaliteit van
+    /// orders die worden geproduceerd door order factory.
     /// </summary>
     public abstract class AbstractOrder
     {
         /// <summary>
-        /// 
+        /// Unieke identifier van order.
         /// </summary>
         protected int _orderId;
         public int OrderId
@@ -20,7 +21,7 @@ namespace Order
         }
 
         /// <summary>
-        /// 
+        /// Huidige status van order.
         /// </summary>
         protected OrderStatus _status;
         public OrderStatus Status
@@ -29,7 +30,7 @@ namespace Order
         }
 
         /// <summary>
-        /// 
+        /// Type van order.
         /// </summary>
         protected OrderType _type;
         public OrderType Type
@@ -38,9 +39,10 @@ namespace Order
         }
 
         /// <summary>
-        /// 
+        /// Creëert een order met meegegeven ID en zet
+        /// status op <c>Start</c>.
         /// </summary>
-        /// <param name="orderId"></param>
+        /// <param name="orderId">Identifier voor order</param>
         public AbstractOrder(int orderId)
         {
             this._orderId = orderId;
@@ -48,10 +50,11 @@ namespace Order
         }
 
         /// <summary>
-        /// 
+        /// Creëert een order met meegegeven ID en zet
+        /// status op meegegeven status.
         /// </summary>
-        /// <param name="orderId"></param>
-        /// <param name="os"></param>
+        /// <param name="orderId">Identifier voor order</param>
+        /// <param name="os">Beginstatus van order</param>
         public AbstractOrder(int orderId, OrderStatus os)
         {
             this._orderId = orderId;
@@ -59,16 +62,18 @@ namespace Order
         }
 
         /// <summary>
-        /// 
+        /// Verandert huidige status van order naar
+        /// meegegeven status.
         /// </summary>
-        /// <param name="os"></param>
+        /// <param name="os">Nieuwe status</param>
         public void ChangeStatus(OrderStatus os)
         {
             this._status = os;
         }
 
         /// <summary>
-        /// 
+        /// Retourneert een tekstuele weergave van order waarin 
+        /// het ID, type en status worden weergegeven.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
