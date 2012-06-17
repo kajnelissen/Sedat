@@ -3473,7 +3473,7 @@
             isAbstract="false">
             <classMoniker
               Id="aea30b76-dc93-43dc-ae7a-f29f1522d835"
-              LastKnownName="IPipe1"
+              LastKnownName="IPipe"
               LastKnownLocation="Diagrams.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3524,7 +3524,7 @@
             isAbstract="false">
             <classMoniker
               Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
-              LastKnownName="IFilter1"
+              LastKnownName="IFilter"
               LastKnownLocation="Diagrams.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3803,7 +3803,7 @@
             isAbstract="false">
             <enumerationMoniker
               Id="c1fcde80-53db-458f-831b-e2b023f7d7e2"
-              LastKnownName="OrderStatus1"
+              LastKnownName="OrderStatus"
               LastKnownLocation="Diagrams.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3987,7 +3987,7 @@
     <packageHasNamedElement>
       <enumeration
         Id="c1fcde80-53db-458f-831b-e2b023f7d7e2"
-        name="OrderStatus1"
+        name="OrderStatus"
         isAbstract="false"
         isLeaf="false">
         <ownedLiterals>
@@ -4031,7 +4031,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="3063997a-a39d-4d68-a34e-fbbbf3e92d1d"
-              LastKnownName="IProduction1"
+              LastKnownName="IProduction"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4076,7 +4076,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="f9dbf7aa-8273-4bca-a69a-752d3380e2bc"
-              LastKnownName="ITest1"
+              LastKnownName="ITest"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4121,7 +4121,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="3063997a-a39d-4d68-a34e-fbbbf3e92d1d"
-              LastKnownName="IProduction1"
+              LastKnownName="IProduction"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4156,7 +4156,7 @@
     <packageHasNamedElement>
       <class
         Id="e8c9a70a-0072-4f00-8d09-af8a2e87cf07"
-        name="SWTest1"
+        name="SWTest"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -4166,7 +4166,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="f9dbf7aa-8273-4bca-a69a-752d3380e2bc"
-              LastKnownName="ITest1"
+              LastKnownName="ITest"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4211,7 +4211,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="aea30b76-dc93-43dc-ae7a-f29f1522d835"
-              LastKnownName="IPipe1"
+              LastKnownName="IPipe"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4402,7 +4402,7 @@
             name="Instantieert">
             <classMoniker
               Id="e8c9a70a-0072-4f00-8d09-af8a2e87cf07"
-              LastKnownName="SWTest1"
+              LastKnownName="SWTest"
               LastKnownLocation="Diagrams.uml" />
           </dependency>
           <dependency
@@ -4512,7 +4512,7 @@
     <packageHasNamedElement>
       <class
         Id="4693b155-de35-44ba-8c97-c1b39694810b"
-        name="Client1"
+        name="Client"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -4573,7 +4573,7 @@
     <packageHasNamedElement>
       <class
         Id="3063997a-a39d-4d68-a34e-fbbbf3e92d1d"
-        name="IProduction1"
+        name="IProduction"
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
@@ -4583,7 +4583,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
-              LastKnownName="IFilter1"
+              LastKnownName="IFilter"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4592,7 +4592,7 @@
     <packageHasNamedElement>
       <class
         Id="f9dbf7aa-8273-4bca-a69a-752d3380e2bc"
-        name="ITest1"
+        name="ITest"
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
@@ -4602,7 +4602,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
-              LastKnownName="IFilter1"
+              LastKnownName="IFilter"
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
@@ -4611,7 +4611,7 @@
     <packageHasNamedElement>
       <class
         Id="aea30b76-dc93-43dc-ae7a-f29f1522d835"
-        name="IPipe1"
+        name="IPipe"
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
@@ -4635,7 +4635,7 @@
             isAbstract="false">
             <classMoniker
               Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
-              LastKnownName="IFilter1"
+              LastKnownName="IFilter"
               LastKnownLocation="Diagrams.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -4860,7 +4860,7 @@
     <packageHasNamedElement>
       <class
         Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
-        name="IFilter1"
+        name="IFilter"
         isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
@@ -5005,6 +5005,1776 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="a6a49b66-6535-48fb-a465-7b07a76cbe8d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4347e47e-63a0-4d06-bc34-90672b8b64f8"
+        name="ISim"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="c88f508c-a924-46d6-84e6-b43a2a4d4630"
+            name="Simulate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfa67407-770f-4120-99b3-6ab217a95834"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b00e9ce0-e2fc-4c16-bd8a-4e4e96974087"
+            name="Enable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4947c03-c256-4233-8769-5a167bd0f344"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c593bc60-02cc-4ddd-8c24-6f2735bc1129"
+            name="Disable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e369f5e6-b291-4651-b76f-bc5c73e8d828"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7179b1c9-ea1f-4289-9bad-fddac1a43239"
+        name="ProductionSim"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e66dfd26-fcf8-4e75-98aa-5138283f1d4e">
+            <interfaceMoniker
+              Id="4347e47e-63a0-4d06-bc34-90672b8b64f8"
+              LastKnownName="ISim"
+              LastKnownLocation="Diagrams.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="5fe9dcc5-a0a3-4022-b304-1cd1b5829456"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Gebruikt"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="d6b714fc-9776-41f9-a29c-e24269417875"
+              LastKnownName="IOrderFactory"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcb17fe3-3187-42c3-9c25-1981cb383a6c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38e99990-7dc2-48a4-9adb-7709cacf48c7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9c4260e-f2dd-403b-9ad2-351ee2fc4a66"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad8d1d36-ae02-40f4-92e8-4a5daeb53b39"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d25119fb-7a18-46d4-8f8f-3f564ddfb12e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b6f654e4-cd74-42cb-becf-dfae624621e4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4beb5ec2-f77b-4faf-8016-490d994a2753"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Gebruikt"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="41be7db6-56cc-45cf-9702-23473ce40ee6"
+              LastKnownName="IPipeFilterFactory"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35080325-2827-4fbd-b72a-16746fc58297"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7b2721e-59ea-47f3-a8bb-c84196084ad2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0b8be3fc-ebfd-45da-bcff-98ade049c152"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dfe264d1-bc6f-4c22-bd21-6b9a6f623f8c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b220bf42-f9af-47dc-8c45-2d2b40308952"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Simuleert"
+            isAbstract="false">
+            <classMoniker
+              Id="2984c387-0afd-4873-b427-59153ebec6ea"
+              LastKnownName="IPipe"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="abc64d4e-cde3-4de8-9f01-e3884f49876c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03c5339f-e7f0-481b-93a1-3ea2b4a945f5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3622d78e-3616-48d9-90d8-5fbc2c7cb4ae"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8b8e28d7-9fd4-47a9-b699-6b5c51cd32f7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8e26aa11-2ec2-4786-b16e-2f6dc8336983"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Simuleert"
+            isAbstract="false">
+            <classMoniker
+              Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+              LastKnownName="IFilter"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5f930ef-a2b1-43c1-880c-c6ec234ccbde"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a39be535-91c2-4c91-9bc5-21f90f6d97fd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="22961456-2994-4c05-8bb0-46726a0f9951"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="40fa3004-4043-4b0c-8acb-6dd5a8094e6e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="23e78385-950e-4c23-805a-4d388f5aec54"
+            name="Simulate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fe47bb6-47d4-48b9-ab62-796bf219a835"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="259724c3-5c06-4c8b-b75b-bf7bbb834c30"
+            name="Enable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="56a559f4-ddb2-4e87-9f8c-7b5b413475ce"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9f8a6bdc-496f-42ec-bcff-432f965b1d22"
+            name="Disable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="743e6564-3361-40ab-abb6-2e915f57ba43"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e36c4e31-857e-4bcb-a718-9811edf6afef"
+        name="DefaultOrderFactory1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="facef0d3-6992-4e46-85d3-7741c68411ba"
+            name="Factory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="a67f5743-df79-45bd-8c2b-06db1f9ba0a7" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="e17f829b-dacc-4cbd-90d9-76b3b3e4caaf" />
+        <suppliersInternal>
+          <interfaceRealization
+            Id="46ca3449-b88d-4389-ae8c-2fa78212ca9b">
+            <interfaceMoniker
+              Id="d6b714fc-9776-41f9-a29c-e24269417875"
+              LastKnownName="IOrderFactory"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="862f5727-206e-4baa-9221-ec49c9ae1a2a" />
+          </interfaceRealization>
+          <dependency
+            Id="12451ab2-3be0-405f-9a9d-fba502dc21dc"
+            name="Instantieert">
+            <classMoniker
+              Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+              LastKnownName="AbstractOrder"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a5bae596-63f1-4032-91ca-4f1849262ed4"
+            name="nextID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="844d4d5e-4f0e-493c-83a6-f72c9ea9836e"
+            name="createOrder(String type)"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="ec61edc3-ac30-4109-8c62-f1fbff27e495" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2561b65-35fc-426c-8a7f-9d66565a746a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
+                      LastKnownName="ModelingProject1::AbstractOrder"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d6b714fc-9776-41f9-a29c-e24269417875"
+        name="IOrderFactory"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bf649c69-f7ce-4d17-964b-fe44bb2cabb8"
+            name="IFactory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="49e71317-a2b0-456d-a718-e1d5e590dc29" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="37c95fc5-3b57-4adf-ae54-09569323f999" />
+        <ownedOperations>
+          <operation
+            Id="b9fad266-0738-4b2a-b8eb-ae6f3881e94c"
+            name="createOrder(String type)"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="ca0554cf-22c8-4831-b75a-3c229d59efa6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46c0ff84-d67d-4a8f-9a4b-dd6e4e6de030"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
+                      LastKnownName="ModelingProject1::AbstractOrder"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+        name="AbstractOrder"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e79bffa0-652f-4433-b901-7fd6acd2ed28"
+            name="Product"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="331ed2cc-196c-4e04-99d9-61a02bf05b83" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="edbd10ce-a9cd-4058-9d18-3cd3e966f453" />
+        <targetEnds>
+          <association
+            Id="2e36e260-86af-4682-b0d4-792cbcc5a7bb"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Status"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="76d1f6c9-a8d2-42ad-b084-cbb27d653cdc"
+              LastKnownName="OrderStatus"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="acbc6718-9a05-4296-a633-d85a9e17b463"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a48f13db-92ff-4434-a974-3f25796b7490"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="914d8f74-8a80-49f9-8524-ccaa64014343"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f08b5c0-c819-49ef-9fd9-bc9e9050b5e0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="e6e3d897-9ad1-4ff1-a2e2-9910a4e8b1f6"
+            name="orderID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8600c10b-4fab-4043-bede-40914e959caf"
+            name="type"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2c4f0e62-26fd-49e4-a359-6e652e171781"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00e1c39a-c41a-47e1-941a-77277f5ac29e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c04583a7-82d0-4b6b-83d9-ec66124830ba"
+            name="ChangeStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9bccd07-0c70-428a-953c-6f5f2bb52bf6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7429917a-da7c-415b-84c3-5638d8dd2f1f"
+                  name="OrderStatus os"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62a5b396-cace-46d6-8fe7-b4bccc70b61a"
+        name="Desktop"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <elementDefinition
+          Id="084d1ae2-6fd7-4d43-9ce6-612503ee037f" />
+        <generalsInternal>
+          <generalization
+            Id="e6398814-6d4a-4943-b820-0aace8a6d9cb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+              LastKnownName="AbstractOrder"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a8004b18-017f-4ff2-a364-fe3633292f08"
+        name="Laptop"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e9fae289-4e08-436a-841e-081aa7a2762e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+              LastKnownName="AbstractOrder"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="76d1f6c9-a8d2-42ad-b084-cbb27d653cdc"
+        name="OrderStatus"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="99e03706-f69c-4d72-9cd8-8a1a7c0e2582"
+            name="Start" />
+          <enumerationLiteral
+            Id="7b14bc84-9b30-430e-bd9d-ddfdd9e821b0"
+            name="Assembled" />
+          <enumerationLiteral
+            Id="783838f1-8ebc-49dd-8179-34866a67558b"
+            name="HardwareTested" />
+          <enumerationLiteral
+            Id="25208a3b-d0a2-4250-b657-160af2c7a35a"
+            name="HardwareErrors" />
+          <enumerationLiteral
+            Id="275be440-9351-454a-947b-cc31ee394107"
+            name="SoftwareInstalled" />
+          <enumerationLiteral
+            Id="dda220dd-c08b-4288-9fc7-cc75ade1c9a2"
+            name="SoftwareTested" />
+          <enumerationLiteral
+            Id="2443e8f9-9c82-4fd4-9535-94395abec320"
+            name="SoftwareErrors" />
+          <enumerationLiteral
+            Id="5fc93460-5e3d-41ac-b4cc-f0f3b333c280"
+            name="End" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c8c8bd74-e4cf-494f-a69c-e68029a301c5"
+        name="HWAssemble"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="46fe4b7e-b0ee-4be4-9808-c48c2d4a4c11"
+            isSubstitutable="false">
+            <classMoniker
+              Id="11e85831-54f3-43a4-ab08-e0117595f1f2"
+              LastKnownName="IProduction"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e058bafb-151c-4a7e-bbf8-285c7c5e0205"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5436d4ee-f098-419a-ab23-e68f04328f8f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2c4fe980-6071-42c1-b9ab-e37a1812d811"
+        name="HWTest"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="31808974-6454-4691-8b6e-2270b262f432"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5d2288a9-fc7b-42c7-9451-f0acdc362f12"
+              LastKnownName="ITest"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d3bb63ff-f553-4a18-8ea1-0c622b9b00d4"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5b187d81-ce14-4697-ae85-956b58a5b53d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2276b257-2e1c-482b-9d7f-52b047dbbebb"
+        name="SWInstall"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d5e732a7-4a65-4f51-bb17-a50e91f4aa2b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="11e85831-54f3-43a4-ab08-e0117595f1f2"
+              LastKnownName="IProduction"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="72ecb9c6-2fb2-4278-a592-8d51e5f9c63a"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e170c166-a2a8-4bde-928c-ffd1c1d6a8f0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6838d84d-602c-46df-9032-558a67520f81"
+        name="SWTest"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f760458b-c9be-4d07-894d-76a2205df0bd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5d2288a9-fc7b-42c7-9451-f0acdc362f12"
+              LastKnownName="ITest"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9af101ba-2934-4987-a1a3-c6183d70722c"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afec4ea2-41c9-4b2a-b4f0-528a03249fd2"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8ad9dc80-32c1-4272-9560-406b1657788a"
+        name="Pipe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e2023561-0b98-4bba-8ce9-554f7b64e51c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2984c387-0afd-4873-b427-59153ebec6ea"
+              LastKnownName="IPipe"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="41be7db6-56cc-45cf-9702-23473ce40ee6"
+        name="IPipeFilterFactory"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ccb89ecc-5f6a-46fe-9125-826471e4d2fe"
+            name="IFactory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="2f9956cd-2235-4f8a-8b73-1f45b0b9572d" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="34fbf122-f14e-438a-99e9-ce444f5162b7" />
+        <ownedOperations>
+          <operation
+            Id="3a43d3fa-4125-4013-b509-b90f90a7a509"
+            name="CreatePipe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="dc52f608-687e-473d-b9dc-3d2e59643ea4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4658051c-2b4f-4c6f-98c0-4a466ea02d32"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
+                      LastKnownName="ModelingProject1::IPipe"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="16006a12-9b26-43fe-b252-17d91ba57d2d"
+            name="CreateFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b6b8e3b-0f24-47dc-afbd-1c581c332588"
+                  name="String type"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="002f017b-c54d-4be6-b90e-726f2d05998c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
+                      LastKnownName="ModelingProject1::IFilter"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2af927d-ccea-44ac-9da8-5406cd2a96d9"
+        name="AbstractPipeFilterFactory"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ab88ebb4-0012-4cc1-afd8-4eab740c5bb7"
+            name="AbstractFactory"
+            profile="GoFDesignPatterns">
+            <elementDefinition
+              Id="fa01de25-2d3f-41bd-b0da-c420c6f3db22" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition
+          Id="0b90f1ff-a0f9-4742-b325-96d83981f783" />
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f5eb785e-8af3-4910-8923-1aca87da01dc">
+            <interfaceMoniker
+              Id="41be7db6-56cc-45cf-9702-23473ce40ee6"
+              LastKnownName="IPipeFilterFactory"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="0457b76a-d95b-4b5f-b39b-dc076b0d62bf" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="909d0372-d241-467b-96f5-9b93a8d314e7"
+            name="CreateFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="96be5696-5da7-42e8-89e1-77df6db6ae75" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="478b0330-0dd9-44ad-9cd7-9a514b09f8f9"
+                  name="String type"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bea61077-3a8e-4fbf-b47a-23506307da8e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
+                      LastKnownName="ModelingProject1::IFilter"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="880ba464-aa39-4b26-b4bf-1446f53a9c8f"
+            name="CreatePipe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <elementDefinition
+              Id="edd8e1f4-e305-445b-b437-121bb29436c0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c07e2be-ee7b-4ddf-b204-fd7dea7304b3"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
+                      LastKnownName="ModelingProject1::IPipe"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1fcbbfb9-3da2-4fe6-af36-6525d6c3fe79"
+        name="PipeFilterFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <elementDefinition
+          Id="e462e9dd-988c-46a7-9279-51969edc39fa" />
+        <suppliersInternal>
+          <dependency
+            Id="f56dc17f-8ec2-452a-8292-6414dd704719"
+            name="Instantieert">
+            <classMoniker
+              Id="6838d84d-602c-46df-9032-558a67520f81"
+              LastKnownName="SWTest"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+          <dependency
+            Id="b9848209-4491-41e7-b36c-c79d0c579487"
+            name="Instantieert">
+            <classMoniker
+              Id="2c4fe980-6071-42c1-b9ab-e37a1812d811"
+              LastKnownName="HWTest"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+          <dependency
+            Id="0e3c634a-3118-48bc-826f-14b136044f16"
+            name="Instantieert">
+            <classMoniker
+              Id="c8c8bd74-e4cf-494f-a69c-e68029a301c5"
+              LastKnownName="HWAssemble"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+          <dependency
+            Id="28f2e189-52ad-4536-866d-1f579ce267a8"
+            name="Instantieert">
+            <classMoniker
+              Id="2276b257-2e1c-482b-9d7f-52b047dbbebb"
+              LastKnownName="SWInstall"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+          <dependency
+            Id="c67618e2-7e32-4cb8-ae9e-73979bfb93ac"
+            name="Instantieert">
+            <classMoniker
+              Id="8ad9dc80-32c1-4272-9560-406b1657788a"
+              LastKnownName="Pipe"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7fefdad6-552c-40ad-930a-f62cd1b859f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e2af927d-ccea-44ac-9da8-5406cd2a96d9"
+              LastKnownName="AbstractPipeFilterFactory"
+              LastKnownLocation="Diagrams.uml" />
+            <elementDefinition
+              Id="b0e8e4e8-6dee-4a67-8d7d-5a3b98a7c2f0" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="07b33234-7824-46a0-8e1d-fd4317c133de"
+            name="CreateFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0acd08e-96fe-49f5-8f1c-ba6b6c0df169"
+                  name="String type"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fca1a1cc-8c70-4e10-8dd3-6bf2345a3b36"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
+                      LastKnownName="ModelingProject1::IFilter"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c802a494-825c-43cf-92b9-3d89aa37079b"
+            name="CreatePipe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="64aa1154-ba13-430c-aa22-7b0c1b104da8"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
+                      LastKnownName="ModelingProject1::IPipe"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4230747c-7db3-4103-85ae-f2dba363ee93"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="7a2cec1e-8da5-47ed-a8b5-d5c30d96576e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="4347e47e-63a0-4d06-bc34-90672b8b64f8"
+              LastKnownName="ISim"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d58005e-19f5-46b2-b676-b55ed9c13d3c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f88255c4-9a82-46e8-ba90-0cf8d3e00682"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a2917ac7-75f2-429b-b7e5-64b326975c6f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4a321ff4-e035-4a17-bdc4-23a675a6276b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="11e85831-54f3-43a4-ab08-e0117595f1f2"
+        name="IProduction"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="aa87bcae-eca3-4143-9a52-319477ca04e2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+              LastKnownName="IFilter"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d2288a9-fc7b-42c7-9451-f0acdc362f12"
+        name="ITest"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="300c9107-c95e-4ef2-9dfe-9fc63bf2e945"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+              LastKnownName="IFilter"
+              LastKnownLocation="Diagrams.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2984c387-0afd-4873-b427-59153ebec6ea"
+        name="IPipe"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="695f8a87-5cfc-4074-99fd-789e865e3ffd">
+            <classMoniker
+              Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+              LastKnownName="AbstractOrder"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="f4839e43-07d3-40f3-9a19-6797e2cbb578"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            name="Verbindt"
+            isAbstract="false">
+            <classMoniker
+              Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+              LastKnownName="IFilter"
+              LastKnownLocation="Diagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d4ec81c-80eb-4efb-af47-c1d69ba9f7bb"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e5eaf1b7-9f8b-4274-bd9d-42f3adf9c7bd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f2989799-1697-4f56-b391-fa57e3104c9a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d376a6b9-fe02-402c-b245-91ef43424343"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="db588a2a-f8a3-4152-b05e-b292954e8e94"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="56763d46-768a-4810-a2e4-ffd3e3a330fa"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="969b6e72-e6b6-40c5-b3f0-20abb42bb35e"
+            name="from"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
+                LastKnownName="ModelingProject1::IFilter"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="64e4eec3-1079-4035-9d49-974cee3c313e"
+            name="to"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
+                LastKnownName="ModelingProject1::IFilter"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="82355f22-8c86-47c1-9553-2f679ac32feb"
+            name="Connect"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4721cdcd-f472-456e-8787-1106117f8df4"
+                  name="IFilter from"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27f5e520-8f9f-44ff-9e79-420142eb0053"
+                  name="IFilter to"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89d3e9ec-4c9e-47eb-a8a7-7aa123a4afc1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e902e582-61d3-443e-9c73-163cb0392afd"
+            name="Transport"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0daa2660-05af-4767-9762-a017774d392b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9303d529-28de-4aa2-9abb-209fd4a7edbb"
+            name="SetStartPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dafce658-de4a-482d-80c0-0de5c1736d40"
+                  name="IFilter f"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f87627c5-7745-4a6f-93f5-801d2cd38cba"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="159bb38c-f89a-4d16-a21a-41c85af5478e"
+            name="SetEndPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="501f9bef-8fea-45b2-ad3b-bce3cdbccdb5"
+                  name="IFilter f"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="79335b90-2731-48f8-bd28-7749ce9ef359"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+        name="IFilter"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="86a53b7c-de3c-4b7f-9504-8e7acd7c9994">
+            <classMoniker
+              Id="e1fa44f2-8d71-453c-b4f3-ce4f3bbb8381"
+              LastKnownName="AbstractOrder"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a9d463cc-6653-4e72-89ca-62ebe2613049"
+            name="in"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="90db3eed-1d80-470b-9551-fbaf9b770240"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="95f5a241-c975-484b-b5ee-bf6bfe05db7c"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
+                LastKnownName="ModelingProject1::AbstractOrder"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fde8db5a-43dc-49d7-9c9d-bdec97cf8546"
+            name="out"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="1b7960c3-937c-41d2-b7cf-29af7d29a31e"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="0fd64dea-f7b0-41cf-a89c-a627667e7e6a"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
+                LastKnownName="ModelingProject1::AbstractOrder"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="83f7246d-a630-4b33-a869-bee91675dd61"
+            name="Process"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4891da09-736b-4679-b68f-d2c90a63dabf"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5003d66f-04cb-49c2-bb1c-f07ccb22afe1"
+            name="Pull"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9bc5e66-aeae-4088-8859-71854aa655c7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
+                      LastKnownName="ModelingProject1::AbstractOrder"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4d14ec4b-08cb-448f-95fe-be0efc04e071"
+            name="Push"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa88d33e-00ad-4f1b-97e2-5877a49de9af"
+                  name="AbstractOrder order"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d3e3d3b-c115-4a09-81ee-9ed659a0ee2e"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>

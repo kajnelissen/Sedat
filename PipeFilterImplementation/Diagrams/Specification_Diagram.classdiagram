@@ -199,7 +199,7 @@
             <elementDefinition Id="52487b40-6b89-4f72-a289-4c1fbb4f2593" />
           </association>
           <association Id="1378e22a-9eea-429c-a606-3cb149bd204f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Simuleert" isAbstract="false">
-            <classMoniker Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" LastKnownName="IPipe1" />
+            <classMoniker Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" LastKnownName="IPipe" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="cf9072f3-5994-47dc-9606-b4b915a1ddb4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -225,7 +225,7 @@
             <elementDefinition Id="474d72cd-4d73-4ed6-9e54-865fcc2ae7f2" />
           </association>
           <association Id="150a24b0-f6c0-4581-bc89-a7ca073c6327" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Simuleert" isAbstract="false">
-            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter1" />
+            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1f8cb25b-8926-4d77-a002-e4978b9fea12" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -372,7 +372,7 @@
         <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
         <targetEnds>
           <association Id="f40fb159-431f-4de3-9b6e-113884510aa7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Status" isAbstract="false">
-            <enumerationMoniker Id="997c2706-8b6d-48b1-93b7-d772bbea58cb" LastKnownName="OrderStatus1" />
+            <enumerationMoniker Id="997c2706-8b6d-48b1-93b7-d772bbea58cb" LastKnownName="OrderStatus" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="43c54c42-94c1-4caf-8a10-5d4c4814982b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -470,7 +470,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <enumeration Id="997c2706-8b6d-48b1-93b7-d772bbea58cb" name="OrderStatus1" isAbstract="false" isLeaf="false">
+      <enumeration Id="997c2706-8b6d-48b1-93b7-d772bbea58cb" name="OrderStatus" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c1fcde80-53db-458f-831b-e2b023f7d7e2" />
         <ownedLiterals>
           <enumerationLiteral Id="b3e9dc1e-443a-48fc-b3eb-eff556c90bfb" name="Start">
@@ -505,7 +505,7 @@
         <elementDefinition Id="519fd4db-c3e4-4dfb-9d59-23856c463998" />
         <generalsInternal>
           <generalization Id="3ca7a5e8-f85b-4e4a-9d3e-59daf108e2c9" isSubstitutable="false">
-            <classMoniker Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" LastKnownName="IProduction1" />
+            <classMoniker Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" LastKnownName="IProduction" />
             <elementDefinition Id="07808cde-7aea-43fa-a02b-c428df6930bb" />
           </generalization>
         </generalsInternal>
@@ -531,7 +531,7 @@
         <elementDefinition Id="c098137d-3208-4c4e-b099-90f83aa37da7" />
         <generalsInternal>
           <generalization Id="0e41a968-5f5e-4cc5-a517-dd113ea78f10" isSubstitutable="false">
-            <classMoniker Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" LastKnownName="ITest1" />
+            <classMoniker Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" LastKnownName="ITest" />
             <elementDefinition Id="9adfb09d-2bae-4810-ba77-5484323c3e9b" />
           </generalization>
         </generalsInternal>
@@ -557,7 +557,7 @@
         <elementDefinition Id="51ab1156-b7b5-4643-a35b-81606cad6e49" />
         <generalsInternal>
           <generalization Id="0b014559-0603-4c4d-8755-0f6b407b37b1" isSubstitutable="false">
-            <classMoniker Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" LastKnownName="IProduction1" />
+            <classMoniker Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" LastKnownName="IProduction" />
             <elementDefinition Id="8105e2b0-cae6-443b-ad6a-a023e3c18d86" />
           </generalization>
         </generalsInternal>
@@ -579,11 +579,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d1072792-3288-4211-8238-f55bdb64f26f" name="SWTest1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d1072792-3288-4211-8238-f55bdb64f26f" name="SWTest" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e8c9a70a-0072-4f00-8d09-af8a2e87cf07" />
         <generalsInternal>
           <generalization Id="14e2c20e-d28e-478f-9a71-d7780b0d2eb7" isSubstitutable="false">
-            <classMoniker Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" LastKnownName="ITest1" />
+            <classMoniker Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" LastKnownName="ITest" />
             <elementDefinition Id="98c36eec-5311-4090-a5c2-4bd88fe2a249" />
           </generalization>
         </generalsInternal>
@@ -609,7 +609,7 @@
         <elementDefinition Id="24c47ee9-58e3-4789-9479-41c7c19a7ba7" />
         <generalsInternal>
           <generalization Id="bcb1f1b1-a00e-42d2-9de7-5d1f98d270ca" isSubstitutable="false">
-            <classMoniker Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" LastKnownName="IPipe1" />
+            <classMoniker Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" LastKnownName="IPipe" />
             <elementDefinition Id="51126706-dcfb-4c57-8ee2-d0711f4e8006" />
           </generalization>
         </generalsInternal>
@@ -712,7 +712,7 @@
         <elementDefinition Id="3c03493e-7ef0-47a5-8cd9-ef284cdb3e72" />
         <suppliersInternal>
           <dependency Id="a26e8989-2251-4a6d-a2d3-3cd856289e0a" name="Instantieert">
-            <classMoniker Id="d1072792-3288-4211-8238-f55bdb64f26f" LastKnownName="SWTest1" />
+            <classMoniker Id="d1072792-3288-4211-8238-f55bdb64f26f" LastKnownName="SWTest" />
             <elementDefinition Id="cf78da68-3e00-4daa-babe-3626d3c6e079" />
           </dependency>
           <dependency Id="5f1b5d22-1718-46b4-9e19-d068613a3f83" name="Instantieert">
@@ -774,7 +774,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="58ca5b4e-57ba-4444-beef-9fa4c9425dad" name="Client1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="58ca5b4e-57ba-4444-beef-9fa4c9425dad" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4693b155-de35-44ba-8c97-c1b39694810b" />
         <targetEnds>
           <association Id="e20e7b3c-6088-4459-a0a0-237722ba333e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -807,29 +807,29 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" name="IProduction1" isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="9ed5a0c1-f8b8-4f2d-8907-19652cee4c3d" name="IProduction" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3063997a-a39d-4d68-a34e-fbbbf3e92d1d" />
         <generalsInternal>
           <generalization Id="44bd02f5-b580-484c-a1e1-f1f1e6bfdccb" isSubstitutable="false">
-            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter1" />
+            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter" />
             <elementDefinition Id="184e6b7e-43ee-40ef-ad8c-a6a29e493e6c" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" name="ITest1" isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="78ee9f43-137b-4fd8-b6a8-0de094d4b08e" name="ITest" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f9dbf7aa-8273-4bca-a69a-752d3380e2bc" />
         <generalsInternal>
           <generalization Id="740582ea-1cfc-47e8-80e4-d938927e995c" isSubstitutable="false">
-            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter1" />
+            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter" />
             <elementDefinition Id="a247b47a-f10f-4ff9-8691-7e805996145d" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" name="IPipe1" isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="7a7cc334-eeeb-40a6-818f-499ff764d6c2" name="IPipe" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="aea30b76-dc93-43dc-ae7a-f29f1522d835" />
         <suppliersInternal>
           <dependency Id="4fc336ba-c898-41cf-be63-cc8d429a8983">
@@ -839,7 +839,7 @@
         </suppliersInternal>
         <targetEnds>
           <association Id="b9d2dcf8-cdf5-4309-81b5-0c9b95a909e7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="Verbindt" isAbstract="false">
-            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter1" />
+            <classMoniker Id="63cc8c58-6c29-403c-abef-f05c541d5542" LastKnownName="IFilter" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ee2b1737-df97-4343-8a38-767c0afdad09" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -966,7 +966,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="63cc8c58-6c29-403c-abef-f05c541d5542" name="IFilter1" isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="63cc8c58-6c29-403c-abef-f05c541d5542" name="IFilter" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1c9e2ea3-6310-4b63-b5c6-77133345499d" />
         <suppliersInternal>
           <dependency Id="7f6627c9-6055-4405-91e6-d19b3cf8e783">

@@ -17,19 +17,26 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
   <ItemGroup>
-    <Content Include="Spec.classdiagram">
+    <Content Include="Implementation_Diagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Spec.classdiagram.layout">
+    <Content Include="Implementation_Diagram.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Spec.classdiagram</DependentUpon>
+      <DependentUpon>Implementation_Diagram.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Specification Diagram.classdiagram">
+    <Content Include="Specification_Diagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Specification Diagram.classdiagram.layout">
+    <Content Include="Specification_Diagram.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Specification Diagram.classdiagram</DependentUpon>
+      <DependentUpon>Specification_Diagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Spec_Roy.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Spec_Roy.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Spec_Roy.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Diagrams.uml">
