@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="64253cd8-9bec-4c7a-b756-d6667991616e"
   name="Diagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -533,7 +533,7 @@
             Id="2ab13535-0337-4700-b868-85b6754991a7">
             <interfaceMoniker
               Id="2acfd626-d3cc-444f-9fc9-39f99e055362"
-              LastKnownName="IProductie"
+              LastKnownName="IProduction"
               LastKnownLocation="Diagrams.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -609,7 +609,7 @@
             Id="59799021-c097-4362-8d0f-9d8cddfff61f">
             <interfaceMoniker
               Id="2acfd626-d3cc-444f-9fc9-39f99e055362"
-              LastKnownName="IProductie"
+              LastKnownName="IProduction"
               LastKnownLocation="Diagrams.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -1135,7 +1135,7 @@
     <packageHasNamedElement>
       <Interface
         Id="2acfd626-d3cc-444f-9fc9-39f99e055362"
-        name="IProductie"
+        name="IProduction"
         isAbstract="false"
         isLeaf="false">
         <generalsInternal>

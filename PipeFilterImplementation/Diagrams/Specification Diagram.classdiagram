@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc7bc8e9-1f86-4a49-8a4f-4fd763ab3d3e" name="Specification Diagram" linkedPackageId="9625e4ab-7533-4b9c-865b-8011d42c9ef4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc7bc8e9-1f86-4a49-8a4f-4fd763ab3d3e" name="Specification Diagram" linkedPackageId="9625e4ab-7533-4b9c-865b-8011d42c9ef4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="794d74ee-6230-44c1-b177-8debcb10080f" name="timer" isAbstract="false" isLeaf="false" cachedFullName="timer">
@@ -270,7 +270,7 @@
         <elementDefinition Id="43bc378b-bd55-4ea3-a683-ec9dd080adcb" />
         <suppliersInternal>
           <interfaceRealization Id="ee7d0673-d850-424b-a74b-5906fd224848">
-            <interfaceMoniker Id="69559dda-726e-4400-9ac4-eb7312db17e5" LastKnownName="IProductie" />
+            <interfaceMoniker Id="69559dda-726e-4400-9ac4-eb7312db17e5" LastKnownName="IProduction" />
             <elementDefinition Id="2ab13535-0337-4700-b868-85b6754991a7" />
           </interfaceRealization>
         </suppliersInternal>
@@ -312,7 +312,7 @@
         <elementDefinition Id="5bded22e-b48d-407c-bd75-e0ffdfcd29fb" />
         <suppliersInternal>
           <interfaceRealization Id="70d4163d-fc3c-4d26-aec8-05d28334fde5">
-            <interfaceMoniker Id="69559dda-726e-4400-9ac4-eb7312db17e5" LastKnownName="IProductie" />
+            <interfaceMoniker Id="69559dda-726e-4400-9ac4-eb7312db17e5" LastKnownName="IProduction" />
             <elementDefinition Id="59799021-c097-4362-8d0f-9d8cddfff61f" />
           </interfaceRealization>
         </suppliersInternal>
@@ -603,7 +603,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="69559dda-726e-4400-9ac4-eb7312db17e5" name="IProductie" isAbstract="false" isLeaf="false">
+      <Interface Id="69559dda-726e-4400-9ac4-eb7312db17e5" name="IProduction" isAbstract="false" isLeaf="false">
         <elementDefinition Id="2acfd626-d3cc-444f-9fc9-39f99e055362" />
         <generalsInternal>
           <generalization Id="292c3f59-e3ea-45ac-a4a5-d49265dc5ba6" isSubstitutable="false">
