@@ -479,7 +479,7 @@
           <enumerationLiteral Id="c7b51b47-0e5a-4dbf-9a8e-a9652367b394" name="Assembled">
             <elementDefinition Id="ceae5bc1-c6d0-410b-a639-dcecc2c6cdf4" />
           </enumerationLiteral>
-          <enumerationLiteral Id="5f9282c0-a1cb-47f6-91a6-abd6c63cd24a" name="HardwareTested">
+          <enumerationLiteral Id="5f9282c0-a1cb-47f6-91a6-abd6c63cd24a" name="HardwareCorrect">
             <elementDefinition Id="0825feb7-9fec-4698-90bc-3e67c4c8c60c" />
           </enumerationLiteral>
           <enumerationLiteral Id="4b19048b-23f0-47fe-8745-9b20e1e46738" name="HardwareErrors">
@@ -488,7 +488,7 @@
           <enumerationLiteral Id="086db6d9-e425-4a6d-86b4-04b3a7749b3c" name="SoftwareInstalled">
             <elementDefinition Id="9161006a-7c40-48e9-8152-4b031a8158a0" />
           </enumerationLiteral>
-          <enumerationLiteral Id="44f9f8a5-fa88-4d73-acf8-0451dc6adaa9" name="SoftwareTested">
+          <enumerationLiteral Id="44f9f8a5-fa88-4d73-acf8-0451dc6adaa9" name="SoftwareCorrect">
             <elementDefinition Id="f14cee1d-cf94-4815-8e04-4d3b237de11a" />
           </enumerationLiteral>
           <enumerationLiteral Id="92c4dff4-516f-4dfc-ad27-f65d7905bcb3" name="SoftwareErrors">

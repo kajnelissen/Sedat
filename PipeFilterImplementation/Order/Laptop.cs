@@ -10,13 +10,13 @@ namespace Order
         public Laptop(int orderId)
             : base(orderId)
         {
-            this._type = OrderType.Laptop;
+            this._type = "Laptop";
         }
 
         public Laptop(int orderId, OrderStatus os)
             : base(orderId, os)
         {
-            this._type = OrderType.Laptop;
+            this._type = "Laptop";
         }
     }
 }

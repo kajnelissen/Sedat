@@ -14,15 +14,15 @@ namespace Order
             this._nextId = 1;
         }
 
-        public AbstractOrder CreateOrder(OrderType t)
+        public AbstractOrder CreateOrder(string type)
         {
             AbstractOrder order = null;
             switch (t)
             {
-                case OrderType.Desktop:
+                case "desktop":
                     order = new Desktop(this._nextId);
                     break;
-                case OrderType.Laptop:
+                case "laptop":
                     order = new Laptop(this._nextId);
                     break;
                 default:

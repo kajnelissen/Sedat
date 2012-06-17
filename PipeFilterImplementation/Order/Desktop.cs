@@ -5,18 +5,21 @@ using System.Text;
 
 namespace Order
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Desktop : AbstractOrder
     {
         public Desktop(int orderId)
             : base(orderId)
         {
-            this._type = OrderType.Desktop;
+            this._type = "Desktop";
         }
 
         public Desktop(int orderId, OrderStatus os)
             : base(orderId, os)
         {
-            this._type = OrderType.Desktop;
+            this._type = "Desktop";
         }
     }
 }

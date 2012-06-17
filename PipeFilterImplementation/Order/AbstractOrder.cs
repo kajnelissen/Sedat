@@ -7,7 +7,7 @@ namespace Order
 {
     /// <summary>
     /// Implementeert alle basisfunctionaliteit van
-    /// orders die worden geproduceerd door order factory.
+    /// orders voor computersystemen.
     /// </summary>
     public abstract class AbstractOrder
     {
@@ -32,8 +32,8 @@ namespace Order
         /// <summary>
         /// Type van order.
         /// </summary>
-        protected OrderType _type;
-        public OrderType Type
+        protected string _type;
+        public string Type
         {
             get { return this._type; }
         }
@@ -78,7 +78,7 @@ namespace Order
         /// <returns></returns>
         public override string ToString()
         {
-            return "ID: " + this._orderId + ", Type: " + this._type.ToString() + ", Status: " + this._status.ToString(); ;
+            return "ID: " + this._orderId + ", Type: " + this._type + ", Status: " + this._status.ToString(); ;
         }
     }
 }

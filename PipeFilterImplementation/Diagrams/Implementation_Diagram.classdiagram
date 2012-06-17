@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="7f826beb-b6e0-4bff-9c32-50a7c2cb589f" name="Implementation_Diagram" linkedPackageId="96099791-9377-4586-9900-2209d180d54a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="02abd930-dee6-49f0-992b-d25843641934">
-      <profileInstance Id="a79c53f0-efb9-4e25-875d-b14e669f1919" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="387e85a1-163a-4556-94be-5ac91af85054">
-      <profileInstance Id="2f190c3a-8fe7-48e3-8e07-04c5cef2da0d" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="edc8a591-2f3f-4b92-88e0-7028d9d44e5e" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
@@ -479,7 +465,7 @@
           <enumerationLiteral Id="7c564931-d890-4498-9c63-3d4624df2a16" name="Assembled">
             <elementDefinition Id="7b14bc84-9b30-430e-bd9d-ddfdd9e821b0" />
           </enumerationLiteral>
-          <enumerationLiteral Id="f3c1d495-504b-43c7-9abd-4a758e54c4fa" name="HardwareTested">
+          <enumerationLiteral Id="f3c1d495-504b-43c7-9abd-4a758e54c4fa" name="HardwareCorrect">
             <elementDefinition Id="783838f1-8ebc-49dd-8179-34866a67558b" />
           </enumerationLiteral>
           <enumerationLiteral Id="433182b0-23fd-4e37-a1ee-d05d49505c1f" name="HardwareErrors">
@@ -488,7 +474,7 @@
           <enumerationLiteral Id="af0b8da5-a025-4175-b5a2-ce8b25aa5e43" name="SoftwareInstalled">
             <elementDefinition Id="275be440-9351-454a-947b-cc31ee394107" />
           </enumerationLiteral>
-          <enumerationLiteral Id="e23bfff5-5b03-4652-aaa7-5f845a8c9b39" name="SoftwareTested">
+          <enumerationLiteral Id="e23bfff5-5b03-4652-aaa7-5f845a8c9b39" name="SoftwareCorrect">
             <elementDefinition Id="dda220dd-c08b-4288-9fc7-cc75ade1c9a2" />
           </enumerationLiteral>
           <enumerationLiteral Id="12726c20-fb09-4a54-b598-18bd336ab749" name="SoftwareErrors">
@@ -1059,5 +1045,19 @@
   </packagedElements>
   <package Id="96099791-9377-4586-9900-2209d180d54a" name="Diagrams">
     <elementDefinition Id="64253cd8-9bec-4c7a-b756-d6667991616e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="02abd930-dee6-49f0-992b-d25843641934">
+        <profileInstance Id="a79c53f0-efb9-4e25-875d-b14e669f1919" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="387e85a1-163a-4556-94be-5ac91af85054">
+        <profileInstance Id="2f190c3a-8fe7-48e3-8e07-04c5cef2da0d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

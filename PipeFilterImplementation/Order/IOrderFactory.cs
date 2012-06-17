@@ -7,6 +7,6 @@ namespace Order
 {
     interface IOrderFactory
     {
-        AbstractOrder CreateOrder(OrderType t);
+        AbstractOrder CreateOrder(string type);
     }
 }

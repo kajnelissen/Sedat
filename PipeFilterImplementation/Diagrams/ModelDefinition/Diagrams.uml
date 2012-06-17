@@ -3999,7 +3999,7 @@
             name="Assembled" />
           <enumerationLiteral
             Id="0825feb7-9fec-4698-90bc-3e67c4c8c60c"
-            name="HardwareTested" />
+            name="HardwareCorrect" />
           <enumerationLiteral
             Id="c4495840-d365-406f-990a-046ad96c6dcf"
             name="HardwareErrors" />
@@ -4008,7 +4008,7 @@
             name="SoftwareInstalled" />
           <enumerationLiteral
             Id="f14cee1d-cf94-4815-8e04-4d3b237de11a"
-            name="SoftwareTested" />
+            name="SoftwareCorrect" />
           <enumerationLiteral
             Id="ff02564f-200f-490e-bcc6-21e5de8b3314"
             name="SoftwareErrors" />
@@ -5769,7 +5769,7 @@
             name="Assembled" />
           <enumerationLiteral
             Id="783838f1-8ebc-49dd-8179-34866a67558b"
-            name="HardwareTested" />
+            name="HardwareCorrect" />
           <enumerationLiteral
             Id="25208a3b-d0a2-4250-b657-160af2c7a35a"
             name="HardwareErrors" />
@@ -5778,7 +5778,7 @@
             name="SoftwareInstalled" />
           <enumerationLiteral
             Id="dda220dd-c08b-4288-9fc7-cc75ade1c9a2"
-            name="SoftwareTested" />
+            name="SoftwareCorrect" />
           <enumerationLiteral
             Id="2443e8f9-9c82-4fd4-9535-94395abec320"
             name="SoftwareErrors" />
