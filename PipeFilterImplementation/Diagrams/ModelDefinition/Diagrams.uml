@@ -3716,9 +3716,9 @@
                   Id="e5cf109b-31c7-4736-ab95-6f9aeacffeb8"
                   direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
-                      LastKnownName="ModelingProject1::AbstractOrder"
+                    <classMoniker
+                      Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                      LastKnownName="AbstractOrder"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3762,9 +3762,9 @@
                   Id="1618000a-3f11-454a-9df7-31cfaaab10e7"
                   direction="Return">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
-                      LastKnownName="ModelingProject1::AbstractOrder"
+                    <classMoniker
+                      Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                      LastKnownName="AbstractOrder"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4252,9 +4252,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
-                      LastKnownName="ModelingProject1::IPipe"
+                    <interfaceMoniker
+                      Id="65ac8398-f29a-421f-9f78-2ad48dd9fa27"
+                      LastKnownName="IPipe"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4283,9 +4283,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
-                      LastKnownName="ModelingProject1::IFilter"
+                    <interfaceMoniker
+                      Id="733c0f75-dac6-4f27-a179-072bc062fb4c"
+                      LastKnownName="IFilter"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4349,9 +4349,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
-                      LastKnownName="ModelingProject1::IFilter"
+                    <interfaceMoniker
+                      Id="733c0f75-dac6-4f27-a179-072bc062fb4c"
+                      LastKnownName="IFilter"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4375,9 +4375,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
-                      LastKnownName="ModelingProject1::IPipe"
+                    <interfaceMoniker
+                      Id="65ac8398-f29a-421f-9f78-2ad48dd9fa27"
+                      LastKnownName="IPipe"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4473,9 +4473,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
-                      LastKnownName="ModelingProject1::IFilter"
+                    <interfaceMoniker
+                      Id="733c0f75-dac6-4f27-a179-072bc062fb4c"
+                      LastKnownName="IFilter"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4497,9 +4497,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd"
-                      LastKnownName="ModelingProject1::IPipe"
+                    <interfaceMoniker
+                      Id="65ac8398-f29a-421f-9f78-2ad48dd9fa27"
+                      LastKnownName="IPipe"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -4704,9 +4704,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
-                LastKnownName="ModelingProject1::IFilter"
+              <classMoniker
+                Id="d285abe3-7d0f-425c-86b0-35260f62ad5d"
+                LastKnownName="IFilter"
                 LastKnownLocation="Diagrams.uml" />
             </type_NamedElement>
           </property>
@@ -4723,9 +4723,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f"
-                LastKnownName="ModelingProject1::IFilter"
+              <interfaceMoniker
+                Id="733c0f75-dac6-4f27-a179-072bc062fb4c"
+                LastKnownName="IFilter"
                 LastKnownLocation="Diagrams.uml" />
             </type_NamedElement>
           </property>
@@ -4899,9 +4899,9 @@
                 value="*" />
             </upperValueInternal>
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
-                LastKnownName="ModelingProject1::AbstractOrder"
+              <classMoniker
+                Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                LastKnownName="AbstractOrder"
                 LastKnownLocation="Diagrams.uml" />
             </type_NamedElement>
           </property>
@@ -4930,9 +4930,9 @@
                 value="*" />
             </upperValueInternal>
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
-                LastKnownName="ModelingProject1::AbstractOrder"
+              <classMoniker
+                Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                LastKnownName="AbstractOrder"
                 LastKnownLocation="Diagrams.uml" />
             </type_NamedElement>
           </property>
@@ -4977,9 +4977,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e"
-                      LastKnownName="ModelingProject1::AbstractOrder"
+                    <classMoniker
+                      Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                      LastKnownName="AbstractOrder"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -6789,6 +6789,16 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="57bee5ad-2c5a-4b0d-bda4-3fbbe3aaab93"
+        name="IPie" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="809fbb50-ee5e-4ead-b0be-0a17c8d36316"
+        name=":AbstractOrder" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -5,11 +5,22 @@ using System.Text;
 
 namespace Order
 {
-    public class OrderFactory : IOrderFactory
+    /// <summary>
+    /// Maakt order aan voor computersysteemproductiebedrijf
+    /// en kent elk order een uniek ID toe. Orders kunnen
+    /// desktops of laptops zijn.
+    /// </summary>
+    public class DefaultOrderFactory : IOrderFactory
     {
+        /// <summary>
+        /// ID voor volgend order.
+        /// </summary>
         private int _nextId;
 
-        public OrderFactory()
+        /// <summary>
+        /// Creëert nieuwe Orderfactory 
+        /// </summary>
+        public DefaultOrderFactory()
         {
             this._nextId = 1;
         }

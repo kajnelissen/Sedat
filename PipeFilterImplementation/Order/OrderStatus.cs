@@ -13,11 +13,11 @@ namespace Order
     {
         Start,              // order is binnengekomen
         Assembled,          // order is geassembleerd
-        HardwareCorrect,     // hardware getest => correct
+        HardwareCorrect,    // hardware getest => correct
         HardwareErrors,     // hardware getest => fouten
         SoftwareInstalled,  // software geïnstalleerd
-        SoftwareCorrect,     // software getest => correct
-        SoftwareErrors,     
-        End
+        SoftwareCorrect,    // software getest => correct
+        SoftwareErrors,     // software getest => fouten  
+        End                 // order afgehandeld
     }
 }

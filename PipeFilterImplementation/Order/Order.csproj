@@ -43,11 +43,9 @@
     <Compile Include="AbstractOrder.cs" />
     <Compile Include="DefaultOrderFactory.cs" />
     <Compile Include="Desktop.cs" />
-    <Compile Include="IOrder.cs" />
     <Compile Include="IOrderFactory.cs" />
     <Compile Include="Laptop.cs" />
     <Compile Include="OrderStatus.cs" />
-    <Compile Include="OrderType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,16 +36,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="08ec0fc0-0914-4774-a9de-c9652a807ab7" name="ModelingProject1::AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::AbstractOrder">
-        <elementDefinition Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="772fdaa5-daf5-447b-89b5-52ca85a7eab1" name="ModelingProject1::AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::AbstractOrder">
-        <elementDefinition Id="6457b20f-8a7d-4d69-b67d-343e5c23b71e" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="4ccedce4-f12a-427a-9e8f-7e8185b4638a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
         <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
@@ -53,21 +43,6 @@
     <packageHasNamedElement>
       <referencedType Id="eabbfce3-d57d-4799-8c56-a0a09f57c4f9" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
         <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="0fcb33f2-b04b-4cd5-9b1c-ca2df07062bd" name="ModelingProject1::IPipe" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPipe">
-        <elementDefinition Id="f50c4ae5-bb65-4770-bcef-e4310a2494dd" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="eea76e9b-e54f-4149-a853-9fa573579105" name="ModelingProject1::IFilter" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IFilter">
-        <elementDefinition Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="60545cf1-078c-40b0-b622-bf3be86e16e2" name="ModelingProject1::IFilter" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IFilter">
-        <elementDefinition Id="de0e70ae-11ed-41fd-9dfd-b2423bea7c8f" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -328,7 +303,7 @@
                 <parameter Id="078f11a8-8d80-4b20-8491-06f3b092ed7b" direction="Return">
                   <elementDefinition Id="e5cf109b-31c7-4736-ab95-6f9aeacffeb8" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="08ec0fc0-0914-4774-a9de-c9652a807ab7" LastKnownName="ModelingProject1::AbstractOrder" />
+                    <referencedTypeMoniker Id="f09443e4-4bd0-4324-b0f7-8a983a099797" LastKnownName="AbstractOrder" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -353,7 +328,7 @@
                 <parameter Id="0c0d5b3f-df19-4b4b-bfcb-8ee7fe87b7b6" direction="Return">
                   <elementDefinition Id="1618000a-3f11-454a-9df7-31cfaaab10e7" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="772fdaa5-daf5-447b-89b5-52ca85a7eab1" LastKnownName="ModelingProject1::AbstractOrder" />
+                    <referencedTypeMoniker Id="47911d3b-6da3-4193-bca0-8dae64bde9fe" LastKnownName="AbstractOrder" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -631,7 +606,7 @@
                 <parameter Id="9c2113cc-0066-45ef-9b45-74de96949d14" direction="Return" isUnique="false">
                   <elementDefinition Id="68ba0bcc-c012-4198-984f-2b428021d60f" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0fcb33f2-b04b-4cd5-9b1c-ca2df07062bd" LastKnownName="ModelingProject1::IPipe" />
+                    <referencedTypeMoniker Id="3cb8dfda-33ab-42f3-a216-ba00da1e9e0a" LastKnownName="IPipe" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -649,7 +624,7 @@
                 <parameter Id="729265ea-c5eb-4462-91cb-823341be2580" direction="Return" isUnique="false">
                   <elementDefinition Id="c2986f68-ff19-4f05-9b6d-570c457bb8a6" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="eea76e9b-e54f-4149-a853-9fa573579105" LastKnownName="ModelingProject1::IFilter" />
+                    <referencedTypeMoniker Id="023dd9c5-8e9d-464f-a25c-620dbebe2d35" LastKnownName="IFilter" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -685,7 +660,7 @@
                 <parameter Id="7471727f-9606-4cde-aeaa-d2e31cc62c3e" direction="Return" isUnique="false">
                   <elementDefinition Id="929159ec-4263-40f7-9dea-451211f1ce0a" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="eea76e9b-e54f-4149-a853-9fa573579105" LastKnownName="ModelingProject1::IFilter" />
+                    <referencedTypeMoniker Id="f0956d19-ce4d-4c36-9ae3-e56e9fef83bd" LastKnownName="IFilter" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -698,7 +673,7 @@
                 <parameter Id="4a7d9948-f76f-48b4-a620-ac1cd7b2644e" direction="Return" isUnique="false">
                   <elementDefinition Id="889633b5-d609-4603-9890-e11a4bd3809d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0fcb33f2-b04b-4cd5-9b1c-ca2df07062bd" LastKnownName="ModelingProject1::IPipe" />
+                    <referencedTypeMoniker Id="9a36911e-1722-409d-8ac5-a72d144fbcf0" LastKnownName="IPipe" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -751,7 +726,7 @@
                 <parameter Id="5c6c9579-590f-4e39-a85e-172c96bdd90c" direction="Return" isUnique="false">
                   <elementDefinition Id="f17e1cbb-fe4b-47e6-9011-bdb2c583cb39" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="eea76e9b-e54f-4149-a853-9fa573579105" LastKnownName="ModelingProject1::IFilter" />
+                    <referencedTypeMoniker Id="fe5b439a-6fba-4352-bc15-e38cc6f6d6ac" LastKnownName="IFilter" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -764,7 +739,7 @@
                 <parameter Id="59196dcf-e0b5-4d08-ba06-ecda3262c3cd" direction="Return" isUnique="false">
                   <elementDefinition Id="509f032e-2ae3-44b0-8c28-91cafa806552" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0fcb33f2-b04b-4cd5-9b1c-ca2df07062bd" LastKnownName="ModelingProject1::IPipe" />
+                    <referencedTypeMoniker Id="9a36911e-1722-409d-8ac5-a72d144fbcf0" LastKnownName="IPipe" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -879,13 +854,13 @@
           <property Id="eebb5e05-edec-48ba-813e-1d5b1331f2c9" name="from" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4ccdf8df-2ab6-4b4a-8058-4ffb99e5c8b8" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="60545cf1-078c-40b0-b622-bf3be86e16e2" LastKnownName="ModelingProject1::IFilter" />
+              <referencedTypeMoniker Id="43535e54-99f4-4a99-81a8-69194c07475e" LastKnownName="IFilter" />
             </type_NamedElement>
           </property>
           <property Id="0a896c16-fd97-4d9d-ac0b-d2f701e46636" name="to" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="48a0e63a-3e92-467e-8663-1d854c8746e0" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="60545cf1-078c-40b0-b622-bf3be86e16e2" LastKnownName="ModelingProject1::IFilter" />
+              <referencedTypeMoniker Id="788d968b-cac7-48cf-bc3a-203dcd911c35" LastKnownName="IFilter" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -988,7 +963,7 @@
             </upperValueInternal>
             <elementDefinition Id="eec2affd-d30c-4c32-90fa-d82a5526058e" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="08ec0fc0-0914-4774-a9de-c9652a807ab7" LastKnownName="ModelingProject1::AbstractOrder" />
+              <referencedTypeMoniker Id="ea581003-2997-44df-9da0-ce4db9d298dc" LastKnownName="AbstractOrder" />
             </type_NamedElement>
           </property>
           <property Id="df3559aa-b98c-4eed-949c-245ceeed8d52" name="out" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1004,7 +979,7 @@
             </upperValueInternal>
             <elementDefinition Id="4921bd00-5586-4c12-b1c3-cc5abe217367" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="08ec0fc0-0914-4774-a9de-c9652a807ab7" LastKnownName="ModelingProject1::AbstractOrder" />
+              <referencedTypeMoniker Id="2803eccf-f650-44dd-83bf-389d62596d73" LastKnownName="AbstractOrder" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1029,7 +1004,7 @@
                 <parameter Id="be644377-0d2d-4d3b-8855-f09d23a1732a" direction="Return" isUnique="false">
                   <elementDefinition Id="415aa783-9998-49fc-9d3e-c868f3fe998a" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="08ec0fc0-0914-4774-a9de-c9652a807ab7" LastKnownName="ModelingProject1::AbstractOrder" />
+                    <referencedTypeMoniker Id="cc1d5ad3-437d-4d49-ada7-b0d32f972816" LastKnownName="AbstractOrder" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1056,6 +1031,66 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="43535e54-99f4-4a99-81a8-69194c07475e" name="IFilter" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IFilter">
+        <elementDefinition Id="d285abe3-7d0f-425c-86b0-35260f62ad5d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="788d968b-cac7-48cf-bc3a-203dcd911c35" name="IFilter" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IFilter">
+        <elementDefinition Id="733c0f75-dac6-4f27-a179-072bc062fb4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ea581003-2997-44df-9da0-ce4db9d298dc" name="AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::AbstractOrder">
+        <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2803eccf-f650-44dd-83bf-389d62596d73" name="AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::AbstractOrder">
+        <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9a36911e-1722-409d-8ac5-a72d144fbcf0" name="IPipe" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IPipe">
+        <elementDefinition Id="65ac8398-f29a-421f-9f78-2ad48dd9fa27" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fe5b439a-6fba-4352-bc15-e38cc6f6d6ac" name="IFilter" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IFilter">
+        <elementDefinition Id="733c0f75-dac6-4f27-a179-072bc062fb4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f0956d19-ce4d-4c36-9ae3-e56e9fef83bd" name="IFilter" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IFilter">
+        <elementDefinition Id="733c0f75-dac6-4f27-a179-072bc062fb4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="023dd9c5-8e9d-464f-a25c-620dbebe2d35" name="IFilter" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IFilter">
+        <elementDefinition Id="733c0f75-dac6-4f27-a179-072bc062fb4c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3cb8dfda-33ab-42f3-a216-ba00da1e9e0a" name="IPipe" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IPipe">
+        <elementDefinition Id="65ac8398-f29a-421f-9f78-2ad48dd9fa27" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cc1d5ad3-437d-4d49-ada7-b0d32f972816" name="AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::AbstractOrder">
+        <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f09443e4-4bd0-4324-b0f7-8a983a099797" name="AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::AbstractOrder">
+        <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="47911d3b-6da3-4193-bca0-8dae64bde9fe" name="AbstractOrder" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::AbstractOrder">
+        <elementDefinition Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="cfde82c5-6a5a-4b25-8623-8e24fcd49b45" name="Diagrams">
     <elementDefinition Id="64253cd8-9bec-4c7a-b756-d6667991616e" />
