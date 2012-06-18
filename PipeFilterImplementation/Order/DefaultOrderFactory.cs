@@ -25,10 +25,16 @@ namespace Order
             this._nextId = 1;
         }
 
+        /// <summary>
+        /// Retourneert nieuw order van het meegegeven type.
+        /// <remarks>Merk op dat het type de waardes </remarks>
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public AbstractOrder CreateOrder(string type)
         {
             AbstractOrder order = null;
-            switch (t)
+            switch (type)
             {
                 case "desktop":
                     order = new Desktop(this._nextId);
