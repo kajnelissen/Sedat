@@ -40,8 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HWAssemble.cs" />
+    <Compile Include="HWTest.cs" />
     <Compile Include="IFilter.cs" />
+    <Compile Include="IProduction.cs" />
+    <Compile Include="ITest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SWInstall.cs" />
+    <Compile Include="SWTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Order\Order.csproj">
+      <Project>{A1F07FB7-5E7C-4285-AF83-20DCAE5A9DC5}</Project>
+      <Name>Order</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
