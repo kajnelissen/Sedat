@@ -27,12 +27,17 @@ namespace Order
 
         /// <summary>
         /// Retourneert nieuw order van het meegegeven type.
-        /// <remarks>Merk op dat het type de waardes </remarks>
+        /// <remarks>Merk op dat het type de waardes 'laptop' of 'desktop' moet hebben.</remarks>
         /// </summary>
         /// <param name="type"></param>
+        /// <exception cref="InvalidOrderException">InvalidOrderException</exception>
         /// <returns></returns>
         public AbstractOrder CreateOrder(string type)
         {
+            if (!type.Equals("desktop") && !type.Equals(""))
+            {
+                throw new InvalidOrderException("");
+            }
             AbstractOrder order = null;
             switch (type)
             {

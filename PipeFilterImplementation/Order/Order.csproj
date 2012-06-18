@@ -43,6 +43,7 @@
     <Compile Include="AbstractOrder.cs" />
     <Compile Include="DefaultOrderFactory.cs" />
     <Compile Include="Desktop.cs" />
+    <Compile Include="InvalidOrderException.cs" />
     <Compile Include="IOrderFactory.cs" />
     <Compile Include="Laptop.cs" />
     <Compile Include="OrderStatus.cs" />
