@@ -12,6 +12,8 @@ namespace Simulation
 {
     /// <summary>
     /// Simuleert productieproces van desktops en laptops.
+    /// 
+    /// Lelijke implementatie.
     /// </summary>
     public class ProductionSim : ISim
     {
@@ -38,15 +40,16 @@ namespace Simulation
         /// Filters voor simulatie.
         /// </summary>
         private Dictionary<string, IFilter> filters;
-        public IFilter GetFilter(string filter) { return this.filters[filter]; }
+        public List<string> GetFilterInput(string filter) { return this.filters[filter].InputBufferToString(); }
+        public List<string> GetFilterOutput(string filter) { return this.filters[filter].OutputBufferToString(); }
 
         /// <summary>
         /// Pipes voor simulatie.
         /// </summary>
         private List<IPipe> pipes;
 
-        private List<AbstractOrder> storage;
-        public List<AbstractOrder> GetStorage() { return this.storage; }
+        //private List<AbstractOrder> storage;
+        //public List<AbstractOrder> GetStorage() { return this.storage; }
 
         /// <summary>
         /// 
@@ -57,7 +60,7 @@ namespace Simulation
             this.pfFac = new PipeFilterFactory();
             this.filters = new Dictionary<string, IFilter>();
             this.pipes = new List<IPipe>();
-            this.storage = new List<AbstractOrder>();
+            //this.storage = new List<AbstractOrder>();
             this.rnd = new Random();
         }
 
