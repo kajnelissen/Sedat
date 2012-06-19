@@ -41,28 +41,29 @@ namespace Pipes
         /// <param name="from">Filter waar data vandaan komt</param>
         /// <param name="to">Filter waar data naartoe gaat</param>
         public IPipe(IFilter from, IFilter to)
-        { 
-            
+        {
+            this.Connect(from, to);
         }
 
         public void Connect(IFilter from, IFilter to)
-        { 
-            
+        {
+            this.SetStartPoint(from);
+            this.SetEndPoint(to);
         }
 
         public void SetStartPoint(IFilter from)
-        { 
-            
+        {
+            this.from = from;
         }
 
         public void SetEndPoint(IFilter to)
-        { 
-            
+        {
+            this.to = to;
         }
 
         public void Transport()
         { 
-            
+            AbstractOrder order = this.from.
         }
     }
 }

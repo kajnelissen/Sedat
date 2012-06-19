@@ -10,6 +10,8 @@ namespace Simulation
     /// </summary>
     public class ProductionSim : ISim
     {
+        private Timer
+
         public ProductionSim()
         { 
             
