@@ -28,7 +28,7 @@ namespace Gui
 
         /// <summary>
         /// Bij "binnenkomende orders" wordt een order geselecteerd. De order wordt dan 
-        /// verplaatst naar "orders in behandeling" 
+        /// verplaatst naar "orders in behandeling." 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
