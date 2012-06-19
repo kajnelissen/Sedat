@@ -5008,9 +5008,9 @@
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
