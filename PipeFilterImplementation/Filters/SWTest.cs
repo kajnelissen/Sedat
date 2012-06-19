@@ -8,23 +8,35 @@ namespace Filters
 {
     public class SWTest : ITest
     {
+        private Random r = new Random();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SWTest()
+        {
+        }
+
         /// <summary>
         /// Proces status veranderen naar software test correct of met errors.
         /// </summary>
         public override void Process()
         {
-            Random r = new Random();
-            int i = r.Next(1, 10);
-            AbstractOrder o = this.input.Dequeue();
-            if (i < 9)
+            if (input.Count > 0)
             {
-                o.ChangeStatus(OrderStatus.SoftwareCorrect);
+                AbstractOrder o = this.input.Dequeue();
+
+                int i = r.Next(1, 10);
+                if (i < 9)
+                {
+                    o.ChangeStatus(OrderStatus.SoftwareCorrect);
+                }
+                else
+                {
+                    o.ChangeStatus(OrderStatus.SoftwareErrors);
+                }
+                this.output.Enqueue(o);
             }
-            else
-            {
-                o.ChangeStatus(OrderStatus.SoftwareErrors);
-            }
-            this.output.Enqueue(o);
         }
     }
 }

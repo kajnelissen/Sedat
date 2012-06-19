@@ -9,13 +9,23 @@ namespace Filters
     public class SWInstall : IProduction
     {
         /// <summary>
+        /// 
+        /// </summary>
+        public SWInstall()
+        {
+        }
+
+        /// <summary>
         /// Proces status veranderen naar geïnstalleerd.
         /// </summary>
         public override void Process()
         {
-            AbstractOrder o = this.input.Dequeue();
-            o.ChangeStatus(OrderStatus.SoftwareInstalled);
-            this.output.Enqueue(o);
+            if (input.Count > 0)
+            {
+                AbstractOrder o = this.input.Dequeue();
+                o.ChangeStatus(OrderStatus.SoftwareInstalled);
+                this.output.Enqueue(o);
+            }
         }
     }
 }
