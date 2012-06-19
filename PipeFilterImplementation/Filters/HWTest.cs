@@ -11,21 +11,32 @@ namespace Filters
         private Random r = new Random();
 
         /// <summary>
+        /// 
+        /// </summary>
+        public HWTest()
+        {
+        }
+
+        /// <summary>
         /// Proces status veranderen naar hardware correct/ met errors getest.
         /// </summary>
         public override void Process()
         {
-            int i = r.Next(1, 10);
-            AbstractOrder o = this.input.Dequeue();
-            if (i < 9)
+            if (input.Count > 0)
             {
-                o.ChangeStatus(OrderStatus.HardwareCorrect);
+                AbstractOrder o = this.input.Dequeue();
+
+                int i = r.Next(1, 10);
+                if (i < 9)
+                {
+                    o.ChangeStatus(OrderStatus.HardwareCorrect);
+                }
+                else
+                {
+                    o.ChangeStatus(OrderStatus.HardwareErrors);
+                }
+                this.output.Enqueue(o);
             }
-            else
-            {
-                o.ChangeStatus(OrderStatus.HardwareErrors);
-            }
-            this.output.Enqueue(o);
         }
     }
 }

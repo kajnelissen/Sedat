@@ -13,13 +13,23 @@ namespace Filters
     public class HWAssemble : IProduction
     {
         /// <summary>
+        /// 
+        /// </summary>
+        public HWAssemble()
+        {
+        }
+
+        /// <summary>
         /// Proces status veranderen naar geassembleerd.
         /// </summary>
         public override void Process()
         {
-            AbstractOrder o = this.input.Dequeue();
-            o.ChangeStatus(OrderStatus.Assembled);
-            this.output.Enqueue(o);
+            if (input.Count > 0)
+            {
+                AbstractOrder o = this.input.Dequeue();
+                o.ChangeStatus(OrderStatus.Assembled);
+                this.output.Enqueue(o);
+            }        
         }
     }
 }
