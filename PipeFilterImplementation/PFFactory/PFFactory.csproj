@@ -40,7 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractPipeFilterFactory.cs" />
+    <Compile Include="IPipeFilterFactory.cs" />
+    <Compile Include="PipeFilterFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Filters\Filters.csproj">
+      <Project>{61E1E306-47E0-412F-9D04-82386FB62669}</Project>
+      <Name>Filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pipes\Pipes.csproj">
+      <Project>{AF6245CD-D605-41A3-A115-0FF656FC7756}</Project>
+      <Name>Pipes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

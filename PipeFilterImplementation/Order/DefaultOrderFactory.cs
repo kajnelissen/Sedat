@@ -6,9 +6,8 @@ using System.Text;
 namespace Order
 {
     /// <summary>
-    /// Maakt order aan voor computersysteemproductiebedrijf
-    /// en kent elk order een uniek ID toe. Orders kunnen
-    /// desktops of laptops zijn.
+    /// Maakt order aan voor computersysteemproductiebedrijf en kent elk 
+    /// order een uniek ID toe. Orders kunnen desktops of laptops zijn.
     /// </summary>
     public class DefaultOrderFactory : IOrderFactory
     {
@@ -29,12 +28,12 @@ namespace Order
         /// Retourneert nieuw order van het meegegeven type.
         /// <remarks>Merk op dat het type de waardes 'laptop' of 'desktop' moet hebben.</remarks>
         /// </summary>
-        /// <param name="type"></param>
+        /// <param name="type">Type van order, i.e. laptop of desktop</param>
         /// <exception cref="InvalidOrderException">InvalidOrderException</exception>
-        /// <returns></returns>
+        /// <returns>Nieuw order</returns>
         public AbstractOrder CreateOrder(string type)
         {
-            if (!type.Equals("desktop") && !type.Equals(""))
+            if (!type.Equals("desktop") && !type.Equals("laptop"))
             {
                 throw new InvalidOrderException("");
             }

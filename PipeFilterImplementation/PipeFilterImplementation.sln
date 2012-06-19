@@ -16,7 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFFactory", "PFFactory\PFFactory.csproj", "{F46306E5-8567-4494-8681-7E3FC2417FE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGUI", "ConsoleGUI\ConsoleGUI.csproj", "{D547C057-B530-44B6-98A5-75646625E178}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGUI", "ConsoleGUI\ConsoleGUI.csproj", "{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -108,16 +107,6 @@ Global
 		{D547C057-B530-44B6-98A5-75646625E178}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D547C057-B530-44B6-98A5-75646625E178}.Release|x86.ActiveCfg = Release|x86
 		{D547C057-B530-44B6-98A5-75646625E178}.Release|x86.Build.0 = Release|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Debug|x86.ActiveCfg = Debug|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Debug|x86.Build.0 = Debug|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Release|Any CPU.ActiveCfg = Release|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Release|Mixed Platforms.Build.0 = Release|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Release|x86.ActiveCfg = Release|x86
-		{6EB9269D-A857-4226-91F1-A3E2A90CFB8D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

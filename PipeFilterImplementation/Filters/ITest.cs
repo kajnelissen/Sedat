@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Filters
 {
-    abstract class ITest : IFilter
+    public abstract class ITest : IFilter
     {
-        abstract void Process();
+        //public abstract void Process();
     }
 }

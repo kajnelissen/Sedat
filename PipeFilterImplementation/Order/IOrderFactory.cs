@@ -9,7 +9,7 @@ namespace Order
     /// Definieert een interface voor het aanmaken van
     /// nieuwe orders.
     /// </summary>
-    interface IOrderFactory
+    public interface IOrderFactory
     {
         /// <summary>
         /// Retourneert een order van het meegegeven type.

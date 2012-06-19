@@ -6,12 +6,15 @@ using Simulation;
 
 namespace ConsoleGUI
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             ProductionSim sim = new ProductionSim();
             sim.Simulate();
+
+            Console.WriteLine("Press ENTER to exit.");
+            Console.ReadKey();
         }
     }
 }

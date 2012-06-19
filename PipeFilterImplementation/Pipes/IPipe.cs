@@ -39,9 +39,9 @@ namespace Pipes
         /// </summary>
         /// <param name="from">Filter waar data vandaan komt</param>
         /// <param name="to">Filter waar data naartoe gaat</param>
-        public IPipe(IFilter from, IFilter to)
+        public IPipe(ref IFilter from, ref IFilter to)
         {
-            this.Connect(from, to);
+            this.Connect(ref from, ref to);
         }
 
         /// <summary>
@@ -50,17 +50,17 @@ namespace Pipes
         /// </summary>
         /// <param name="from">Filter waar data vandaan komt</param>
         /// <param name="to">Filter waar data naartoe gaat</param>
-        public void Connect(IFilter from, IFilter to)
+        public void Connect(ref IFilter from, ref IFilter to)
         {
-            this.SetStartPoint(from);
-            this.SetEndPoint(to);
+            this.SetStartPoint(ref from);
+            this.SetEndPoint(ref to);
         }
 
         /// <summary>
         /// Wijzigt de filter waar deze pipe data vandaan haalt.
         /// </summary>
         /// <param name="from">Filter waar data vandaan komt</param>
-        public void SetStartPoint(IFilter from)
+        public void SetStartPoint(ref IFilter from)
         {
             this.from = from;
         }
@@ -69,14 +69,22 @@ namespace Pipes
         /// Wijzigt de filter waar deze pipe data naartoe stuurt.
         /// </summary>
         /// <param name="to"></param>
-        public void SetEndPoint(IFilter to)
+        public void SetEndPoint(ref IFilter to)
         {
             this.to = to;
         }
 
+        /// <summary>
+        /// Haalt order met hoogste prioriteit uit bronfilter en
+        /// verplaatst deze naar verbonden filter.
+        /// </summary>
         public void Transport()
-        { 
-            AbstractOrder order = this.from.
+        {
+            AbstractOrder order = this.from.Pull();
+            if (order != null)
+            {
+                this.to.Push(order);
+            }
         }
     }
 }
