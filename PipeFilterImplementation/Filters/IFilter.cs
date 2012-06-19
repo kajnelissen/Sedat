@@ -13,12 +13,8 @@ namespace Filters
     {
         abstract void Process();
 
-        AbstractOrder Pull()
-        {
-        }
+        AbstractOrder Pull();
 
-        bool Push(AbstractOrder order)
-        {
-        }
+        void Push(AbstractOrder order);
     }
 }
