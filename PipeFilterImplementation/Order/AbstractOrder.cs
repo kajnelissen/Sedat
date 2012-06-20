@@ -39,6 +39,15 @@ namespace Order
         }
 
         /// <summary>
+        /// Componenten die in dit order verwerkt zijn.
+        /// </summary>
+        protected List<IComponent> _components;
+        public List<IComponent> Components
+        {
+            get { return this._components; }
+        }
+
+        /// <summary>
         /// Creëert een order met meegegeven ID en zet
         /// status op <c>Start</c>.
         /// </summary>
@@ -47,6 +56,7 @@ namespace Order
         {
             this._orderId = orderId;
             this._status = OrderStatus.Start;
+            this._components = new List<IComponent>();
         }
 
         /// <summary>
@@ -59,6 +69,21 @@ namespace Order
         {
             this._orderId = orderId;
             this._status = os;
+            this._components = new List<IComponent>();
+        }
+
+        /// <summary>
+        /// Creëert een order met meegegeven ID en zet
+        /// status op meegegeven status.
+        /// </summary>
+        /// <param name="orderId">Identifier voor order</param>
+        /// <param name="os">Beginstatus van order</param>
+        /// <param name="components">Lijst van componenten</param>
+        public AbstractOrder(int orderId, OrderStatus os, List<IComponent> components)
+        {
+            this._orderId = orderId;
+            this._status = os;
+            this._components = components;
         }
 
         /// <summary>
@@ -69,6 +94,24 @@ namespace Order
         public void ChangeStatus(OrderStatus os)
         {
             this._status = os;
+        }
+
+        /// <summary>
+        /// Voegt meegegeven component toe aan order.
+        /// </summary>
+        /// <param name="comp">Hardware component</param>
+        public void AddComponent(IComponent comp)
+        {
+            this._components.Add(comp);
+        }
+
+        /// <summary>
+        /// Voegt lijst van componenten toe aan order.
+        /// </summary>
+        /// <param name="comps">Lijst met hardwarecomponenten</param>
+        public void AddComponentList(List<IComponent> comps)
+        {
+            this._components = comps;
         }
 
         /// <summary>
