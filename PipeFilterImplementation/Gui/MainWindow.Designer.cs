@@ -30,16 +30,26 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cb_ssd = new System.Windows.Forms.ComboBox();
+            this.cb_gpu = new System.Windows.Forms.ComboBox();
+            this.cb_cpu = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bt_orderPlaatsen = new System.Windows.Forms.Button();
             this.lb_opmerkingen = new System.Windows.Forms.Label();
             this.tb_opmerkingen = new System.Windows.Forms.TextBox();
             this.cb_soort = new System.Windows.Forms.ComboBox();
             this.lb_soort = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.bt_afhandelen1 = new System.Windows.Forms.Button();
-            this.tb_ordersinBehandeling1 = new System.Windows.Forms.TextBox();
-            this.lb_gaande = new System.Windows.Forms.Label();
-            this.bt_accepteren1 = new System.Windows.Forms.Button();
-            this.tb_binnenkomend = new System.Windows.Forms.TextBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.lb_binnenkomend = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bt_hwRapport = new System.Windows.Forms.Button();
@@ -65,14 +75,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.lb_teTesten2 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.bt_goedkeuren = new System.Windows.Forms.Button();
-            this.bt_afkeuren = new System.Windows.Forms.Button();
-            this.tb_goedkeuring = new System.Windows.Forms.TextBox();
-            this.tb_testrapporten = new System.Windows.Forms.TextBox();
-            this.bt_testOpenen = new System.Windows.Forms.Button();
             this.lb_testrapporten = new System.Windows.Forms.Label();
-            this.bt_orderPlaatsen = new System.Windows.Forms.Button();
+            this.bt_testOpenen = new System.Windows.Forms.Button();
+            this.tb_testrapporten = new System.Windows.Forms.TextBox();
+            this.tb_goedkeuring = new System.Windows.Forms.TextBox();
+            this.bt_afkeuren = new System.Windows.Forms.Button();
+            this.bt_goedkeuren = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,7 +99,7 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(25, 30);
+            this.tabControl1.Location = new System.Drawing.Point(25, 34);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(679, 430);
@@ -98,6 +107,14 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.cb_ssd);
+            this.tabPage1.Controls.Add(this.cb_gpu);
+            this.tabPage1.Controls.Add(this.cb_cpu);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.bt_orderPlaatsen);
             this.tabPage1.Controls.Add(this.lb_opmerkingen);
             this.tabPage1.Controls.Add(this.tb_opmerkingen);
@@ -111,10 +128,99 @@
             this.tabPage1.Text = "Order invoeren";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(252, 200);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
+            this.textBox4.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(107, 203);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Overige";
+            // 
+            // cb_ssd
+            // 
+            this.cb_ssd.FormattingEnabled = true;
+            this.cb_ssd.Items.AddRange(new object[] {
+            "SSD1",
+            "SSD2",
+            "SSD3"});
+            this.cb_ssd.Location = new System.Drawing.Point(252, 153);
+            this.cb_ssd.Name = "cb_ssd";
+            this.cb_ssd.Size = new System.Drawing.Size(121, 21);
+            this.cb_ssd.TabIndex = 10;
+            // 
+            // cb_gpu
+            // 
+            this.cb_gpu.FormattingEnabled = true;
+            this.cb_gpu.Items.AddRange(new object[] {
+            "GPU1",
+            "GPU2",
+            "GPU3"});
+            this.cb_gpu.Location = new System.Drawing.Point(252, 114);
+            this.cb_gpu.Name = "cb_gpu";
+            this.cb_gpu.Size = new System.Drawing.Size(121, 21);
+            this.cb_gpu.TabIndex = 9;
+            // 
+            // cb_cpu
+            // 
+            this.cb_cpu.FormattingEnabled = true;
+            this.cb_cpu.Items.AddRange(new object[] {
+            "CPU1",
+            "CPU2",
+            "CPU3"});
+            this.cb_cpu.Location = new System.Drawing.Point(252, 76);
+            this.cb_cpu.Name = "cb_cpu";
+            this.cb_cpu.Size = new System.Drawing.Size(121, 21);
+            this.cb_cpu.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(107, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "SSD";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(107, 123);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "GPU";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(108, 85);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "CPU";
+            // 
+            // bt_orderPlaatsen
+            // 
+            this.bt_orderPlaatsen.Location = new System.Drawing.Point(111, 349);
+            this.bt_orderPlaatsen.Name = "bt_orderPlaatsen";
+            this.bt_orderPlaatsen.Size = new System.Drawing.Size(118, 23);
+            this.bt_orderPlaatsen.TabIndex = 4;
+            this.bt_orderPlaatsen.Text = "Order plaatsen";
+            this.bt_orderPlaatsen.UseVisualStyleBackColor = true;
+            this.bt_orderPlaatsen.Click += new System.EventHandler(this.bt_orderPlaatsen_Click);
+            // 
             // lb_opmerkingen
             // 
             this.lb_opmerkingen.AutoSize = true;
-            this.lb_opmerkingen.Location = new System.Drawing.Point(108, 107);
+            this.lb_opmerkingen.Location = new System.Drawing.Point(108, 254);
             this.lb_opmerkingen.Name = "lb_opmerkingen";
             this.lb_opmerkingen.Size = new System.Drawing.Size(70, 13);
             this.lb_opmerkingen.TabIndex = 3;
@@ -122,16 +228,19 @@
             // 
             // tb_opmerkingen
             // 
-            this.tb_opmerkingen.Location = new System.Drawing.Point(111, 135);
+            this.tb_opmerkingen.Location = new System.Drawing.Point(111, 270);
             this.tb_opmerkingen.Multiline = true;
             this.tb_opmerkingen.Name = "tb_opmerkingen";
-            this.tb_opmerkingen.Size = new System.Drawing.Size(398, 181);
+            this.tb_opmerkingen.Size = new System.Drawing.Size(398, 61);
             this.tb_opmerkingen.TabIndex = 2;
             // 
             // cb_soort
             // 
             this.cb_soort.FormattingEnabled = true;
-            this.cb_soort.Location = new System.Drawing.Point(255, 50);
+            this.cb_soort.Items.AddRange(new object[] {
+            "Laptop",
+            "Desktop"});
+            this.cb_soort.Location = new System.Drawing.Point(252, 34);
             this.cb_soort.Name = "cb_soort";
             this.cb_soort.Size = new System.Drawing.Size(160, 21);
             this.cb_soort.TabIndex = 1;
@@ -139,7 +248,7 @@
             // lb_soort
             // 
             this.lb_soort.AutoSize = true;
-            this.lb_soort.Location = new System.Drawing.Point(108, 58);
+            this.lb_soort.Location = new System.Drawing.Point(108, 42);
             this.lb_soort.Name = "lb_soort";
             this.lb_soort.Size = new System.Drawing.Size(61, 13);
             this.lb_soort.TabIndex = 0;
@@ -147,11 +256,12 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.bt_afhandelen1);
-            this.tabPage2.Controls.Add(this.tb_ordersinBehandeling1);
-            this.tabPage2.Controls.Add(this.lb_gaande);
-            this.tabPage2.Controls.Add(this.bt_accepteren1);
-            this.tabPage2.Controls.Add(this.tb_binnenkomend);
+            this.tabPage2.Controls.Add(this.checkBox3);
+            this.tabPage2.Controls.Add(this.checkBox2);
+            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.listBox1);
             this.tabPage2.Controls.Add(this.lb_binnenkomend);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -161,55 +271,66 @@
             this.tabPage2.Text = "Hardware Bouwen";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // bt_afhandelen1
+            // checkBox3
             // 
-            this.bt_afhandelen1.Location = new System.Drawing.Point(73, 361);
-            this.bt_afhandelen1.Name = "bt_afhandelen1";
-            this.bt_afhandelen1.Size = new System.Drawing.Size(138, 23);
-            this.bt_afhandelen1.TabIndex = 5;
-            this.bt_afhandelen1.Text = "Opdracht afhandelen";
-            this.bt_afhandelen1.UseVisualStyleBackColor = true;
-            this.bt_afhandelen1.Click += new System.EventHandler(this.bt_afhandelen1_Click);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(269, 97);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(49, 17);
+            this.checkBox3.TabIndex = 7;
+            this.checkBox3.Text = "GPU";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // tb_ordersinBehandeling1
+            // checkBox2
             // 
-            this.tb_ordersinBehandeling1.Location = new System.Drawing.Point(73, 268);
-            this.tb_ordersinBehandeling1.Multiline = true;
-            this.tb_ordersinBehandeling1.Name = "tb_ordersinBehandeling1";
-            this.tb_ordersinBehandeling1.Size = new System.Drawing.Size(457, 75);
-            this.tb_ordersinBehandeling1.TabIndex = 4;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(270, 74);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(48, 17);
+            this.checkBox2.TabIndex = 6;
+            this.checkBox2.Text = "CPU";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // lb_gaande
+            // checkBox1
             // 
-            this.lb_gaande.AutoSize = true;
-            this.lb_gaande.Location = new System.Drawing.Point(70, 243);
-            this.lb_gaande.Name = "lb_gaande";
-            this.lb_gaande.Size = new System.Drawing.Size(110, 13);
-            this.lb_gaande.TabIndex = 3;
-            this.lb_gaande.Text = "Orders in behandeling";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(270, 51);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(48, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "SSD";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // bt_accepteren1
+            // button1
             // 
-            this.bt_accepteren1.Location = new System.Drawing.Point(73, 183);
-            this.bt_accepteren1.Name = "bt_accepteren1";
-            this.bt_accepteren1.Size = new System.Drawing.Size(178, 23);
-            this.bt_accepteren1.TabIndex = 2;
-            this.bt_accepteren1.Text = "Assamblage accepteren";
-            this.bt_accepteren1.UseVisualStyleBackColor = true;
-            this.bt_accepteren1.Click += new System.EventHandler(this.bt_accepteren1_Click);
+            this.button1.Location = new System.Drawing.Point(29, 361);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Assamblage Voltooid";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // tb_binnenkomend
+            // label3
             // 
-            this.tb_binnenkomend.Location = new System.Drawing.Point(73, 65);
-            this.tb_binnenkomend.Multiline = true;
-            this.tb_binnenkomend.Name = "tb_binnenkomend";
-            this.tb_binnenkomend.Size = new System.Drawing.Size(457, 89);
-            this.tb_binnenkomend.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(281, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Omschrijving";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(29, 51);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(172, 290);
+            this.listBox1.TabIndex = 1;
             // 
             // lb_binnenkomend
             // 
             this.lb_binnenkomend.AutoSize = true;
-            this.lb_binnenkomend.Location = new System.Drawing.Point(70, 35);
+            this.lb_binnenkomend.Location = new System.Drawing.Point(26, 19);
             this.lb_binnenkomend.Name = "lb_binnenkomend";
             this.lb_binnenkomend.Size = new System.Drawing.Size(118, 13);
             this.lb_binnenkomend.TabIndex = 0;
@@ -464,50 +585,14 @@
             this.tabPage6.Text = "Beheer";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lb_testrapporten
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Orders dat gekeurd moeten worden.";
-            // 
-            // bt_goedkeuren
-            // 
-            this.bt_goedkeuren.Location = new System.Drawing.Point(56, 199);
-            this.bt_goedkeuren.Name = "bt_goedkeuren";
-            this.bt_goedkeuren.Size = new System.Drawing.Size(75, 23);
-            this.bt_goedkeuren.TabIndex = 1;
-            this.bt_goedkeuren.Text = "Goedkeuren";
-            this.bt_goedkeuren.UseVisualStyleBackColor = true;
-            this.bt_goedkeuren.Click += new System.EventHandler(this.bt_goedkeuren_Click);
-            // 
-            // bt_afkeuren
-            // 
-            this.bt_afkeuren.Location = new System.Drawing.Point(187, 199);
-            this.bt_afkeuren.Name = "bt_afkeuren";
-            this.bt_afkeuren.Size = new System.Drawing.Size(75, 23);
-            this.bt_afkeuren.TabIndex = 2;
-            this.bt_afkeuren.Text = "Afkeuren";
-            this.bt_afkeuren.UseVisualStyleBackColor = true;
-            this.bt_afkeuren.Click += new System.EventHandler(this.bt_afkeuren_Click);
-            // 
-            // tb_goedkeuring
-            // 
-            this.tb_goedkeuring.Location = new System.Drawing.Point(56, 70);
-            this.tb_goedkeuring.Multiline = true;
-            this.tb_goedkeuring.Name = "tb_goedkeuring";
-            this.tb_goedkeuring.Size = new System.Drawing.Size(479, 95);
-            this.tb_goedkeuring.TabIndex = 3;
-            // 
-            // tb_testrapporten
-            // 
-            this.tb_testrapporten.Location = new System.Drawing.Point(56, 277);
-            this.tb_testrapporten.Multiline = true;
-            this.tb_testrapporten.Name = "tb_testrapporten";
-            this.tb_testrapporten.Size = new System.Drawing.Size(479, 70);
-            this.tb_testrapporten.TabIndex = 4;
+            this.lb_testrapporten.AutoSize = true;
+            this.lb_testrapporten.Location = new System.Drawing.Point(53, 252);
+            this.lb_testrapporten.Name = "lb_testrapporten";
+            this.lb_testrapporten.Size = new System.Drawing.Size(124, 13);
+            this.lb_testrapporten.TabIndex = 6;
+            this.lb_testrapporten.Text = "Geuploade testrapporten";
             // 
             // bt_testOpenen
             // 
@@ -519,24 +604,50 @@
             this.bt_testOpenen.UseVisualStyleBackColor = true;
             this.bt_testOpenen.Click += new System.EventHandler(this.bt_testOpenen_Click);
             // 
-            // lb_testrapporten
+            // tb_testrapporten
             // 
-            this.lb_testrapporten.AutoSize = true;
-            this.lb_testrapporten.Location = new System.Drawing.Point(53, 252);
-            this.lb_testrapporten.Name = "lb_testrapporten";
-            this.lb_testrapporten.Size = new System.Drawing.Size(124, 13);
-            this.lb_testrapporten.TabIndex = 6;
-            this.lb_testrapporten.Text = "Geuploade testrapporten";
+            this.tb_testrapporten.Location = new System.Drawing.Point(56, 277);
+            this.tb_testrapporten.Multiline = true;
+            this.tb_testrapporten.Name = "tb_testrapporten";
+            this.tb_testrapporten.Size = new System.Drawing.Size(479, 70);
+            this.tb_testrapporten.TabIndex = 4;
             // 
-            // bt_orderPlaatsen
+            // tb_goedkeuring
             // 
-            this.bt_orderPlaatsen.Location = new System.Drawing.Point(111, 339);
-            this.bt_orderPlaatsen.Name = "bt_orderPlaatsen";
-            this.bt_orderPlaatsen.Size = new System.Drawing.Size(75, 23);
-            this.bt_orderPlaatsen.TabIndex = 4;
-            this.bt_orderPlaatsen.Text = "Order plaatsen";
-            this.bt_orderPlaatsen.UseVisualStyleBackColor = true;
-            this.bt_orderPlaatsen.Click += new System.EventHandler(this.bt_orderPlaatsen_Click);
+            this.tb_goedkeuring.Location = new System.Drawing.Point(56, 70);
+            this.tb_goedkeuring.Multiline = true;
+            this.tb_goedkeuring.Name = "tb_goedkeuring";
+            this.tb_goedkeuring.Size = new System.Drawing.Size(479, 95);
+            this.tb_goedkeuring.TabIndex = 3;
+            // 
+            // bt_afkeuren
+            // 
+            this.bt_afkeuren.Location = new System.Drawing.Point(187, 199);
+            this.bt_afkeuren.Name = "bt_afkeuren";
+            this.bt_afkeuren.Size = new System.Drawing.Size(75, 23);
+            this.bt_afkeuren.TabIndex = 2;
+            this.bt_afkeuren.Text = "Afkeuren";
+            this.bt_afkeuren.UseVisualStyleBackColor = true;
+            this.bt_afkeuren.Click += new System.EventHandler(this.bt_afkeuren_Click);
+            // 
+            // bt_goedkeuren
+            // 
+            this.bt_goedkeuren.Location = new System.Drawing.Point(56, 199);
+            this.bt_goedkeuren.Name = "bt_goedkeuren";
+            this.bt_goedkeuren.Size = new System.Drawing.Size(75, 23);
+            this.bt_goedkeuren.TabIndex = 1;
+            this.bt_goedkeuren.Text = "Goedkeuren";
+            this.bt_goedkeuren.UseVisualStyleBackColor = true;
+            this.bt_goedkeuren.Click += new System.EventHandler(this.bt_goedkeuren_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(177, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Orders dat gekeurd moeten worden.";
             // 
             // MainWindow
             // 
@@ -576,11 +687,6 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label lb_opmerkingen;
         private System.Windows.Forms.TextBox tb_opmerkingen;
-        private System.Windows.Forms.Button bt_afhandelen1;
-        private System.Windows.Forms.TextBox tb_ordersinBehandeling1;
-        private System.Windows.Forms.Label lb_gaande;
-        private System.Windows.Forms.Button bt_accepteren1;
-        private System.Windows.Forms.TextBox tb_binnenkomend;
         private System.Windows.Forms.Label lb_binnenkomend;
         private System.Windows.Forms.Button bt_hwRapport;
         private System.Windows.Forms.Button bt_testAfhandelen1;
@@ -610,6 +716,20 @@
         private System.Windows.Forms.Button bt_afkeuren;
         private System.Windows.Forms.Button bt_goedkeuren;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cb_ssd;
+        private System.Windows.Forms.ComboBox cb_gpu;
+        private System.Windows.Forms.ComboBox cb_cpu;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
