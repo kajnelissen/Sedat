@@ -44,13 +44,33 @@
             this.cb_soort = new System.Windows.Forms.ComboBox();
             this.lb_soort = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lb_binnenkomend = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btn_sendTest = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lb_TestOrders = new System.Windows.Forms.ListBox();
             this.lb_TOrders = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.btn_Bevestig_Installatie = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_OrderToInstall = new System.Windows.Forms.ListBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.lb_testrapporten = new System.Windows.Forms.Label();
             this.bt_testOpenen = new System.Windows.Forms.Button();
@@ -59,36 +79,14 @@
             this.bt_afkeuren = new System.Windows.Forms.Button();
             this.bt_goedkeuren = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lb_TestOrders = new System.Windows.Forms.ListBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.btn_sendTest = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.lb_OrderToInstall = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Bevestig_Installatie = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -269,6 +267,14 @@
             this.tabPage2.Text = "Hardware Bouwen";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Location = new System.Drawing.Point(266, 51);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox2.TabIndex = 5;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(29, 361);
@@ -321,6 +327,56 @@
             this.tabPage3.Text = "Hardwaretest";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(233, 45);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 15;
+            // 
+            // btn_sendTest
+            // 
+            this.btn_sendTest.Location = new System.Drawing.Point(233, 306);
+            this.btn_sendTest.Name = "btn_sendTest";
+            this.btn_sendTest.Size = new System.Drawing.Size(121, 23);
+            this.btn_sendTest.TabIndex = 14;
+            this.btn_sendTest.Text = "Verstuur Testrapport";
+            this.btn_sendTest.UseVisualStyleBackColor = true;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(233, 160);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 13;
+            this.textBox5.Text = "Testrapport";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(233, 186);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(359, 113);
+            this.textBox3.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(230, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Omschrijving";
+            // 
+            // lb_TestOrders
+            // 
+            this.lb_TestOrders.FormattingEnabled = true;
+            this.lb_TestOrders.Location = new System.Drawing.Point(59, 45);
+            this.lb_TestOrders.Name = "lb_TestOrders";
+            this.lb_TestOrders.Size = new System.Drawing.Size(120, 277);
+            this.lb_TestOrders.TabIndex = 7;
+            // 
             // lb_TOrders
             // 
             this.lb_TOrders.AutoSize = true;
@@ -330,17 +386,63 @@
             this.lb_TOrders.TabIndex = 0;
             this.lb_TOrders.Text = "Te testen orders";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.checkedListBox3);
+            this.tabPage4.Controls.Add(this.btn_Bevestig_Installatie);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.lb_OrderToInstall);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(671, 404);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Software Installeren";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Location = new System.Drawing.Point(270, 70);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox3.TabIndex = 6;
+            // 
+            // btn_Bevestig_Installatie
+            // 
+            this.btn_Bevestig_Installatie.Location = new System.Drawing.Point(271, 311);
+            this.btn_Bevestig_Installatie.Name = "btn_Bevestig_Installatie";
+            this.btn_Bevestig_Installatie.Size = new System.Drawing.Size(119, 23);
+            this.btn_Bevestig_Installatie.TabIndex = 5;
+            this.btn_Bevestig_Installatie.Text = "Bevestig Installatie";
+            this.btn_Bevestig_Installatie.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(73, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Orders to install";
+            // 
+            // lb_OrderToInstall
+            // 
+            this.lb_OrderToInstall.FormattingEnabled = true;
+            this.lb_OrderToInstall.Location = new System.Drawing.Point(76, 70);
+            this.lb_OrderToInstall.Name = "lb_OrderToInstall";
+            this.lb_OrderToInstall.Size = new System.Drawing.Size(120, 264);
+            this.lb_OrderToInstall.TabIndex = 0;
+            // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.checkedListBox4);
             this.tabPage5.Controls.Add(this.button4);
             this.tabPage5.Controls.Add(this.button3);
             this.tabPage5.Controls.Add(this.button2);
             this.tabPage5.Controls.Add(this.textBox1);
             this.tabPage5.Controls.Add(this.textBox2);
             this.tabPage5.Controls.Add(this.label9);
-            this.tabPage5.Controls.Add(this.checkBox10);
-            this.tabPage5.Controls.Add(this.checkBox11);
-            this.tabPage5.Controls.Add(this.checkBox12);
             this.tabPage5.Controls.Add(this.listBox2);
             this.tabPage5.Controls.Add(this.label10);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -350,6 +452,75 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Softwaretest";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(467, 329);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Afgekeurd";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(354, 329);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 23);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Goedgekeurd";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(243, 329);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(77, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Verstuur Testrapport";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(243, 183);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.Text = "Testrapport";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(243, 209);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(359, 113);
+            this.textBox2.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(240, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Omschrijving";
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(69, 68);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(120, 277);
+            this.listBox2.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(69, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Te testen orders";
             // 
             // tabPage6
             // 
@@ -432,210 +603,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Orders dat gekeurd moeten worden.";
             // 
-            // lb_TestOrders
+            // checkedListBox4
             // 
-            this.lb_TestOrders.FormattingEnabled = true;
-            this.lb_TestOrders.Location = new System.Drawing.Point(59, 45);
-            this.lb_TestOrders.Name = "lb_TestOrders";
-            this.lb_TestOrders.Size = new System.Drawing.Size(120, 277);
-            this.lb_TestOrders.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(230, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "Omschrijving";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(233, 186);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(359, 113);
-            this.textBox3.TabIndex = 12;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(233, 160);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 13;
-            this.textBox5.Text = "Testrapport";
-            // 
-            // btn_sendTest
-            // 
-            this.btn_sendTest.Location = new System.Drawing.Point(233, 306);
-            this.btn_sendTest.Name = "btn_sendTest";
-            this.btn_sendTest.Size = new System.Drawing.Size(121, 23);
-            this.btn_sendTest.TabIndex = 14;
-            this.btn_sendTest.Text = "Verstuur Testrapport";
-            this.btn_sendTest.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(243, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Verstuur Testrapport";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(243, 183);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "Testrapport";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(243, 209);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(359, 113);
-            this.textBox2.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(240, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Omschrijving";
-            // 
-            // checkBox10
-            // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(243, 127);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(77, 17);
-            this.checkBox10.TabIndex = 19;
-            this.checkBox10.Text = "Software 3";
-            this.checkBox10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox11
-            // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(243, 104);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(77, 17);
-            this.checkBox11.TabIndex = 18;
-            this.checkBox11.Text = "Software 2";
-            this.checkBox11.UseVisualStyleBackColor = true;
-            // 
-            // checkBox12
-            // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(243, 81);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(77, 17);
-            this.checkBox12.TabIndex = 17;
-            this.checkBox12.Text = "Software 1";
-            this.checkBox12.UseVisualStyleBackColor = true;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(69, 68);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(120, 277);
-            this.listBox2.TabIndex = 16;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(69, 52);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 13);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Te testen orders";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(354, 329);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 23);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Goedgekeurd";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(467, 329);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "Afgekeurd";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(233, 45);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 15;
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(266, 51);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox2.TabIndex = 5;
-            // 
-            // lb_OrderToInstall
-            // 
-            this.lb_OrderToInstall.FormattingEnabled = true;
-            this.lb_OrderToInstall.Location = new System.Drawing.Point(76, 70);
-            this.lb_OrderToInstall.Name = "lb_OrderToInstall";
-            this.lb_OrderToInstall.Size = new System.Drawing.Size(120, 264);
-            this.lb_OrderToInstall.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Orders to install";
-            // 
-            // btn_Bevestig_Installatie
-            // 
-            this.btn_Bevestig_Installatie.Location = new System.Drawing.Point(271, 311);
-            this.btn_Bevestig_Installatie.Name = "btn_Bevestig_Installatie";
-            this.btn_Bevestig_Installatie.Size = new System.Drawing.Size(119, 23);
-            this.btn_Bevestig_Installatie.TabIndex = 5;
-            this.btn_Bevestig_Installatie.Text = "Bevestig Installatie";
-            this.btn_Bevestig_Installatie.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.checkedListBox3);
-            this.tabPage4.Controls.Add(this.btn_Bevestig_Installatie);
-            this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Controls.Add(this.lb_OrderToInstall);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(671, 404);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Software Installeren";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox3
-            // 
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(270, 70);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox3.TabIndex = 6;
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Location = new System.Drawing.Point(243, 68);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox4.TabIndex = 26;
             // 
             // MainWindow
             // 
@@ -652,12 +626,12 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -713,11 +687,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.CheckedListBox checkedListBox4;
     }
 }
 
