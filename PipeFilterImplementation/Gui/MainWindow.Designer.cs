@@ -44,36 +44,13 @@
             this.cb_soort = new System.Windows.Forms.ComboBox();
             this.lb_soort = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lb_binnenkomend = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.bt_hwRapport = new System.Windows.Forms.Button();
-            this.bt_testAfhandelen1 = new System.Windows.Forms.Button();
-            this.tb_hwTestsgaande = new System.Windows.Forms.TextBox();
-            this.lb_testsGaande1 = new System.Windows.Forms.Label();
-            this.bt_hwTesten = new System.Windows.Forms.Button();
-            this.tb_teTestenorders1 = new System.Windows.Forms.TextBox();
-            this.lb_teTesten1 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.bt_afhandelen2 = new System.Windows.Forms.Button();
-            this.tb_ordersinBehandeling2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bt_accepteren2 = new System.Windows.Forms.Button();
-            this.tb_hwgetesteOrders = new System.Windows.Forms.TextBox();
-            this.bt_getesteOrders = new System.Windows.Forms.Label();
+            this.lb_TOrders = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.bt_swRapport = new System.Windows.Forms.Button();
-            this.bt_testAfhandelen2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lb_swTest = new System.Windows.Forms.Label();
-            this.bt_swTesten = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lb_teTesten2 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.lb_testrapporten = new System.Windows.Forms.Label();
             this.bt_testOpenen = new System.Windows.Forms.Button();
@@ -82,13 +59,36 @@
             this.bt_afkeuren = new System.Windows.Forms.Button();
             this.bt_goedkeuren = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.lb_TestOrders = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btn_sendTest = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.lb_OrderToInstall = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_Bevestig_Installatie = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -256,9 +256,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.checkBox3);
-            this.tabPage2.Controls.Add(this.checkBox2);
-            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.checkedListBox2);
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.listBox1);
@@ -270,36 +268,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Hardware Bouwen";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(269, 97);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(49, 17);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "GPU";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(270, 74);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(48, 17);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "CPU";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(270, 51);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(48, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "SSD";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -338,13 +306,13 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.bt_hwRapport);
-            this.tabPage3.Controls.Add(this.bt_testAfhandelen1);
-            this.tabPage3.Controls.Add(this.tb_hwTestsgaande);
-            this.tabPage3.Controls.Add(this.lb_testsGaande1);
-            this.tabPage3.Controls.Add(this.bt_hwTesten);
-            this.tabPage3.Controls.Add(this.tb_teTestenorders1);
-            this.tabPage3.Controls.Add(this.lb_teTesten1);
+            this.tabPage3.Controls.Add(this.checkedListBox1);
+            this.tabPage3.Controls.Add(this.btn_sendTest);
+            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.lb_TestOrders);
+            this.tabPage3.Controls.Add(this.lb_TOrders);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -353,149 +321,28 @@
             this.tabPage3.Text = "Hardwaretest";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // bt_hwRapport
+            // lb_TOrders
             // 
-            this.bt_hwRapport.Location = new System.Drawing.Point(225, 364);
-            this.bt_hwRapport.Name = "bt_hwRapport";
-            this.bt_hwRapport.Size = new System.Drawing.Size(122, 23);
-            this.bt_hwRapport.TabIndex = 6;
-            this.bt_hwRapport.Text = "Testrapport Uploaden";
-            this.bt_hwRapport.UseVisualStyleBackColor = true;
-            this.bt_hwRapport.Click += new System.EventHandler(this.bt_hwRapport_Click);
-            // 
-            // bt_testAfhandelen1
-            // 
-            this.bt_testAfhandelen1.Location = new System.Drawing.Point(62, 365);
-            this.bt_testAfhandelen1.Name = "bt_testAfhandelen1";
-            this.bt_testAfhandelen1.Size = new System.Drawing.Size(117, 23);
-            this.bt_testAfhandelen1.TabIndex = 5;
-            this.bt_testAfhandelen1.Text = "Test afhandelen.";
-            this.bt_testAfhandelen1.UseVisualStyleBackColor = true;
-            this.bt_testAfhandelen1.Click += new System.EventHandler(this.bt_testAfhandelen1_Click);
-            // 
-            // tb_hwTestsgaande
-            // 
-            this.tb_hwTestsgaande.Location = new System.Drawing.Point(62, 255);
-            this.tb_hwTestsgaande.Multiline = true;
-            this.tb_hwTestsgaande.Name = "tb_hwTestsgaande";
-            this.tb_hwTestsgaande.Size = new System.Drawing.Size(494, 92);
-            this.tb_hwTestsgaande.TabIndex = 4;
-            // 
-            // lb_testsGaande1
-            // 
-            this.lb_testsGaande1.AutoSize = true;
-            this.lb_testsGaande1.Location = new System.Drawing.Point(59, 228);
-            this.lb_testsGaande1.Name = "lb_testsGaande1";
-            this.lb_testsGaande1.Size = new System.Drawing.Size(120, 13);
-            this.lb_testsGaande1.TabIndex = 3;
-            this.lb_testsGaande1.Text = "Hardware tests gaande.";
-            // 
-            // bt_hwTesten
-            // 
-            this.bt_hwTesten.Location = new System.Drawing.Point(62, 175);
-            this.bt_hwTesten.Name = "bt_hwTesten";
-            this.bt_hwTesten.Size = new System.Drawing.Size(128, 25);
-            this.bt_hwTesten.TabIndex = 2;
-            this.bt_hwTesten.Text = "Order Testen";
-            this.bt_hwTesten.UseVisualStyleBackColor = true;
-            this.bt_hwTesten.Click += new System.EventHandler(this.bt_hwTesten_Click);
-            // 
-            // tb_teTestenorders1
-            // 
-            this.tb_teTestenorders1.Location = new System.Drawing.Point(62, 57);
-            this.tb_teTestenorders1.Multiline = true;
-            this.tb_teTestenorders1.Name = "tb_teTestenorders1";
-            this.tb_teTestenorders1.Size = new System.Drawing.Size(494, 101);
-            this.tb_teTestenorders1.TabIndex = 1;
-            // 
-            // lb_teTesten1
-            // 
-            this.lb_teTesten1.AutoSize = true;
-            this.lb_teTesten1.Location = new System.Drawing.Point(59, 29);
-            this.lb_teTesten1.Name = "lb_teTesten1";
-            this.lb_teTesten1.Size = new System.Drawing.Size(84, 13);
-            this.lb_teTesten1.TabIndex = 0;
-            this.lb_teTesten1.Text = "Te testen orders";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.bt_afhandelen2);
-            this.tabPage4.Controls.Add(this.tb_ordersinBehandeling2);
-            this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Controls.Add(this.bt_accepteren2);
-            this.tabPage4.Controls.Add(this.tb_hwgetesteOrders);
-            this.tabPage4.Controls.Add(this.bt_getesteOrders);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(671, 404);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Software Installeren";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // bt_afhandelen2
-            // 
-            this.bt_afhandelen2.Location = new System.Drawing.Point(108, 354);
-            this.bt_afhandelen2.Name = "bt_afhandelen2";
-            this.bt_afhandelen2.Size = new System.Drawing.Size(138, 23);
-            this.bt_afhandelen2.TabIndex = 11;
-            this.bt_afhandelen2.Text = "Opdracht afhandelen";
-            this.bt_afhandelen2.UseVisualStyleBackColor = true;
-            this.bt_afhandelen2.Click += new System.EventHandler(this.bt_afhandelen2_Click);
-            // 
-            // tb_ordersinBehandeling2
-            // 
-            this.tb_ordersinBehandeling2.Location = new System.Drawing.Point(108, 261);
-            this.tb_ordersinBehandeling2.Multiline = true;
-            this.tb_ordersinBehandeling2.Name = "tb_ordersinBehandeling2";
-            this.tb_ordersinBehandeling2.Size = new System.Drawing.Size(457, 75);
-            this.tb_ordersinBehandeling2.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(105, 236);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Installatie orders in behandeling";
-            // 
-            // bt_accepteren2
-            // 
-            this.bt_accepteren2.Location = new System.Drawing.Point(108, 176);
-            this.bt_accepteren2.Name = "bt_accepteren2";
-            this.bt_accepteren2.Size = new System.Drawing.Size(178, 23);
-            this.bt_accepteren2.TabIndex = 8;
-            this.bt_accepteren2.Text = "Software installeren";
-            this.bt_accepteren2.UseVisualStyleBackColor = true;
-            this.bt_accepteren2.Click += new System.EventHandler(this.bt_accepteren2_Click);
-            // 
-            // tb_hwgetesteOrders
-            // 
-            this.tb_hwgetesteOrders.Location = new System.Drawing.Point(108, 58);
-            this.tb_hwgetesteOrders.Multiline = true;
-            this.tb_hwgetesteOrders.Name = "tb_hwgetesteOrders";
-            this.tb_hwgetesteOrders.Size = new System.Drawing.Size(457, 89);
-            this.tb_hwgetesteOrders.TabIndex = 7;
-            // 
-            // bt_getesteOrders
-            // 
-            this.bt_getesteOrders.AutoSize = true;
-            this.bt_getesteOrders.Location = new System.Drawing.Point(105, 28);
-            this.bt_getesteOrders.Name = "bt_getesteOrders";
-            this.bt_getesteOrders.Size = new System.Drawing.Size(123, 13);
-            this.bt_getesteOrders.TabIndex = 6;
-            this.bt_getesteOrders.Text = "Hardware geteste orders";
+            this.lb_TOrders.AutoSize = true;
+            this.lb_TOrders.Location = new System.Drawing.Point(59, 29);
+            this.lb_TOrders.Name = "lb_TOrders";
+            this.lb_TOrders.Size = new System.Drawing.Size(84, 13);
+            this.lb_TOrders.TabIndex = 0;
+            this.lb_TOrders.Text = "Te testen orders";
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.bt_swRapport);
-            this.tabPage5.Controls.Add(this.bt_testAfhandelen2);
+            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.button3);
+            this.tabPage5.Controls.Add(this.button2);
             this.tabPage5.Controls.Add(this.textBox1);
-            this.tabPage5.Controls.Add(this.lb_swTest);
-            this.tabPage5.Controls.Add(this.bt_swTesten);
             this.tabPage5.Controls.Add(this.textBox2);
-            this.tabPage5.Controls.Add(this.lb_teTesten2);
+            this.tabPage5.Controls.Add(this.label9);
+            this.tabPage5.Controls.Add(this.checkBox10);
+            this.tabPage5.Controls.Add(this.checkBox11);
+            this.tabPage5.Controls.Add(this.checkBox12);
+            this.tabPage5.Controls.Add(this.listBox2);
+            this.tabPage5.Controls.Add(this.label10);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -503,70 +350,6 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Softwaretest";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // bt_swRapport
-            // 
-            this.bt_swRapport.Location = new System.Drawing.Point(253, 358);
-            this.bt_swRapport.Name = "bt_swRapport";
-            this.bt_swRapport.Size = new System.Drawing.Size(122, 23);
-            this.bt_swRapport.TabIndex = 13;
-            this.bt_swRapport.Text = "Testrapport Uploaden";
-            this.bt_swRapport.UseVisualStyleBackColor = true;
-            this.bt_swRapport.Click += new System.EventHandler(this.bt_swRapport_Click);
-            // 
-            // bt_testAfhandelen2
-            // 
-            this.bt_testAfhandelen2.Location = new System.Drawing.Point(90, 359);
-            this.bt_testAfhandelen2.Name = "bt_testAfhandelen2";
-            this.bt_testAfhandelen2.Size = new System.Drawing.Size(117, 23);
-            this.bt_testAfhandelen2.TabIndex = 12;
-            this.bt_testAfhandelen2.Text = "Test afhandelen.";
-            this.bt_testAfhandelen2.UseVisualStyleBackColor = true;
-            this.bt_testAfhandelen2.Click += new System.EventHandler(this.bt_testAfhandelen2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(90, 249);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 92);
-            this.textBox1.TabIndex = 11;
-            // 
-            // lb_swTest
-            // 
-            this.lb_swTest.AutoSize = true;
-            this.lb_swTest.Location = new System.Drawing.Point(87, 222);
-            this.lb_swTest.Name = "lb_swTest";
-            this.lb_swTest.Size = new System.Drawing.Size(116, 13);
-            this.lb_swTest.TabIndex = 10;
-            this.lb_swTest.Text = "Software tests gaande.";
-            // 
-            // bt_swTesten
-            // 
-            this.bt_swTesten.Location = new System.Drawing.Point(90, 169);
-            this.bt_swTesten.Name = "bt_swTesten";
-            this.bt_swTesten.Size = new System.Drawing.Size(128, 25);
-            this.bt_swTesten.TabIndex = 9;
-            this.bt_swTesten.Text = "Order Testen";
-            this.bt_swTesten.UseVisualStyleBackColor = true;
-            this.bt_swTesten.Click += new System.EventHandler(this.bt_swTesten_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(90, 51);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(494, 101);
-            this.textBox2.TabIndex = 8;
-            // 
-            // lb_teTesten2
-            // 
-            this.lb_teTesten2.AutoSize = true;
-            this.lb_teTesten2.Location = new System.Drawing.Point(87, 23);
-            this.lb_teTesten2.Name = "lb_teTesten2";
-            this.lb_teTesten2.Size = new System.Drawing.Size(84, 13);
-            this.lb_teTesten2.TabIndex = 7;
-            this.lb_teTesten2.Text = "Te testen orders";
             // 
             // tabPage6
             // 
@@ -649,6 +432,211 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Orders dat gekeurd moeten worden.";
             // 
+            // lb_TestOrders
+            // 
+            this.lb_TestOrders.FormattingEnabled = true;
+            this.lb_TestOrders.Location = new System.Drawing.Point(59, 45);
+            this.lb_TestOrders.Name = "lb_TestOrders";
+            this.lb_TestOrders.Size = new System.Drawing.Size(120, 277);
+            this.lb_TestOrders.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(230, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Omschrijving";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(233, 186);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(359, 113);
+            this.textBox3.TabIndex = 12;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(233, 160);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 13;
+            this.textBox5.Text = "Testrapport";
+            // 
+            // btn_sendTest
+            // 
+            this.btn_sendTest.Location = new System.Drawing.Point(233, 306);
+            this.btn_sendTest.Name = "btn_sendTest";
+            this.btn_sendTest.Size = new System.Drawing.Size(121, 23);
+            this.btn_sendTest.TabIndex = 14;
+            this.btn_sendTest.Text = "Verstuur Testrapport";
+            this.btn_sendTest.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(243, 329);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(77, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Verstuur Testrapport";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(243, 183);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.Text = "Testrapport";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(243, 209);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(359, 113);
+            this.textBox2.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(240, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Omschrijving";
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(243, 127);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(77, 17);
+            this.checkBox10.TabIndex = 19;
+            this.checkBox10.Text = "Software 3";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(243, 104);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(77, 17);
+            this.checkBox11.TabIndex = 18;
+            this.checkBox11.Text = "Software 2";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(243, 81);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(77, 17);
+            this.checkBox12.TabIndex = 17;
+            this.checkBox12.Text = "Software 1";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(69, 68);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(120, 277);
+            this.listBox2.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(69, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Te testen orders";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(354, 329);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 23);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Goedgekeurd";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(467, 329);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Afgekeurd";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(233, 45);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 15;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Location = new System.Drawing.Point(266, 51);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox2.TabIndex = 5;
+            // 
+            // lb_OrderToInstall
+            // 
+            this.lb_OrderToInstall.FormattingEnabled = true;
+            this.lb_OrderToInstall.Location = new System.Drawing.Point(76, 70);
+            this.lb_OrderToInstall.Name = "lb_OrderToInstall";
+            this.lb_OrderToInstall.Size = new System.Drawing.Size(120, 264);
+            this.lb_OrderToInstall.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(73, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Orders to install";
+            // 
+            // btn_Bevestig_Installatie
+            // 
+            this.btn_Bevestig_Installatie.Location = new System.Drawing.Point(271, 311);
+            this.btn_Bevestig_Installatie.Name = "btn_Bevestig_Installatie";
+            this.btn_Bevestig_Installatie.Size = new System.Drawing.Size(119, 23);
+            this.btn_Bevestig_Installatie.TabIndex = 5;
+            this.btn_Bevestig_Installatie.Text = "Bevestig Installatie";
+            this.btn_Bevestig_Installatie.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.checkedListBox3);
+            this.tabPage4.Controls.Add(this.btn_Bevestig_Installatie);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.lb_OrderToInstall);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(671, 404);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Software Installeren";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Location = new System.Drawing.Point(270, 70);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox3.TabIndex = 6;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -664,12 +652,12 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -682,32 +670,12 @@
         private System.Windows.Forms.Label lb_soort;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label lb_opmerkingen;
         private System.Windows.Forms.TextBox tb_opmerkingen;
         private System.Windows.Forms.Label lb_binnenkomend;
-        private System.Windows.Forms.Button bt_hwRapport;
-        private System.Windows.Forms.Button bt_testAfhandelen1;
-        private System.Windows.Forms.TextBox tb_hwTestsgaande;
-        private System.Windows.Forms.Label lb_testsGaande1;
-        private System.Windows.Forms.Button bt_hwTesten;
-        private System.Windows.Forms.TextBox tb_teTestenorders1;
-        private System.Windows.Forms.Label lb_teTesten1;
-        private System.Windows.Forms.Button bt_afhandelen2;
-        private System.Windows.Forms.TextBox tb_ordersinBehandeling2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button bt_accepteren2;
-        private System.Windows.Forms.TextBox tb_hwgetesteOrders;
-        private System.Windows.Forms.Label bt_getesteOrders;
-        private System.Windows.Forms.Button bt_swRapport;
-        private System.Windows.Forms.Button bt_testAfhandelen2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lb_swTest;
-        private System.Windows.Forms.Button bt_swTesten;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label lb_teTesten2;
+        private System.Windows.Forms.Label lb_TOrders;
         private System.Windows.Forms.Button bt_orderPlaatsen;
         private System.Windows.Forms.Label lb_testrapporten;
         private System.Windows.Forms.Button bt_testOpenen;
@@ -724,12 +692,32 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btn_sendTest;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListBox lb_TestOrders;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.CheckedListBox checkedListBox3;
+        private System.Windows.Forms.Button btn_Bevestig_Installatie;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox lb_OrderToInstall;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label label10;
     }
 }
 
