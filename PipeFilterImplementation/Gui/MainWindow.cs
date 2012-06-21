@@ -5,16 +5,54 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Timers;
 using System.Windows.Forms;
+using Simulation;
+
 
 namespace Gui
 {
-    public partial class MainWindow : Form
+    public partial class MainWindow : Form 
     {
+        private System.Timers.Timer updateTimer;
+
+        private ProductionSim sim;
+
+
         public MainWindow()
         {
             InitializeComponent();
+
+            sim = new ProductionSim();
+            sim.Simulate();
+
+            updateTimer = new System.Timers.Timer(1000); // 1000 millisecondes tussen updates
+            updateTimer.Enabled = true;
+            updateTimer.Elapsed += new System.Timers.ElapsedEventHandler(Update); // Update verwijst naar je updatemethode
+
+            
         }
+
+
+        private void WriteBufferToListbox(List<string> bufferContent, ListBox lb)
+        {
+            foreach (string s in bufferContent)
+            {
+                lb.Items.Add(s);
+            }
+        }
+
+        public void Update(object source, ElapsedEventArgs args)
+        {
+            // implementatie wat betreft vullen van listboxes etc
+
+            WriteBufferToListbox(sim.GetFilterInput("hwAssemble"), listBox1);
+            
+        }
+
+       
+
+    
 
         /// <summary>
         /// De geselecteerde order wordt geplaatst.
@@ -23,8 +61,10 @@ namespace Gui
         /// <param name="e"></param>
         private void bt_orderPlaatsen_Click(object sender, EventArgs e)
         {
-
+           
         }
+
+
 
         /// <summary>
         /// Bij "binnenkomende orders" wordt een order geselecteerd. De order wordt dan 
@@ -166,9 +206,6 @@ namespace Gui
         {
 
         }
-
-        
-
-        
     }
 }
+

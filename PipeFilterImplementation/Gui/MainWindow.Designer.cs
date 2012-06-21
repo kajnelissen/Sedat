@@ -63,6 +63,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lb_OrderToInstall = new System.Windows.Forms.ListBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -79,7 +80,6 @@
             this.bt_afkeuren = new System.Windows.Forms.Button();
             this.bt_goedkeuren = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -170,9 +170,9 @@
             // 
             this.cb_cpu.FormattingEnabled = true;
             this.cb_cpu.Items.AddRange(new object[] {
-            "CPU1",
-            "CPU2",
-            "CPU3"});
+            "Intel® Core™ i3-2100 Processor",
+            "Intel® Core™ i5-2400 Processor",
+            "Intel® Core™ i7-3770K Processor"});
             this.cb_cpu.Location = new System.Drawing.Point(252, 76);
             this.cb_cpu.Name = "cb_cpu";
             this.cb_cpu.Size = new System.Drawing.Size(121, 21);
@@ -453,6 +453,14 @@
             this.tabPage5.Text = "Softwaretest";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // checkedListBox4
+            // 
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Location = new System.Drawing.Point(243, 68);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox4.TabIndex = 26;
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(467, 329);
@@ -602,14 +610,6 @@
             this.label2.Size = new System.Drawing.Size(177, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Orders dat gekeurd moeten worden.";
-            // 
-            // checkedListBox4
-            // 
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Location = new System.Drawing.Point(243, 68);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox4.TabIndex = 26;
             // 
             // MainWindow
             // 
