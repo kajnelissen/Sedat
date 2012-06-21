@@ -13,7 +13,7 @@ namespace Filters
         /// <summary>
         /// 
         /// </summary>
-        public HWTest()
+        public HWTest() : base()
         {
         }
 

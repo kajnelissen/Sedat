@@ -60,6 +60,21 @@ namespace Filters
         }
 
         /// <summary>
+        /// Retourneert de status van het order met de hoogste
+        /// prioriteit. Als de outputbuffer leeg is, wordt de
+        /// standaardstatus geretourneerd.
+        /// </summary>
+        /// <returns>Status van prioriteitsorder</returns>
+        public OrderStatus GetPriorityOrderStatus()
+        {
+            if (this.output.Count > 0)
+            {
+                return this.output.First().Status;
+            }
+            return OrderStatus.Start;
+        }
+
+        /// <summary>
         /// Aanroepen van BufferToString voor omzetten van de buffer.
         /// </summary>
         /// <returns>strings van de inputbuffer</returns>

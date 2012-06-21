@@ -15,7 +15,7 @@ namespace Filters
         /// <summary>
         /// 
         /// </summary>
-        public HWAssemble()
+        public HWAssemble() : base()
         {
         }
 

@@ -13,7 +13,7 @@ namespace Filters
         /// <summary>
         /// 
         /// </summary>
-        public SWTest()
+        public SWTest() : base()
         {
         }
 

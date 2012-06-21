@@ -27,7 +27,7 @@ namespace ConsoleGUI
             Console.WriteLine("Press S to view hwtest filter input/output.");
             Console.WriteLine("Press D to view swinstall filter input/output.");
             Console.WriteLine("Press F to view swtest filter input/output.");
-            Console.WriteLine("\n*It may be the case you have to press a bit longer ;)*");
+            Console.WriteLine("Press G to view storage.");
             Console.WriteLine("=======================\n\n");
 
             bool run = true;
@@ -58,7 +58,7 @@ namespace ConsoleGUI
                 }
                 else if (k == ConsoleKey.D)
                 {
-                    Console.WriteLine("\nSoftware Installationy");
+                    Console.WriteLine("\nSoftware Installation");
                     Console.WriteLine("Input:");
                     PrintStringList(sim.GetFilterInput("swInstall"));
                     Console.WriteLine("Output:");
@@ -72,6 +72,13 @@ namespace ConsoleGUI
                     PrintStringList(sim.GetFilterInput("swTest"));
                     Console.WriteLine("Output:");
                     PrintStringList(sim.GetFilterOutput("swTest"));
+                    Console.WriteLine();
+                }
+                else if (k == ConsoleKey.G)
+                {
+                    Console.WriteLine("\nStorage");
+                    Console.WriteLine("Content:");
+                    PrintStringList(sim.GetFilterInput("storage"));
                     Console.WriteLine();
                 }
             }
