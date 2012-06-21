@@ -11,7 +11,7 @@ namespace Filters
         /// <summary>
         /// 
         /// </summary>
-        public SWInstall()
+        public SWInstall() : base()
         {
         }
 

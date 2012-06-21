@@ -46,6 +46,7 @@
     <Compile Include="IProduction.cs" />
     <Compile Include="ITest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="SWInstall.cs" />
     <Compile Include="SWTest.cs" />
   </ItemGroup>

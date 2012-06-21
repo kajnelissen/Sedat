@@ -48,9 +48,6 @@ namespace Simulation
         /// </summary>
         private List<IPipe> pipes;
 
-        //private List<AbstractOrder> storage;
-        //public List<AbstractOrder> GetStorage() { return this.storage; }
-
         /// <summary>
         /// 
         /// </summary>
@@ -60,7 +57,6 @@ namespace Simulation
             this.pfFac = new PipeFilterFactory();
             this.filters = new Dictionary<string, IFilter>();
             this.pipes = new List<IPipe>();
-            //this.storage = new List<AbstractOrder>();
             this.rnd = new Random();
         }
 
@@ -69,35 +65,44 @@ namespace Simulation
         /// </summary>
         public void Simulate()
         {
-            // creëer pipes en filters
+            #region Creëren van pipes en filters
+
             IFilter hwAssemble = new HWAssemble();
             IFilter hwTest = new HWTest();
             IFilter swInstall = new SWInstall();
             IFilter swTest = new SWTest();
+            IFilter storage = new Storage();
 
             this.pipes.Add(new Pipe(ref hwAssemble, ref hwTest));
-            this.pipes.Add(new Pipe(ref hwTest, ref swInstall));
+            this.pipes.Add(new Pipe(ref hwTest, ref swInstall, new List<OrderStatus> {OrderStatus.HardwareCorrect}));
             this.pipes.Add(new Pipe(ref swInstall, ref swTest));
-            this.pipes.Add(new Pipe(ref hwTest, ref hwAssemble));
-            this.pipes.Add(new Pipe(ref swTest, ref swInstall));
+            this.pipes.Add(new Pipe(ref hwTest, ref hwAssemble, new List<OrderStatus> { OrderStatus.HardwareErrors }));
+            this.pipes.Add(new Pipe(ref swTest, ref swInstall, new List<OrderStatus> { OrderStatus.SoftwareErrors }));
+            this.pipes.Add(new Pipe(ref swTest, ref storage, new List<OrderStatus> { OrderStatus.SoftwareCorrect }));
 
             this.filters.Add("hwAssemble", hwAssemble);
             this.filters.Add("hwTest", hwTest);
             this.filters.Add("swInstall", swInstall);
             this.filters.Add("swTest", swTest);
+            this.filters.Add("storage", storage);
 
-            // timers opzetten
-            this.orderTimer = new Timer(3000);
+            #endregion
+
+            #region Timers opzetten
+
+            this.orderTimer = new Timer(1000);
             this.orderTimer.Enabled = true;
             this.orderTimer.Elapsed += new ElapsedEventHandler(this.NewOrder);
 
-            this.pipeTimer = new Timer(5000);
+            this.pipeTimer = new Timer(1000);
             this.pipeTimer.Enabled = true;
             this.pipeTimer.Elapsed += new ElapsedEventHandler(this.FirePipes);
 
-            this.filterTimer = new Timer(10000);
+            this.filterTimer = new Timer(3000);
             this.pipeTimer.Enabled = true;
             this.pipeTimer.Elapsed += new ElapsedEventHandler(this.FireFilters);
+
+            #endregion
         }
 
         /// <summary>
@@ -138,16 +143,6 @@ namespace Simulation
                 this.orderFac.CreateOrder("desktop") : this.orderFac.CreateOrder("laptop");
             Console.WriteLine("Nieuw order: {0}", order.ToString());
             this.filters["hwAssemble"].Push(order);
-        }
-
-        /// <summary>
-        /// Plaatst orders in magazijn.
-        /// </summary>
-        /// <param name="source"></param>
-        /// <param name="e"></param>
-        private void PutInStorage(object source, ElapsedEventArgs e)
-        { 
-            //if ( this.filters["swTest"]. )
         }
     }
 }
