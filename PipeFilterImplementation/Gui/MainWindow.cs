@@ -18,6 +18,7 @@ namespace Gui
 
         private ProductionSim sim;
 
+        private delegate void stringDelegate(string s);
 
         public MainWindow()
         {
@@ -38,7 +39,10 @@ namespace Gui
         {
             foreach (string s in bufferContent)
             {
-                lb.Items.Add(s);
+               
+                    lb.Items.Add(s);
+           
+                
             }
         }
 
