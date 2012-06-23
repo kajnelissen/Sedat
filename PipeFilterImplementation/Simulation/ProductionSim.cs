@@ -10,6 +10,8 @@ using PFFactory;
 
 namespace Simulation
 {
+    public delegate void Notifier();
+
     /// <summary>
     /// Simuleert productieproces van desktops en laptops.
     /// 
@@ -17,7 +19,10 @@ namespace Simulation
     /// </summary>
     public class ProductionSim : ISim
     {
-        //private Timer hwAssemble, hwTest, hwErrors, swInstall, swTest, swErrors, storage;
+        /// <summary>
+        /// Event dat wordt getriggerd zodra simulatie een stap verder is.
+        /// </summary>
+        public event Notifier Notify;
 
         /// <summary>
         /// Timers voor het vuren van pipes en filters.
@@ -90,15 +95,15 @@ namespace Simulation
 
             #region Timers opzetten
 
-            this.orderTimer = new Timer(1000);
+            this.orderTimer = new Timer(3000);
             this.orderTimer.Enabled = true;
             this.orderTimer.Elapsed += new ElapsedEventHandler(this.NewOrder);
 
-            this.pipeTimer = new Timer(1000);
+            this.pipeTimer = new Timer(5000);
             this.pipeTimer.Enabled = true;
             this.pipeTimer.Elapsed += new ElapsedEventHandler(this.FirePipes);
 
-            this.filterTimer = new Timer(3000);
+            this.filterTimer = new Timer(8000);
             this.pipeTimer.Enabled = true;
             this.pipeTimer.Elapsed += new ElapsedEventHandler(this.FireFilters);
 
@@ -116,6 +121,7 @@ namespace Simulation
             {
                 p.Transport();
             }
+            this.Notify();
         }
 
         /// <summary>
@@ -129,6 +135,7 @@ namespace Simulation
             {
                 kvp.Value.Process();
             }
+            this.Notify();
         }
 
         /// <summary>

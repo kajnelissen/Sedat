@@ -8,6 +8,8 @@ namespace ConsoleGUI
 {
     public class Program
     {
+        private static ProductionSim sim;
+
         /// <summary>
         /// Lelijk
         /// 
@@ -17,17 +19,13 @@ namespace ConsoleGUI
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            ProductionSim sim = new ProductionSim();
+            sim = new ProductionSim();
+            sim.Notify += PrintFilters;
             sim.Simulate();
 
             Console.WriteLine("Console GUI guidelines:");
             Console.WriteLine("=======================");
             Console.WriteLine("Press ENTER to exit.");
-            Console.WriteLine("Press A to view assembly filter input/output.");
-            Console.WriteLine("Press S to view hwtest filter input/output.");
-            Console.WriteLine("Press D to view swinstall filter input/output.");
-            Console.WriteLine("Press F to view swtest filter input/output.");
-            Console.WriteLine("Press G to view storage.");
             Console.WriteLine("=======================\n\n");
 
             bool run = true;
@@ -38,61 +36,47 @@ namespace ConsoleGUI
                 {
                     run = false;
                 }
-                else if (k == ConsoleKey.A)
-                {
-                    Console.WriteLine("\nHardware Assembly");
-                    Console.WriteLine("Input:");
-                    PrintStringList(sim.GetFilterInput("hwAssemble"));
-                    Console.WriteLine("Output:");
-                    PrintStringList(sim.GetFilterOutput("hwAssemble"));
-                    Console.WriteLine();
-                }
-                else if (k == ConsoleKey.S)
-                {
-                    Console.WriteLine("\nHardware Testing");
-                    Console.WriteLine("Input:");
-                    PrintStringList(sim.GetFilterInput("hwTest"));
-                    Console.WriteLine("Output:");
-                    PrintStringList(sim.GetFilterOutput("hwTest"));
-                    Console.WriteLine();
-                }
-                else if (k == ConsoleKey.D)
-                {
-                    Console.WriteLine("\nSoftware Installation");
-                    Console.WriteLine("Input:");
-                    PrintStringList(sim.GetFilterInput("swInstall"));
-                    Console.WriteLine("Output:");
-                    PrintStringList(sim.GetFilterOutput("swInstall"));
-                    Console.WriteLine();
-                }
-                else if (k == ConsoleKey.F)
-                {
-                    Console.WriteLine("\nSoftware Testing");
-                    Console.WriteLine("Input:");
-                    PrintStringList(sim.GetFilterInput("swTest"));
-                    Console.WriteLine("Output:");
-                    PrintStringList(sim.GetFilterOutput("swTest"));
-                    Console.WriteLine();
-                }
-                else if (k == ConsoleKey.G)
-                {
-                    Console.WriteLine("\nStorage");
-                    Console.WriteLine("Content:");
-                    PrintStringList(sim.GetFilterInput("storage"));
-                    Console.WriteLine();
-                }
             }
-
-
+            
             Console.ReadKey();
         }
 
-        private static void PrintStringList(List<string> l)
+        public static void PrintStringList(List<string> l)
         {
             foreach (string s in l)
             {
                 Console.WriteLine("\t" + s);
             }
+        }
+
+        public static void PrintFilters()
+        { 
+            Console.WriteLine("\nHardware Assembly");
+            PrintFilter("hwAssemble");
+                   
+            Console.WriteLine("\nHardware Testing");
+            PrintFilter("hwTest");
+                    
+            Console.WriteLine("\nSoftware Installation");
+            PrintFilter("swInstall");
+                    
+            Console.WriteLine("\nSoftware Testing");
+            PrintFilter("swTest");
+                    
+            Console.WriteLine("\nStorage");
+            PrintFilter("storage");
+
+            Console.WriteLine();
+            Console.WriteLine("\n\n=======================\n\n");
+        }
+
+        public static void PrintFilter(string filter)
+        {
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("Input:");
+            PrintStringList(sim.GetFilterInput(filter));
+            Console.WriteLine("Output:");
+            PrintStringList(sim.GetFilterOutput(filter));
         }
     }
 }
