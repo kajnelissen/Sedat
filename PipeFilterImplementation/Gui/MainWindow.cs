@@ -26,6 +26,7 @@ namespace Gui
 
             sim = new ProductionSim();
             sim.Simulate();
+            sim.Notify += Update;
 
             updateTimer = new System.Timers.Timer(1000); // 1000 millisecondes tussen updates
             updateTimer.Enabled = true;
