@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Order;
 using System.Collections.Generic;
+using PFFactory;
 
 namespace TestFilter
 {
@@ -35,6 +36,11 @@ namespace TestFilter
             }
         }
 
+        public IFilterOrderTest()
+        {
+            pffactory = new PipeFilterFactory();
+        }
+
         #region Additional test attributes
         // 
         //You can use the following additional attributes as you write your tests:
@@ -65,66 +71,10 @@ namespace TestFilter
         //
         #endregion
 
+        private IPipeFilterFactory pffactory;
 
-        internal virtual IFilter_Accessor CreateIFilter_Accessor()
-        {
-            // TODO: Instantiate an appropriate concrete class.
-            IFilter_Accessor target = null;
-            return target;
-        }
 
-        /// <summary>
-        ///A test for BufferToString
-        ///</summary>
-        [TestMethod()]
-        [DeploymentItem("Filters.dll")]
-        public void BufferToStringTest()
-        {
-            PrivateObject param0 = null; // TODO: Initialize to an appropriate value
-            IFilter_Accessor target = new IFilter_Accessor(param0); // TODO: Initialize to an appropriate value
-            Queue<AbstractOrder> buffer = new Queue<AbstractOrder>(); // TODO: Initialize to an appropriate value
-            
-            List<string> expected = null; // TODO: Initialize to an appropriate value
-            List<string> actual;
-            actual = target.BufferToString(buffer);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
-        }
-
-        internal virtual IFilter CreateIFilter()
-        {
-            // TODO: Instantiate an appropriate concrete class.
-            IFilter target = null;
-            return target;
-        }
-
-        /// <summary>
-        ///A test for InputBufferToString
-        ///</summary>
-        [TestMethod()]
-        public void InputBufferToStringTest()
-        {
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
-            List<string> expected = null; // TODO: Initialize to an appropriate value
-            List<string> actual;
-            actual = target.InputBufferToString();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
-        }
-
-        /// <summary>
-        ///A test for OutputBufferToString
-        ///</summary>
-        [TestMethod()]
-        public void OutputBufferToStringTest()
-        {
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
-            List<string> expected = null; // TODO: Initialize to an appropriate value
-            List<string> actual;
-            actual = target.OutputBufferToString();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
-        }
+        
 
         /// <summary>
         ///A test for Process
@@ -134,12 +84,13 @@ namespace TestFilter
         [TestMethod()]
         public void ProcessTest()
         {
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
-            int expected = target.InputBufferToString().Count - 1;
+            IFilter target = pffactory.CreateFilter("HWTEST"); // TODO: Initialize to an appropriate value
+            
             this.orderFac = new DefaultOrderFactory();
             int rand = 0;
             AbstractOrder order = (rand == 0) ?
                 this.orderFac.CreateOrder("desktop") : this.orderFac.CreateOrder("laptop");
+            int expected = target.InputBufferToString().Count + 1;
             target.Push(order);
             int actual = target.InputBufferToString().Count;
             Assert.AreEqual(expected, actual);
@@ -157,13 +108,13 @@ namespace TestFilter
         {
             this.orderFac = new DefaultOrderFactory();
             int rand = 0;
-            AbstractOrder expected = (rand == 0) ?
+            AbstractOrder expected = null;
+            AbstractOrder order = (rand == 0) ?
                 this.orderFac.CreateOrder("desktop") : this.orderFac.CreateOrder("laptop");
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
+            IFilter target = pffactory.CreateFilter("SWTEST"); // TODO: Initialize to an appropriate value
             AbstractOrder actual;
             actual = target.Pull();
             Assert.AreEqual(expected, actual);
-            
         }
 
         /// <summary>
@@ -174,9 +125,8 @@ namespace TestFilter
         [TestMethod()]
         public void PullTest2()
         {
-            
             AbstractOrder expected = null;
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
+            IFilter target = pffactory.CreateFilter("HWASSEMBLE"); // TODO: Initialize to an appropriate value
             AbstractOrder actual;
             actual = target.Pull();
             Assert.AreEqual(expected, actual);
@@ -192,14 +142,14 @@ namespace TestFilter
         public void PushTest1()
         {
 
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
-            int expected = target.InputBufferToString().Count + 1;
+            IFilter target = pffactory.CreateFilter("SWINSTALL"); // TODO: Initialize to an appropriate value
+            int expected = target.InputCount + 1;
             this.orderFac = new DefaultOrderFactory();
             int rand = 0;
             AbstractOrder order = (rand == 0) ?
                 this.orderFac.CreateOrder("desktop") : this.orderFac.CreateOrder("laptop");
             target.Push(order);
-            int actual = target.InputBufferToString().Count;
+            int actual = target.InputCount;
             Assert.AreEqual(expected, actual);
         }
 
@@ -211,11 +161,11 @@ namespace TestFilter
         [TestMethod()]
         public void PushTest2()
         {
-            IFilter target = CreateIFilter(); // TODO: Initialize to an appropriate value
-            int expected = target.InputBufferToString().Count;
+            IFilter target = pffactory.CreateFilter("HWTEST"); // TODO: Initialize to an appropriate value
+            int expected = target.InputCount;
             AbstractOrder order = null; // TODO: Initialize to an appropriate value
             target.Push(order);
-            int actual = target.InputBufferToString().Count;
+            int actual = target.InputCount;
             Assert.AreEqual(expected, actual);
         }
     }

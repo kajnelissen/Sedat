@@ -66,6 +66,10 @@
       <Project>{AF6245CD-D605-41A3-A115-0FF656FC7756}</Project>
       <Name>Pipes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PFFactory\PFFactory.csproj">
+      <Project>{F46306E5-8567-4494-8681-7E3FC2417FE3}</Project>
+      <Name>PFFactory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

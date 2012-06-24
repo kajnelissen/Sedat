@@ -116,6 +116,10 @@ namespace Pipes
         /// <returns>True indien mogelijk, anders false</returns>
         public bool CanFire()
         {
+            if (this._from == null || this._to == null)
+            {
+                return false;
+            }
             if (this._fireTriggers.Count == 0)
             {
                 return true;

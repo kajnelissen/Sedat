@@ -58,7 +58,10 @@ namespace Filters
         /// <returns></returns>
         public void Push(AbstractOrder order)
         {
-            this.input.Enqueue(order);
+            if (order != null)
+            {
+                this.input.Enqueue(order);
+            }
         }
 
         /// <summary>

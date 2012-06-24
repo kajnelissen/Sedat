@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Order;
 using Pipes;
+using PFFactory;
 using System.Collections.Generic;
 
 namespace TestPipe
@@ -16,9 +17,14 @@ namespace TestPipe
     [TestClass()]
     public class IPipeOrderTest
     {
-
+        private IPipeFilterFactory pffactory;
 
         private TestContext testContextInstance;
+
+        public IPipeOrderTest()
+        {
+            pffactory = new PipeFilterFactory();
+        }
 
         /// <summary>
         ///Gets or sets the test context which provides
@@ -36,12 +42,6 @@ namespace TestPipe
             }
         }
 
-        internal virtual IFilter CreateIFilter()
-        {
-            // TODO: Instantiate an appropriate concrete class.
-            IFilter target = null;
-            return target;
-        }
 
         #region Additional test attributes
         // 
@@ -77,56 +77,10 @@ namespace TestPipe
         internal virtual IPipe CreateIPipe()
         {
             // TODO: Instantiate an appropriate concrete class.
-            IPipe target = null;
+            IPipe target = new Pipe();
             return target;
         }
 
-        /// <summary>
-        ///A test for Connect
-        ///De test staat ook beschrijven in het methode testplan
-        ///dit is test 4.1
-        ///</summary>
-        //[TestMethod()]
-        //public void ConnectTest()
-        //{
-        //    IPipe target = CreateIPipe(); // TODO: Initialize to an appropriate value
-        //    IFilter from = null; // TODO: Initialize to an appropriate value
-        //    IFilter fromExpected = null; // TODO: Initialize to an appropriate value
-        //    IFilter to = null; // TODO: Initialize to an appropriate value
-        //    IFilter toExpected = null; // TODO: Initialize to an appropriate value
-        //    target.Connect(ref from, ref to);
-        //    Assert.AreEqual(fromExpected, from);
-        //    Assert.AreEqual(toExpected, to);
-        //    Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        //}
-
-        ///// <summary>
-        /////A test for SetEndPoint
-        /////</summary>
-        //[TestMethod()]
-        //public void SetEndPointTest()
-        //{
-        //    IPipe target = CreateIPipe(); // TODO: Initialize to an appropriate value
-        //    IFilter to = null; // TODO: Initialize to an appropriate value
-        //    IFilter toExpected = null; // TODO: Initialize to an appropriate value
-        //    target.SetEndPoint(ref to);
-        //    Assert.AreEqual(toExpected, to);
-        //    Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        //}
-
-        ///// <summary>
-        /////A test for SetStartPoint
-        /////</summary>
-        //[TestMethod()]
-        //public void SetStartPointTest()
-        //{
-        //    IPipe target = CreateIPipe(); // TODO: Initialize to an appropriate value
-        //    IFilter from = null; // TODO: Initialize to an appropriate value
-        //    IFilter fromExpected = null; // TODO: Initialize to an appropriate value
-        //    target.SetStartPoint(ref from);
-        //    Assert.AreEqual(fromExpected, from);
-        //    Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        //}
 
         /// <summary>
         ///A test for Transport
@@ -137,7 +91,7 @@ namespace TestPipe
         public void TransportTest()
         {
             IPipe target = CreateIPipe(); // TODO: Initialize to an appropriate value
-            IFilter target2 = CreateIFilter();
+            IFilter target2 = pffactory.CreateFilter("SWTEST");
             int expected = target2.InputBufferToString().Count + 1;
             AbstractOrder order = null; // TODO: Initialize to an appropriate value
             target.Transport();
