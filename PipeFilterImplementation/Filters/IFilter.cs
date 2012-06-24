@@ -16,11 +16,13 @@ namespace Filters
         /// Queue van orders input
         /// </summary>
         protected Queue<AbstractOrder> input;
+        public int InputCount { get { return this.input.Count; } }
 
         /// <summary>
         /// Queue van orders output
         /// </summary>
         protected Queue<AbstractOrder> output;
+        public int OutputCount { get { return this.output.Count; } }
 
         /// <summary>
         /// 
