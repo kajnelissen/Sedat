@@ -14,11 +14,11 @@ namespace Gui
 {
     public partial class MainWindow : Form 
     {
-        private System.Timers.Timer updateTimer;
+        //private System.Timers.Timer updateTimer;
 
         private ProductionSim sim;
 
-        private delegate void stringDelegate(string s);
+        //private delegate void stringDelegate(string s);
 
         public MainWindow()
         {
@@ -26,11 +26,11 @@ namespace Gui
 
             sim = new ProductionSim();
             sim.Simulate();
-            sim.Notify += Update;
+            sim.Notify += UpdateFilters;
 
-            updateTimer = new System.Timers.Timer(1000); // 1000 millisecondes tussen updates
-            updateTimer.Enabled = true;
-            updateTimer.Elapsed += new System.Timers.ElapsedEventHandler(Update); // Update verwijst naar je updatemethode
+            //updateTimer = new System.Timers.Timer(1000); // 1000 millisecondes tussen updates
+            //updateTimer.Enabled = true;
+           // updateTimer.Elapsed += new System.Timers.ElapsedEventHandler(Update); // Update verwijst naar je updatemethode
 
             
         }
@@ -40,14 +40,13 @@ namespace Gui
         {
             foreach (string s in bufferContent)
             {
-               
-                    lb.Items.Add(s);
+                lb.Items.Add(s);
            
                 
             }
         }
 
-        public void Update(object source, ElapsedEventArgs args)
+        public void UpdateFilters()
         {
             // implementatie wat betreft vullen van listboxes etc
 
