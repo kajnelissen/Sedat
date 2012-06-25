@@ -14,7 +14,12 @@ namespace Filters
 
         public override void Process()
         {
-            // empty
+            if (input.Count > 0)
+            {
+                AbstractOrder o = this.input.Dequeue();
+                o.ChangeStatus(OrderStatus.End);
+                this.output.Enqueue(o);
+            }
         }
     }
 }

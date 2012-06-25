@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f2ed33ef-03e9-4356-b7fa-e9745e8a572e" name="Spec" linkedPackageId="cfde82c5-6a5a-4b25-8623-8e24fcd49b45" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="f2ed33ef-03e9-4356-b7fa-e9745e8a572e" name="Spec" linkedPackageId="cfde82c5-6a5a-4b25-8623-8e24fcd49b45" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="28cc5c0b-18df-4d42-be1b-1cab838ff6a8" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
@@ -1464,6 +1464,21 @@
             <elementDefinition Id="b8ab746a-514c-47bc-97f5-4242feb9aee0" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="b5a9a126-ff7b-407d-b627-f8bf3427cc7c" name="Process" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c92065b-60d3-455a-8a91-55294a13e182" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="557aae0b-91cb-4078-8f92-4b1127ddea81" direction="Return" isUnique="false">
+                  <elementDefinition Id="72d5446a-3627-4a34-b595-530dee79fdcc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="28cc5c0b-18df-4d42-be1b-1cab838ff6a8" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
