@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractOrder.cs" />
+    <Compile Include="ComponentFactory.cs" />
     <Compile Include="CPU.cs" />
     <Compile Include="GPU.cs" />
     <Compile Include="IComponent.cs" />
