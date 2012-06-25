@@ -8,7 +8,7 @@ namespace Order
     /// <summary>
     /// Klasse die een CPU representeert van een bepaald type.
     /// </summary>
-    public class CPU
+    public class CPU : IComponent
     {
         /// <summary>
         /// Type van CPU.

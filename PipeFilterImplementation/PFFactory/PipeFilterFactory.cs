@@ -40,6 +40,10 @@ namespace PFFactory
             {
                 return new SWTest();
             }
+            else if (type.ToUpper() == "STORAGE")
+            {
+                return new Storage();
+            }
             else
             {
                 return null;

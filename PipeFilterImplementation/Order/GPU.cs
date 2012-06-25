@@ -8,7 +8,7 @@ namespace Order
     /// <summary>
     /// Klasse die een GPU representeert van een bepaald type.
     /// </summary>
-    public class GPU
+    public class GPU : IComponent
     {
         /// <summary>
         /// Type van GPU.

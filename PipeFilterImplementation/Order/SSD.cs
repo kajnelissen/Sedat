@@ -8,7 +8,7 @@ namespace Order
     /// <summary>
     /// Klasse die een SSD representeert van een bepaald type.
     /// </summary>
-    public class SSD
+    public class SSD : IComponent
     {
         /// <summary>
         /// Type van SSD.

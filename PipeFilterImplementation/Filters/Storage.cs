@@ -8,7 +8,7 @@ namespace Filters
 {
     public class Storage : IFilter
     {
-        public Storage()
+        public Storage() : base()
         {
         }
 
