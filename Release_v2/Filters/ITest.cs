@@ -7,6 +7,13 @@ namespace Filters
 {
     public abstract class ITest : IFilter
     {
+        //private bool appro
+
         //public abstract void Process();
+
+        public void Approve(bool approval)
+        { 
+            
+        }
     }
 }

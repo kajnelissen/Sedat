@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Gui
+namespace Release_v2
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace Gui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindow());
+            Application.Run(new EntryWindow());
         }
     }
 }
