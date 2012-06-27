@@ -72,11 +72,11 @@ namespace Simulation
         {
             #region Creëren van pipes en filters
 
-            IFilter hwAssemble = new HWAssemble();
-            IFilter hwTest = new HWTest();
-            IFilter swInstall = new SWInstall();
-            IFilter swTest = new SWTest();
-            IFilter storage = new Storage();
+            IFilter hwAssemble = this.pfFac.CreateFilter("HWASSEMBLE");
+            IFilter hwTest = this.pfFac.CreateFilter("HWTEST");
+            IFilter swInstall = this.pfFac.CreateFilter("SWINSTALL");
+            IFilter swTest = this.pfFac.CreateFilter("SWTEST");
+            IFilter storage = this.pfFac.CreateFilter("STORAGE");
 
             this.pipes.Add(new Pipe(ref hwAssemble, ref hwTest));
             this.pipes.Add(new Pipe(ref hwTest, ref swInstall, new List<OrderStatus> {OrderStatus.HardwareCorrect}));
