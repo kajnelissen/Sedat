@@ -52,6 +52,9 @@
     <Compile Include="AssemblyWindow.Designer.cs">
       <DependentUpon>AssemblyWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EntryWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +114,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Filters\Filters.csproj">
+      <Project>{61E1E306-47E0-412F-9D04-82386FB62669}</Project>
+      <Name>Filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Order\Order.csproj">
+      <Project>{A1F07FB7-5E7C-4285-AF83-20DCAE5A9DC5}</Project>
+      <Name>Order</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pipes\Pipes.csproj">
+      <Project>{AF6245CD-D605-41A3-A115-0FF656FC7756}</Project>
+      <Name>Pipes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
