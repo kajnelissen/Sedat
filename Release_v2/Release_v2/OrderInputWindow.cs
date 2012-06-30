@@ -45,11 +45,11 @@ namespace Release_v2
         /// <param name="e"></param>
         private void bt_orderPlaatsen_Click(object sender, EventArgs e)
         {
-            cpu = new CPU(cb_cpu.ToString());
-            gpu = new GPU(cb_gpu.ToString());
-            ssd = new SSD(cb_ssd.ToString());
+            cpu = new CPU(cb_cpu.SelectedItem.ToString());
+            gpu = new GPU(cb_gpu.SelectedItem.ToString());
+            ssd = new SSD(cb_ssd.SelectedItem.ToString());
             
-            AbstractOrder order = orderFac.CreateOrder(cb_soort.ToString());
+            AbstractOrder order = orderFac.CreateOrder(cb_soort.SelectedItem.ToString());
             order.AddComponent(cpu);
             order.AddComponent(gpu);
             order.AddComponent(ssd);
