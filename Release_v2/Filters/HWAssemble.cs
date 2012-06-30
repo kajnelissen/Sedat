@@ -30,7 +30,7 @@ namespace Filters
             {
                 AbstractOrder order = this.input[orderId];
                 this.input.Remove(orderId);
-                order.ChangeStatus(OrderStatus.SoftwareCorrect);
+                order.ChangeStatus(OrderStatus.Assembled);
                 this.output.Add(order);
             }
             //if (input.Count > 0)
