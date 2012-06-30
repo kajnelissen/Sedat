@@ -7,13 +7,20 @@ namespace Filters
 {
     public abstract class ITest : IFilter
     {
-        //private bool appro
+        protected bool approval;
 
-        //public abstract void Process();
+        //public abstract void Process(int orderId);
 
-        public void Approve(bool approval)
-        { 
-            
+        /// <summary>
+        /// Geeft aan of er bij het testen wel/geen fouten
+        /// zijn geconstateerd.
+        /// </summary>
+        /// <param name="orderId">ID van order dat is gekeurd</param>
+        /// <param name="approval">Goed-/afgekeurd (true/false)</param>
+        public void Approve(int orderId, bool approval)
+        {
+            this.approval = approval;
+            this.Process(orderId);
         }
     }
 }

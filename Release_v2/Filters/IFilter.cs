@@ -54,7 +54,7 @@ namespace Filters
             AbstractOrder order = null;
             if (this.output.Count != 0)
             {
-                if (withStatus.Count == 0)
+                if (withStatus == null)
                 {
                     order = this.output.First();
                     this.output.RemoveAt(0);
@@ -81,7 +81,6 @@ namespace Filters
         /// Order wordt geplaatst in inputbuffer.
         /// </summary>
         /// <param name="order">Order</param>
-        /// <returns></returns>
         public void Push(AbstractOrder order)
         {
             if (order != null)

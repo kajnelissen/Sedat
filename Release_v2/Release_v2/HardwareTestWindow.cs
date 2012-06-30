@@ -6,14 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Filters;
 
 namespace Release_v2
 {
-    public partial class HardwareTestWindow : Form
+    public partial class HardwareTestWindow : BaseWindow
     {
-        public HardwareTestWindow()
+        public HardwareTestWindow(ref IFilter filter)
+            : base(ref filter)
         {
             InitializeComponent();
+        }
+
+        public override void UpdateForm()
+        {
+            throw new NotImplementedException();
         }
     }
 }

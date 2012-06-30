@@ -55,6 +55,9 @@
     <Compile Include="BaseWindow.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BaseWindow.Designer.cs">
+      <DependentUpon>BaseWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="EntryWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +126,10 @@
     <ProjectReference Include="..\Order\Order.csproj">
       <Project>{A1F07FB7-5E7C-4285-AF83-20DCAE5A9DC5}</Project>
       <Name>Order</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PFFactory\PFFactory.csproj">
+      <Project>{F46306E5-8567-4494-8681-7E3FC2417FE3}</Project>
+      <Name>PFFactory</Name>
     </ProjectReference>
     <ProjectReference Include="..\Pipes\Pipes.csproj">
       <Project>{AF6245CD-D605-41A3-A115-0FF656FC7756}</Project>

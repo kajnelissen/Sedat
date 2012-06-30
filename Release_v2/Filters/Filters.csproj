@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilterException.cs" />
     <Compile Include="HWAssemble.cs" />
     <Compile Include="HWTest.cs" />
     <Compile Include="IFilter.cs" />

@@ -8,12 +8,21 @@ namespace Filters
 {
     public class Storage : IFilter
     {
-        public Storage() : base()
-        {
-        }
+        public Storage() : base() { }
 
-        public override void Process()
+        public override void Process(int orderId)
         {
+            if (!this.input.ContainsKey(orderId))
+            {
+                throw new FilterException("Order niet in filter.");
+            }
+            else
+            {
+                AbstractOrder order = this.input[orderId];
+                this.input.Remove(orderId);
+                order.ChangeStatus(OrderStatus.End);
+                this.output.Add(order);
+            }
             //if (input.Count > 0)
             //{
             //    AbstractOrder o = this.input.Dequeue();

@@ -1,6 +1,6 @@
 ﻿namespace Release_v2
 {
-    partial class AssemblyWindow
+    partial class BaseWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // AssemblyWindow
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "AssemblyWindow";
-            this.Text = "Hardware assembleren";
-            this.ResumeLayout(false);
-
+            this.Text = "BaseWindow";
         }
 
         #endregion

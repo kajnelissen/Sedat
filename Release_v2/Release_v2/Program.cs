@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using PFFactory;
 
 namespace Release_v2
 {
@@ -15,7 +16,7 @@ namespace Release_v2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EntryWindow());
+            Application.Run(new EntryWindow(new PipeFilterFactory()));
         }
     }
 }
