@@ -8,21 +8,28 @@ namespace Filters
 {
     public class HWTest : ITest
     {
-        private Random r = new Random();
-
         /// <summary>
         /// 
         /// </summary>
-        public HWTest()
-            : base()
-        {
-        }
+        public HWTest() : base() { }
 
         /// <summary>
         /// Proces status veranderen naar hardware correct/ met errors getest.
         /// </summary>
-        public override void Process()
+        public override void Process(int orderId)
         {
+            if (!this.input.ContainsKey(orderId))
+            {
+                throw new FilterException("Order niet in filter.");
+            }
+            else
+            {
+                AbstractOrder order = this.input[orderId];
+                this.input.Remove(orderId);
+                OrderStatus os = this.approval ? OrderStatus.HardwareCorrect : OrderStatus.HardwareErrors;
+                order.ChangeStatus(os);
+                this.output.Add(order);
+            }
             //if (input.Count > 0)
             //{
             //    AbstractOrder o = this.input.Dequeue();

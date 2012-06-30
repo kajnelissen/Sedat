@@ -8,24 +8,28 @@ namespace Filters
 {
     public class SWTest : ITest
     {
-        private Random r = new Random();
-
         /// <summary>
         /// 
         /// </summary>
-        public SWTest() : base()
-        {
-        }
+        public SWTest() : base() { }
 
         /// <summary>
         /// Proces status veranderen naar software test correct of met errors.
         /// </summary>
         public override void Process(int orderId)
         {
-            //if !(this.input.ContainsKey(orderId))
-            //{
-                
-            //}
+            if (!this.input.ContainsKey(orderId))
+            {
+                throw new FilterException("Order niet in filter.");
+            }
+            else
+            {
+                AbstractOrder order = this.input[orderId];
+                this.input.Remove(orderId);
+                OrderStatus os = this.approval ? OrderStatus.SoftwareCorrect : OrderStatus.SoftwareErrors;
+                order.ChangeStatus(os);
+                this.output.Add(order);
+            }
             //else
             //{
             //    AbstractOrder o = this.input.Dequeue();

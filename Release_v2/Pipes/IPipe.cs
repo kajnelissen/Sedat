@@ -37,7 +37,7 @@ namespace Pipes
         {
             this._from = null;
             this._to = null;
-            this._fireTriggers = new List<OrderStatus>();
+            this._fireTriggers = null;
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Pipes
         public IPipe(ref IFilter from, ref IFilter to)
         {
             this.Connect(ref from, ref to);
-            this._fireTriggers = new List<OrderStatus>();
+            this._fireTriggers = null;
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace Pipes
         /// <summary>
         /// Wijzigt de filter waar deze pipe data naartoe stuurt.
         /// </summary>
-        /// <param name="to"></param>
+        /// <param name="to">Filter waar data naartoe gaat</param>
         public void SetEndPoint(ref IFilter to)
         {
             this._to = to;
@@ -100,6 +100,10 @@ namespace Pipes
         /// <param name="os">Orderstatus</param>
         public void AddFireTrigger(OrderStatus os)
         {
+            if (this._fireTriggers == null)
+            {
+                this._fireTriggers = new List<OrderStatus>();
+            }
             this._fireTriggers.Add(os);
         }
 

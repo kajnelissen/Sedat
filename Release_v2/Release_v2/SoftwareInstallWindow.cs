@@ -6,14 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Filters;
 
 namespace Release_v2
 {
-    public partial class SoftwareInstallWindow : Form
+    public partial class SoftwareInstallWindow : BaseWindow
     {
-        public SoftwareInstallWindow()
+        public SoftwareInstallWindow(ref IFilter filter)
+            : base(ref filter)
         {
             InitializeComponent();
+        }
+
+        public override void UpdateForm()
+        {
+            throw new NotImplementedException();
         }
     }
 }
