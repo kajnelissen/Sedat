@@ -96,6 +96,9 @@
     <Compile Include="StorageWindow.Designer.cs">
       <DependentUpon>StorageWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AssemblyWindow.resx">
+      <DependentUpon>AssemblyWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EntryWindow.resx">
       <DependentUpon>EntryWindow.cs</DependentUpon>
     </EmbeddedResource>
