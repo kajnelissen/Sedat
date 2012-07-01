@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Filters;
+using Order;
 
 namespace Release_v2
 {
@@ -22,9 +23,9 @@ namespace Release_v2
         {
             lb_OrderToInstall.Items.Clear();
 
-            for (int index = 0; index < Filter.Input.Count; index++)
+            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_OrderToInstall.Items.Add(Filter.Input[index]).ToString();
+                lb_OrderToInstall.Items.Add(kvp.Value.ToString());
             }
         }
 
@@ -68,7 +69,7 @@ namespace Release_v2
                             string tests = cbl_ComponentenInstall.SelectedItem.ToString();
                             string[] objects;
                             objects = tests.Split(',', ':');
-                            int id = Convert.ToInt32(objects[2]);
+                            int id = Convert.ToInt32(objects[1]);
 
                             Filter.Process(id); // dit kan een exception geven... opvangen!
                             cbl_ComponentenInstall.Items.Clear();
