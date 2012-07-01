@@ -36,7 +36,7 @@ namespace Release_v2
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_HWtest.Items.Add(kvp.ToString());
+                lb_HWtest.Items.Add(kvp.Value.ToString());
             }
         }
 

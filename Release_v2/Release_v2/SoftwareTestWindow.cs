@@ -26,9 +26,9 @@ namespace Release_v2
         {
             lb_SWTest.Items.Clear();
 
-            for (int index = 0; index < Filter.Input.Count; index++)
+            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_SWTest.Items.Add(Filter.Input[index]).ToString();
+                lb_SWTest.Items.Add(kvp.Value.ToString());
             }
         }
 
