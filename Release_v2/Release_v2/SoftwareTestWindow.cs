@@ -42,7 +42,7 @@ namespace Release_v2
             string obj = lb_SWTest.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[2]);
+            int id = Convert.ToInt32(objects[1]);
 
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
@@ -84,7 +84,7 @@ namespace Release_v2
                     string tests = cbl_SWtestcomponenten.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
-                    int id = Convert.ToInt32(objects[2]);
+                    int id = Convert.ToInt32(objects[1]);
 
 
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)
@@ -114,7 +114,7 @@ namespace Release_v2
                     string tests = cbl_SWtestcomponenten.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
-                    int id = Convert.ToInt32(objects[2]);
+                    int id = Convert.ToInt32(objects[1]);
 
 
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)
