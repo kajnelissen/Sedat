@@ -36,7 +36,7 @@ namespace Release_v2
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_HWtest.Items.Add(kvp.ToString());
+                lb_HWtest.Items.Add(kvp.Value.ToString());
             }
         }
 
@@ -51,7 +51,7 @@ namespace Release_v2
             string obj = lb_HWtest.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[2]);
+            int id = Convert.ToInt32(objects[1]);
 
             /// Buitenste for wordt een foreach.
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
@@ -89,10 +89,10 @@ namespace Release_v2
             {
                 try
                 {
-                    string tests = cbl_HWtestcomponenten.SelectedItem.ToString();
+                    string tests = lb_HWtest.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
-                    int id = Convert.ToInt32(objects[2]);
+                    int id = Convert.ToInt32(objects[1]);
 
 
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)

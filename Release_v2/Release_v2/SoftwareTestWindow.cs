@@ -26,9 +26,9 @@ namespace Release_v2
         {
             lb_SWTest.Items.Clear();
 
-            for (int index = 0; index < Filter.Input.Count; index++)
+            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_SWTest.Items.Add(Filter.Input[index]).ToString();
+                lb_SWTest.Items.Add(kvp.Value.ToString());
             }
         }
 
@@ -42,7 +42,7 @@ namespace Release_v2
             string obj = lb_SWTest.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[2]);
+            int id = Convert.ToInt32(objects[1]);
 
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
@@ -81,10 +81,10 @@ namespace Release_v2
 
                 try
                 {
-                    string tests = cbl_SWtestcomponenten.SelectedItem.ToString();
+                    string tests = lb_SWTest.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
-                    int id = Convert.ToInt32(objects[2]);
+                    int id = Convert.ToInt32(objects[1]);
 
 
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)
