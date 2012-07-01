@@ -102,6 +102,9 @@
     <EmbeddedResource Include="EntryWindow.resx">
       <DependentUpon>EntryWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OrderInputWindow.resx">
+      <DependentUpon>OrderInputWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -111,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StorageWindow.resx">
+      <DependentUpon>StorageWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
