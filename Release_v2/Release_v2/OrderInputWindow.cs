@@ -49,19 +49,26 @@ namespace Release_v2
         /// <param name="e"></param>
         private void bt_orderPlaatsen_Click(object sender, EventArgs e)
         {
-            if (DialogResult.OK == MessageBox.Show("Order wordt geplaatst", "Order plaatsen", 
-                MessageBoxButtons.OKCancel))
+            try
             {
                 cpu = new CPU(cb_cpu.SelectedItem.ToString());
                 gpu = new GPU(cb_gpu.SelectedItem.ToString());
                 ssd = new SSD(cb_ssd.SelectedItem.ToString());
+                string soort = cb_soort.SelectedItem.ToString();
+                if (DialogResult.OK == MessageBox.Show("Order wordt geplaatst", "Order plaatsen",
+                    MessageBoxButtons.OKCancel))
+                {
+                    AbstractOrder order = orderFac.CreateOrder(soort);
+                    order.AddComponent(cpu);
+                    order.AddComponent(gpu);
+                    order.AddComponent(ssd);
 
-                AbstractOrder order = orderFac.CreateOrder(cb_soort.SelectedItem.ToString());
-                order.AddComponent(cpu);
-                order.AddComponent(gpu);
-                order.AddComponent(ssd);
-
-                filter.Push(order);
+                    filter.Push(order);
+                }
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Niet alles ingevoerd", "Error");
             }
         }
     }
