@@ -31,20 +31,16 @@ namespace Release_v2
             storage = new Storage();
         }
 
-        //public override void UpdateForm()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        /// <summary>
-        /// controleren of er nieuwe orders met status END zijn
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void bt_refresh_Click(object sender, EventArgs e)
+        public override void UpdateForm()
         {
+            //alle orders in input naar output verplaatsen
+            foreach (KeyValuePair<int, AbstractOrder> a in storage.Input)
+            {
+                storage.Process(a.Value.OrderId);
+            }
+
             //todo: alles orders ophalen met status END
-            orders = storage.Output;            
+            orders = storage.Output;
 
             //alle orders worden in de listbox gezet
             int index = 0;
@@ -54,5 +50,7 @@ namespace Release_v2
                 index++;
             }
         }
+
+        
     }
 }
