@@ -36,6 +36,7 @@ namespace Release_v2
         public OrderInputWindow()
         {
             InitializeComponent();
+            this.orderFac = new DefaultOrderFactory();
         }
 
         /// <summary>

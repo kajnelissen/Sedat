@@ -102,8 +102,8 @@
             // 
             this.cb_soort.FormattingEnabled = true;
             this.cb_soort.Items.AddRange(new object[] {
-            "Desktop",
-            "Laptop"});
+            "desktop",
+            "laptop"});
             this.cb_soort.Location = new System.Drawing.Point(102, 14);
             this.cb_soort.Name = "cb_soort";
             this.cb_soort.Size = new System.Drawing.Size(155, 21);
