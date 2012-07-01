@@ -35,7 +35,7 @@
           <requiredInterfaceMoniker Id="eef6fd8d-5240-4c17-9ab9-f6c2f163ea0c" LastKnownName="Port1" />
           <relativeChildShapes />
           <moveableDecoratorHostShapes>
-            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.9375, 2.125, 0.26576966047286987, 0.14800345897674561" shapeFieldName="Label" />
+            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="5.0148292742669582, 2.131944440305233, 0.125, 0.1341145783662796" shapeFieldName="Label" />
           </moveableDecoratorHostShapes>
         </requiredInterfaceShape>
       </relativeChildShapes>
@@ -149,7 +149,7 @@
         </requiredInterfaceShape>
       </relativeChildShapes>
     </componentShape>
-    <dependencyConnector edgePoints="[(10.59375 : 3.046875); (10.4114583333333 : 3.046875 : JumpStart); (10.2447916666667 : 3.046875 : JumpEnd); (9.40625 : 3.046875)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+    <dependencyConnector edgePoints="[(10.59375 : 3.046875); (9.40625 : 3.046875)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
       <dependencyMoniker Id="81f45d6f-3eab-4760-86f7-229bc4faccf0" />
       <relativeChildShapes />
       <nodes>
@@ -205,7 +205,7 @@
         <providedInterfaceShapeMoniker Id="c8106749-e0fb-4c0c-96da-00c2d5e891ab" />
       </nodes>
     </dependencyConnector>
-    <dependencyConnector edgePoints="[(7.953125 : 3.73125); (7.953125 : 4.359375); (6.875 : 4.359375 : JumpStart); (6.70833333333333 : 4.359375 : JumpEnd); (5.28125 : 4.359375)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+    <dependencyConnector edgePoints="[(7.953125 : 3.73125); (7.953125 : 4.359375); (6.875 : 4.359375 : JumpStart); (6.70833333333334 : 4.359375 : JumpEnd); (5.28125 : 4.359375)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
       <dependencyMoniker Id="e978aa1a-f1bd-4300-bd6a-605a939f274e" />
       <relativeChildShapes />
       <nodes>

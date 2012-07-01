@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b575c257-ffb9-4ea4-9c63-40d27d79d49f" name="UMLComponentDiagram1" linkedPackageId="124ec603-4bb1-47a5-a23c-fefbfad0e98c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="2890d5b7-fa1e-4b31-8dad-6a30f1e3f6dd">
-      <profileInstance Id="ad52019e-78b7-4a4b-b205-c8f6863f7a8d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="05cec2e0-b90a-42b7-87c4-c8ea8de57593">
-      <profileInstance Id="6a957cd0-0164-4a07-9f8d-b5ef7a88496e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b575c257-ffb9-4ea4-9c63-40d27d79d49f" name="UMLComponentDiagram1" linkedPackageId="124ec603-4bb1-47a5-a23c-fefbfad0e98c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
   <packagedElements>
     <componentModelHasComponents>
       <component Id="fff8beff-8206-4861-b4ea-fe13f1a4bb7c" name="Filters" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -59,7 +45,7 @@
               </dependency>
             </suppliersInternal>
             <type_NamedElement>
-              <interfaceMoniker Id="ab384ba9-94e6-42f7-87ce-45d70296bb57" LastKnownName="ISim" />
+              <interfaceMoniker Id="ab384ba9-94e6-42f7-87ce-45d70296bb57" />
             </type_NamedElement>
           </requiredInterface>
         </ownedAttributesInternal>
@@ -251,7 +237,7 @@
       </Interface>
     </modelContainsNamedElements>
     <modelContainsNamedElements>
-      <Interface Id="ab384ba9-94e6-42f7-87ce-45d70296bb57" name="ISim" isAbstract="false" isLeaf="false">
+      <Interface Id="ab384ba9-94e6-42f7-87ce-45d70296bb57" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4045da49-75d7-48a7-b284-f14c4ca14cc5" />
       </Interface>
     </modelContainsNamedElements>
@@ -318,5 +304,19 @@
   </packagedElements>
   <package Id="124ec603-4bb1-47a5-a23c-fefbfad0e98c" name="Diagrams">
     <elementDefinition Id="64253cd8-9bec-4c7a-b756-d6667991616e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2890d5b7-fa1e-4b31-8dad-6a30f1e3f6dd">
+        <profileInstance Id="ad52019e-78b7-4a4b-b205-c8f6863f7a8d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="05cec2e0-b90a-42b7-87c4-c8ea8de57593">
+        <profileInstance Id="6a957cd0-0164-4a07-9f8d-b5ef7a88496e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>
