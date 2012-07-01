@@ -18,11 +18,17 @@ namespace Release_v2
         /// </summary>
         private List<AbstractOrder> orders;
 
+        /// <summary>
+        /// hier wordt de lijst uitgehaald
+        /// </summary>
+        private IFilter storage;
+
         public StorageWindow(ref IFilter filter)
             : base(ref filter)
         {
             InitializeComponent();
             orders = new List<AbstractOrder>();
+            storage = new Storage();
         }
 
         //public override void UpdateForm()
@@ -38,7 +44,7 @@ namespace Release_v2
         private void bt_refresh_Click(object sender, EventArgs e)
         {
             //todo: alles orders ophalen met status END
-                        
+            orders = storage.Output;            
 
             //alle orders worden in de listbox gezet
             int index = 0;
