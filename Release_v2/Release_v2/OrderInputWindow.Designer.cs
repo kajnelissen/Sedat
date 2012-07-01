@@ -33,19 +33,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.cb_soort = new System.Windows.Forms.ComboBox();
             this.cb_cpu = new System.Windows.Forms.ComboBox();
             this.cb_gpu = new System.Windows.Forms.ComboBox();
             this.cb_ssd = new System.Windows.Forms.ComboBox();
-            this.tb_overige = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_opmerkingen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bt_orderPlaatsen
             // 
-            this.bt_orderPlaatsen.Location = new System.Drawing.Point(12, 322);
+            this.bt_orderPlaatsen.Location = new System.Drawing.Point(12, 171);
             this.bt_orderPlaatsen.Name = "bt_orderPlaatsen";
             this.bt_orderPlaatsen.Size = new System.Drawing.Size(245, 23);
             this.bt_orderPlaatsen.TabIndex = 0;
@@ -88,15 +84,6 @@
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "SSD";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 172);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Overige";
             // 
             // cb_soort
             // 
@@ -145,43 +132,15 @@
             this.cb_ssd.Size = new System.Drawing.Size(155, 21);
             this.cb_ssd.TabIndex = 10;
             // 
-            // tb_overige
-            // 
-            this.tb_overige.Location = new System.Drawing.Point(102, 164);
-            this.tb_overige.Name = "tb_overige";
-            this.tb_overige.Size = new System.Drawing.Size(155, 20);
-            this.tb_overige.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 209);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Opmerkingen";
-            // 
-            // tb_opmerkingen
-            // 
-            this.tb_opmerkingen.Location = new System.Drawing.Point(12, 226);
-            this.tb_opmerkingen.Multiline = true;
-            this.tb_opmerkingen.Name = "tb_opmerkingen";
-            this.tb_opmerkingen.Size = new System.Drawing.Size(245, 90);
-            this.tb_opmerkingen.TabIndex = 12;
-            // 
             // OrderInputWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 357);
-            this.Controls.Add(this.tb_opmerkingen);
-            this.Controls.Add(this.tb_overige);
+            this.ClientSize = new System.Drawing.Size(269, 206);
             this.Controls.Add(this.cb_ssd);
             this.Controls.Add(this.cb_gpu);
             this.Controls.Add(this.cb_cpu);
             this.Controls.Add(this.cb_soort);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -201,13 +160,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cb_soort;
         private System.Windows.Forms.ComboBox cb_cpu;
         private System.Windows.Forms.ComboBox cb_gpu;
         private System.Windows.Forms.ComboBox cb_ssd;
-        private System.Windows.Forms.TextBox tb_overige;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tb_opmerkingen;
     }
 }
