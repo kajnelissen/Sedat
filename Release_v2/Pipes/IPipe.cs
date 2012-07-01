@@ -83,6 +83,7 @@ namespace Pipes
         public void SetStartPoint(ref IFilter from)
         {
             this._from = from;
+            this._from.OnProcess += this.Transport;
         }
 
         /// <summary>

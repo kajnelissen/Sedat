@@ -86,8 +86,24 @@ namespace Filters
             if (order != null)
             {
                 this.input.Add(order.OrderId, order);
-                this.OnPush();
+                this.RaisePush();
             }
+        }
+
+        /// <summary>
+        /// Triggert OnPush event.
+        /// </summary>
+        protected virtual void RaisePush()
+        {
+            this.OnPush();
+        }
+
+        /// <summary>
+        /// Triggert OnProcess event.
+        /// </summary>
+        protected virtual void RaiseProcess()
+        {
+            this.OnProcess();
         }
 
         public virtual void Approve(int orderId, bool approval) { }
