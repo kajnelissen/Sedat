@@ -47,24 +47,43 @@ namespace Release_v2
                 }
             }
 
-            // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
             if (isChecked)
             {
-                try
+                DialogResult result = MessageBox.Show("Weet u zeker dat alles correct is?", "", MessageBoxButtons.YesNo);
+                //
+                // Test the results of the previous three dialogs. [6]
+                //
+                if (result == DialogResult.Yes)
                 {
-                string tests = cbl_AssemblageComponenten.SelectedItem.ToString();
-                string[] objects;
-                objects = tests.Split(',', ':');
-                int id = Convert.ToInt32(objects[1]);
+                    // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
+                    if (isChecked)
+                    {
+                        try
+                        {
+                            string tests = lb_AssemblageOrders.SelectedItem.ToString();
+                            string[] objects;
+                            objects = tests.Split(',', ':');
+                            int id = Convert.ToInt32(objects[2]);
 
-                
-                    Filter.Process(id); // dit kan een exception geven... opvangen!
-                    cbl_AssemblageComponenten.Items.Clear();
+
+                            Filter.Process(id); // dit kan een exception geven... opvangen!
+                            cbl_AssemblageComponenten.Items.Clear();
+                        }
+                        catch (FilterException f)
+                        {
+                            MessageBox.Show(f.Message);
+                        }
+                        MessageBox.Show("Assemblage is voltooid.");
+                    }
                 }
-                catch (FilterException f)
+                else
                 {
-                    MessageBox.Show(f.Message);
+                    MessageBox.Show("Rond de assemblage af.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Niet alle componenenten zijn aangevinkt.");
             }
         }
         
@@ -79,18 +98,29 @@ namespace Release_v2
             string obj = lb_AssemblageOrders.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[1]);
+            int id = Convert.ToInt32(objects[2]);
 
-            for (int index = 0; index < Filter.Input.Count; index++)
+            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                if (Filter.Input[index].OrderId == id)
+                if (Filter.Input[kvp.Key].OrderId == id)
                 {
-                    for (int index2 = 0; index2 < Filter.Input[index].Components.Count; index2++)
+                    for (int index2 = 0; index2 < Filter.Input[kvp.Key].Components.Count; index2++)
                     {
-                        cbl_AssemblageComponenten.Items.Add(Filter.Input[index].Components[index2]);
+                        cbl_AssemblageComponenten.Items.Add(Filter.Input[kvp.Key].Components[index2]);
                     }
                 }
             }
+
+            //for (int index = 0; index < Filter.Input.Count; index++)
+            //{
+            //    if (Filter.Input[index].OrderId == id)
+            //    {
+            //        for (int index2 = 0; index2 < Filter.Input[index].Components.Count; index2++)
+            //        {
+            //            cbl_AssemblageComponenten.Items.Add(Filter.Input[index].Components[index2]);
+            //        }
+            //    }
+            //}
         }
     }
 }

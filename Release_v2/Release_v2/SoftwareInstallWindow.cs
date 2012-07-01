@@ -36,8 +36,6 @@ namespace Release_v2
         private void btn_Bevestig_Installatie_Click(object sender, EventArgs e)
         {
             bool isChecked = true;
-
-            // Controleren of alle componenten aangevinkt zijn.
             for (int index = 0; index < cbl_ComponentenInstall.Items.Count; index++)
             {
                 if (cbl_ComponentenInstall.GetItemCheckState(index) == CheckState.Unchecked)
@@ -46,23 +44,50 @@ namespace Release_v2
                 }
             }
 
-            // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
             if (isChecked)
             {
-                try
+                DialogResult result = MessageBox.Show("Weet u zeker dat de installatie is voltooid?", "", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
                 {
-                    string tests = cbl_ComponentenInstall.SelectedItem.ToString();
-                    string[] objects;
-                    objects = tests.Split(',', ':');
-                    int id = Convert.ToInt32(objects[1]);
 
-                    Filter.Process(id); // dit kan een exception geven... opvangen!
-                    cbl_ComponentenInstall.Items.Clear();
+
+                    // Controleren of alle componenten aangevinkt zijn.
+                    for (int index = 0; index < cbl_ComponentenInstall.Items.Count; index++)
+                    {
+                        if (cbl_ComponentenInstall.GetItemCheckState(index) == CheckState.Unchecked)
+                        {
+                            isChecked = false;
+                        }
+                    }
+
+                    // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
+                    if (isChecked)
+                    {
+                        try
+                        {
+                            string tests = cbl_ComponentenInstall.SelectedItem.ToString();
+                            string[] objects;
+                            objects = tests.Split(',', ':');
+                            int id = Convert.ToInt32(objects[2]);
+
+                            Filter.Process(id); // dit kan een exception geven... opvangen!
+                            cbl_ComponentenInstall.Items.Clear();
+                        }
+                        catch (FilterException f)
+                        {
+                            MessageBox.Show(f.Message);
+                        }
+                        MessageBox.Show("Installatie is voltooid.");
+                    }
                 }
-                catch (FilterException f)
+                else
                 {
-                    MessageBox.Show(f.Message);
+                    MessageBox.Show("Rond de installatie af.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Niet alle componenten zijn aagevinkt.");
             }
         }
 
