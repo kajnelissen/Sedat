@@ -89,5 +89,7 @@ namespace Filters
                 this.OnPush();
             }
         }
+
+        public virtual void Approve(int orderId, bool approval) { }
     }
 }

@@ -7,18 +7,18 @@ using Filters;
 
 namespace Release_v2
 {
-    public partial class BaseWindow : Form
+    public partial class BaseTestWindow : Form
     {
         /// <summary>
         /// Filter waarop formulier is geabonneerd.
         /// </summary>
-        private IFilter _filter;
-        public IFilter Filter { get { return this._filter; } }
+        private ITest _filter;
+        public ITest Filter { get { return this._filter; } }
 
         /// <summary>
         /// Creëert nieuw basisformulier zonder zich te abonneren op een filter.
         /// </summary>
-        public BaseWindow()
+        public BaseTestWindow()
             : base()
         {
             this._filter = null;
@@ -29,7 +29,7 @@ namespace Release_v2
         /// de meegegeven filter.
         /// </summary>
         /// <param name="filter">Filter</param>
-        public BaseWindow(ref IFilter filter)
+        public BaseTestWindow(ref ITest filter)
             : base()
         {
             filter.OnPush += this.UpdateForm;
@@ -41,7 +41,7 @@ namespace Release_v2
         /// Abonneert formulier op meegegeven filter.
         /// </summary>
         /// <param name="filter">Filter</param>
-        public void ObserveFilter(ref IFilter filter)
+        public void ObserveFilter(ref ITest filter)
         {
             this._filter = filter;
             this._filter.OnPush += this.Update;

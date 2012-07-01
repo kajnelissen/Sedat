@@ -49,7 +49,7 @@ namespace Release_v2
         /// <param name="e"></param>
         private void bt_orderPlaatsen_Click(object sender, EventArgs e)
         {
-            if (DialogResult.OK == MessageBox.Show("Order wordt geplaats", "Order plaatsen", 
+            if (DialogResult.OK == MessageBox.Show("Order wordt geplaatst", "Order plaatsen", 
                 MessageBoxButtons.OKCancel))
             {
                 cpu = new CPU(cb_cpu.SelectedItem.ToString());

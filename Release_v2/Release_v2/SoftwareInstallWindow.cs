@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Filters;
-using Order;
 
 namespace Release_v2
 {
@@ -23,9 +22,9 @@ namespace Release_v2
         {
             lb_OrderToInstall.Items.Clear();
 
-            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
+            for (int index = 0; index < Filter.Input.Count; index++)
             {
-                lb_OrderToInstall.Items.Add(kvp.ToString());
+                lb_OrderToInstall.Items.Add(Filter.Input[index]).ToString();
             }
         }
 
@@ -36,46 +35,34 @@ namespace Release_v2
         /// <param name="e"></param>
         private void btn_Bevestig_Installatie_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Weet u zeker dat de installatie is voltooid?", "", MessageBoxButtons.YesNo);
-            //
-            // Test the results of the previous three dialogs. [6]
-            //
-            if (result == DialogResult.Yes)
+            bool isChecked = true;
+
+            // Controleren of alle componenten aangevinkt zijn.
+            for (int index = 0; index < cbl_ComponentenInstall.Items.Count; index++)
             {
-                bool isChecked = true;
-
-                // Controleren of alle componenten aangevinkt zijn.
-                for (int index = 0; index < cbl_ComponentenInstall.Items.Count; index++)
+                if (cbl_ComponentenInstall.GetItemCheckState(index) == CheckState.Unchecked)
                 {
-                    if (cbl_ComponentenInstall.GetItemCheckState(index) == CheckState.Unchecked)
-                    {
-                        isChecked = false;
-                    }
-                }
-
-                // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
-                if (isChecked)
-                {
-                    try
-                    {
-                        string tests = cbl_ComponentenInstall.SelectedItem.ToString();
-                        string[] objects;
-                        objects = tests.Split(',', ':');
-                        int id = Convert.ToInt32(objects[2]);
-
-                        Filter.Process(id); // dit kan een exception geven... opvangen!
-                        cbl_ComponentenInstall.Items.Clear();
-                    }
-                    catch (FilterException f)
-                    {
-                        MessageBox.Show(f.Message);
-                    }
-                    MessageBox.Show("Installatie is voltooid.");
+                    isChecked = false;
                 }
             }
-            else
+
+            // Als alle componenenten aangevinkt zijn dan wordt de orderstatus gewijzigt.
+            if (isChecked)
             {
-                MessageBox.Show("Rond de installatie af.");
+                try
+                {
+                    string tests = cbl_ComponentenInstall.SelectedItem.ToString();
+                    string[] objects;
+                    objects = tests.Split(',', ':');
+                    int id = Convert.ToInt32(objects[1]);
+
+                    Filter.Process(id); // dit kan een exception geven... opvangen!
+                    cbl_ComponentenInstall.Items.Clear();
+                }
+                catch (FilterException f)
+                {
+                    MessageBox.Show(f.Message);
+                }
             }
         }
 
@@ -89,30 +76,19 @@ namespace Release_v2
             string obj = lb_OrderToInstall.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[2]);
+            int id = Convert.ToInt32(objects[1]);
 
-            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
+            for (int index = 0; index < Filter.Input.Count; index++)
             {
-                if (kvp.Key == id)
+                if (Filter.Input[index].OrderId == id)
                 {
-                    for (int index2 = 0; index2 < Filter.Input[id].Components.Count; index2++)
+                    cbl_ComponentenInstall.Items.Clear();
+                    for (int index2 = 0; index2 < Filter.Input[index].Components.Count; index2++)
                     {
-                        cbl_ComponentenInstall.Items.Add(Filter.Input[id].Components[index2]);
+                        cbl_ComponentenInstall.Items.Add(Filter.Input[index].Components[index2]);
                     }
                 }
             }
-
-            //for (int index = 0; index < Filter.Input.Count; index++)
-            //{
-            //    if (Filter.Input[index].OrderId == id)
-            //    {
-            //        cbl_ComponentenInstall.Items.Clear();
-            //        for (int index2 = 0; index2 < Filter.Input[index].Components.Count; index2++)
-            //        {
-            //            cbl_ComponentenInstall.Items.Add(Filter.Input[index].Components[index2]);
-            //        }
-            //    }
-            //}
         }
     }
 }

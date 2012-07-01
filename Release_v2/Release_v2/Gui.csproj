@@ -52,6 +52,12 @@
     <Compile Include="AssemblyWindow.Designer.cs">
       <DependentUpon>AssemblyWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseTestWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseTestWindow.Designer.cs">
+      <DependentUpon>BaseTestWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,9 +84,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SoftwareInstallWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="SoftwareInstallWindow.cs" />
     <Compile Include="SoftwareInstallWindow.Designer.cs">
       <DependentUpon>SoftwareInstallWindow.cs</DependentUpon>
     </Compile>

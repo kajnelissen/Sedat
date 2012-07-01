@@ -17,7 +17,7 @@ namespace Filters
         /// </summary>
         /// <param name="orderId">ID van order dat is gekeurd</param>
         /// <param name="approval">Goed-/afgekeurd (true/false)</param>
-        public void Approve(int orderId, bool approval)
+        public override void Approve(int orderId, bool approval)
         {
             this.approval = approval;
             this.Process(orderId);
