@@ -49,16 +49,20 @@ namespace Release_v2
         /// <param name="e"></param>
         private void bt_orderPlaatsen_Click(object sender, EventArgs e)
         {
-            cpu = new CPU(cb_cpu.SelectedItem.ToString());
-            gpu = new GPU(cb_gpu.SelectedItem.ToString());
-            ssd = new SSD(cb_ssd.SelectedItem.ToString());
-            
-            AbstractOrder order = orderFac.CreateOrder(cb_soort.SelectedItem.ToString());
-            order.AddComponent(cpu);
-            order.AddComponent(gpu);
-            order.AddComponent(ssd);
+            if (DialogResult.OK == MessageBox.Show("Order wordt geplaats", "Order plaatsen", 
+                MessageBoxButtons.OKCancel))
+            {
+                cpu = new CPU(cb_cpu.SelectedItem.ToString());
+                gpu = new GPU(cb_gpu.SelectedItem.ToString());
+                ssd = new SSD(cb_ssd.SelectedItem.ToString());
 
-            filter.Push(order);
+                AbstractOrder order = orderFac.CreateOrder(cb_soort.SelectedItem.ToString());
+                order.AddComponent(cpu);
+                order.AddComponent(gpu);
+                order.AddComponent(ssd);
+
+                filter.Push(order);
+            }
         }
     }
 }
