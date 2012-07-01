@@ -76,7 +76,7 @@ namespace Release_v2
                 this._pipes.Add(new Pipe(ref swTest, ref storage, new List<OrderStatus> { OrderStatus.SoftwareCorrect }));
 
                 // open formulieren
-                OrderInputWindow oiw = new OrderInputWindow();
+                OrderInputWindow oiw = new OrderInputWindow(ref hwAssemble);
                 oiw.Show();
                 AssemblyWindow ass = new AssemblyWindow(ref hwAssemble);
                 ass.Show();
