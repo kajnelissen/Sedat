@@ -25,7 +25,7 @@ namespace Release_v2
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_AssemblageOrders.Items.Add(kvp.ToString());
+                lb_AssemblageOrders.Items.Add(kvp.Value.ToString());
             }
         }
 
@@ -63,7 +63,7 @@ namespace Release_v2
                             string tests = lb_AssemblageOrders.SelectedItem.ToString();
                             string[] objects;
                             objects = tests.Split(',', ':');
-                            int id = Convert.ToInt32(objects[2]);
+                            int id = Convert.ToInt32(objects[1]);
 
 
                             Filter.Process(id); // dit kan een exception geven... opvangen!
@@ -98,7 +98,7 @@ namespace Release_v2
             string obj = lb_AssemblageOrders.SelectedItem.ToString();
             string[] objects;
             objects = obj.Split(',', ':');
-            int id = Convert.ToInt32(objects[2]);
+            int id = Convert.ToInt32(objects[1]);
 
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {

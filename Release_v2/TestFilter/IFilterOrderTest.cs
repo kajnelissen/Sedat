@@ -141,15 +141,21 @@ namespace TestFilter
         [TestMethod()]
         public void PushTest1()
         {
-
-            IFilter target = pffactory.CreateFilter("SWINSTALL"); // TODO: Initialize to an appropriate value
-            int expected = target.InputCount + 1;
+            IFilter target = pffactory.CreateFilter("HWASSEMBLE"); // TODO: Initialize to an appropriate value
+            int expected = 0;
+            foreach (KeyValuePair<int, AbstractOrder> a in target.Input)
+            {
+                expected++;
+            }
+            expected = +1;
             this.orderFac = new DefaultOrderFactory();
-            int rand = 0;
-            AbstractOrder order = (rand == 0) ?
-                this.orderFac.CreateOrder("desktop") : this.orderFac.CreateOrder("laptop");
+            AbstractOrder order = this.orderFac.CreateOrder("desktop");
             target.Push(order);
-            int actual = target.InputCount;
+            int actual = 0;
+            foreach (KeyValuePair<int, AbstractOrder> a in target.Input)
+            {
+                actual++;
+            }
             Assert.AreEqual(expected, actual);
         }
 
@@ -162,11 +168,21 @@ namespace TestFilter
         public void PushTest2()
         {
             IFilter target = pffactory.CreateFilter("HWTEST"); // TODO: Initialize to an appropriate value
-            int expected = target.InputCount;
+            int expected = 0;
+            foreach (KeyValuePair<int, AbstractOrder> a in target.Input)
+            {
+                expected++;
+            }
+
             AbstractOrder order = null; // TODO: Initialize to an appropriate value
             target.Push(order);
-            int actual = target.InputCount;
+            int actual = 0;
+            foreach (KeyValuePair<int, AbstractOrder> a in target.Input)
+            {
+                actual++;
+            }
             Assert.AreEqual(expected, actual);
         }
+
     }
 }
