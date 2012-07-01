@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Order;
+using Filters;
 
 namespace Release_v2
 {
@@ -32,11 +33,13 @@ namespace Release_v2
         /// </summary>
         private SSD ssd;
 
+        IFilter filter;
 
-        public OrderInputWindow()
+        public OrderInputWindow(ref IFilter filter)
         {
             InitializeComponent();
             this.orderFac = new DefaultOrderFactory();
+            this.filter = filter;
         }
 
         /// <summary>
@@ -54,6 +57,8 @@ namespace Release_v2
             order.AddComponent(cpu);
             order.AddComponent(gpu);
             order.AddComponent(ssd);
+
+            filter.Push(order);
         }
     }
 }
