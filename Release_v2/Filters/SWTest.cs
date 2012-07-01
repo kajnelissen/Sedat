@@ -29,22 +29,8 @@ namespace Filters
                 OrderStatus os = this.approval ? OrderStatus.SoftwareCorrect : OrderStatus.SoftwareErrors;
                 order.ChangeStatus(os);
                 this.output.Add(order);
+                this.RaiseProcess();
             }
-            //else
-            //{
-            //    AbstractOrder o = this.input.Dequeue();
-
-            //    int i = r.Next(1, 10);
-            //    if (i < 6)
-            //    {
-            //        o.ChangeStatus(OrderStatus.SoftwareCorrect);
-            //    }
-            //    else
-            //    {
-            //        o.ChangeStatus(OrderStatus.SoftwareErrors);
-            //    }
-            //    this.output.Enqueue(o);
-            //}
         }
     }
 }

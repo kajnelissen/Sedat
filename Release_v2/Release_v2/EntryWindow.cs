@@ -96,9 +96,9 @@ namespace Release_v2
                 this._filters.Add("storage", storage);
 
                 // initialiseer timer voor pipes
-                this._pipeTimer = new System.Timers.Timer(3000);
-                this._pipeTimer.Enabled = true;
-                this._pipeTimer.Elapsed += new ElapsedEventHandler(this.FirePipes);
+                //this._pipeTimer = new System.Timers.Timer(3000);
+                //this._pipeTimer.Enabled = true;
+                //this._pipeTimer.Elapsed += new ElapsedEventHandler(this.FirePipes);
 
                 this._running = true;
             }

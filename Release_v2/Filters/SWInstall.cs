@@ -28,13 +28,8 @@ namespace Filters
                 this.input.Remove(orderId);
                 order.ChangeStatus(OrderStatus.SoftwareInstalled);
                 this.output.Add(order);
+                this.RaiseProcess();
             }
-            //if (input.Count > 0)
-            //{
-            //    AbstractOrder o = this.input.Dequeue();
-            //    o.ChangeStatus(OrderStatus.SoftwareInstalled);
-            //    this.output.Enqueue(o);
-            //}
         }
     }
 }
