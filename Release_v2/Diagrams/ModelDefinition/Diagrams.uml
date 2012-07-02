@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="64253cd8-9bec-4c7a-b756-d6667991616e"
   name="Diagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -3286,7 +3286,7 @@
     <packageHasNamedElement>
       <class
         Id="8eacf36f-05ef-45cf-bd4a-7ae55af1ed28"
-        name="ProductionSim"
+        name="Client"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3352,13 +3352,13 @@
                     <literalString
                       Id="d0e05372-da6b-469c-b1b3-14062525c5f6"
                       name="Lower"
-                      value="*" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="b65f7eb4-95cd-438a-8422-5244cb39b711"
                       name="Upper"
-                      value="*" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -3421,7 +3421,7 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
-            name="Simuleert"
+            name="Initialiseert"
             isAbstract="false">
             <classMoniker
               Id="aea30b76-dc93-43dc-ae7a-f29f1522d835"
@@ -3472,7 +3472,7 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
-            name="Simuleert"
+            name="Bestuurt"
             isAbstract="false">
             <classMoniker
               Id="1c9e2ea3-6310-4b63-b5c6-77133345499d"
@@ -3518,31 +3518,6 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedOperationsInternal>
-          <operation
-            Id="6dbe082a-1fdb-48b4-a562-1fff9222314a"
-            name="Simulate"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1e9454b9-91bb-4180-9194-90cea71c5df4"
-                  direction="Return">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
-                      LastKnownName="void"
-                      LastKnownLocation="Diagrams.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4148,6 +4123,13 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1e36574-538c-4da8-a25c-397313271c26"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
@@ -4192,6 +4174,13 @@
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ba4602d-606c-46e4-859f-4137f9c179ba"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -4238,6 +4227,13 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c7607fd2-a2fb-497d-8463-3efb75934900"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
@@ -4282,6 +4278,13 @@
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71297d92-0276-49be-83d4-80ba2cffa747"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -4705,6 +4708,67 @@
               LastKnownLocation="Diagrams.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="abf369d7-8bf7-42a8-8b9a-8335a89279e5"
+            name="approval"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b02ee179-5307-44da-a568-957f98f9e51d"
+            name="Approve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cecf10e4-697f-4667-bc9c-f4984306e852"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="374d8317-76ad-4e94-a568-a41be299f4c2"
+                  name="bool approval"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0159e03-0b7c-4541-9ef8-3516242cf3be"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -5033,6 +5097,22 @@
               LastKnownName="AbstractOrder"
               LastKnownLocation="Diagrams.uml" />
           </dependency>
+          <dependency
+            Id="a9d71eb2-8eae-4447-a5c2-53376056ed15"
+            name="&lt;&lt;invokes&gt;&gt;">
+            <classMoniker
+              Id="aea30b76-dc93-43dc-ae7a-f29f1522d835"
+              LastKnownName="IPipe"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
+          <dependency
+            Id="a8eedbd2-d49e-4904-9cb4-1536d904adba"
+            name="&lt;&lt;invokes&gt;&gt;">
+            <classMoniker
+              Id="8eacf36f-05ef-45cf-bd4a-7ae55af1ed28"
+              LastKnownName="Client"
+              LastKnownLocation="Diagrams.uml" />
+          </dependency>
         </suppliersInternal>
         <ownedAttributesInternal>
           <property
@@ -5121,6 +5201,13 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd413d47-a006-43e3-bdfc-fbc30991218d"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
@@ -5144,6 +5231,13 @@
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74b14e7b-bc62-4f53-a915-83ff97ef9028"
+                  name="OrderStatus[*] withStatus"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -5179,8 +5273,8 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="02a739a1-e450-4394-accd-a5fb9e837051"
-            name="GetPriorityOrderStatus"
+            Id="acdd5192-5751-40a3-a8c8-5a2fe90cd9fe"
+            name="RaiseProcess"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -5189,13 +5283,75 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="abe69c3b-ab9d-4bc8-9fda-7febc61d0a3a"
+                  Id="49d27880-389b-4e5c-9b13-82fe50eb19c5"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <enumerationMoniker
-                      Id="4d1f77be-76d1-4ed8-94af-0d8c08ae34da"
-                      LastKnownName="OrderStatus"
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0b3fe910-9d50-4007-be96-34656014ae22"
+            name="RaisePush"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d0a2030-7f19-4e22-ac61-b2ee2a00d857"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="af3d870e-8956-44e9-8193-925c2af783a3"
+            name="Approve"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb4ca6b0-efd1-4474-9a03-a8ad6502940b"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f164606-aec3-4a95-961e-67045e373399"
+                  name="bool approval"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="249ddfee-e3a8-4bb5-8818-d891e7037f81"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cdd9da6f-d908-46d6-8b4b-b8de09e468ef"
+                      LastKnownName="void"
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7461,6 +7617,13 @@
                       LastKnownLocation="Diagrams.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea4e2f48-ba54-4530-808f-8ef346b34258"
+                  name="int orderId"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -12141,6 +12304,11 @@
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2cde2c3f-4602-4fa6-87de-5732c82b4e3c"
+        name="boolean" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -33,12 +33,6 @@ namespace Release_v2
         /// </summary>
         private List<IPipe> _pipes;
 
-        /// <summary>
-        /// Timer die periodiek data laat transporteren
-        /// door pipes.
-        /// </summary>
-        private System.Timers.Timer _pipeTimer;
-
         public EntryWindow()
         {
             InitializeComponent();
@@ -61,6 +55,8 @@ namespace Release_v2
         {
             if (!this._running)
             {
+                #region Filters initialiseren
+
                 // initialiseer pipeline
                 IFilter hwAssemble = this._pfFac.CreateFilter("hwAssemble");
                 IFilter hwTest = this._pfFac.CreateFilter("hwTest");
@@ -68,37 +64,60 @@ namespace Release_v2
                 IFilter swTest = this._pfFac.CreateFilter("swTest");
                 IFilter storage = this._pfFac.CreateFilter("storage");
 
-                this._pipes.Add(new Pipe(ref hwAssemble, ref hwTest));
-                this._pipes.Add(new Pipe(ref hwTest, ref swInstall, new List<OrderStatus> { OrderStatus.HardwareCorrect }));
-                this._pipes.Add(new Pipe(ref swInstall, ref swTest));
-                this._pipes.Add(new Pipe(ref hwTest, ref hwAssemble, new List<OrderStatus> { OrderStatus.HardwareErrors }));
-                this._pipes.Add(new Pipe(ref swTest, ref swInstall, new List<OrderStatus> { OrderStatus.SoftwareErrors }));
-                this._pipes.Add(new Pipe(ref swTest, ref storage, new List<OrderStatus> { OrderStatus.SoftwareCorrect }));
+                #endregion
+
+                #region Pipes initialiseren
+
+                IPipe pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref hwAssemble, ref hwTest);
+                this._pipes.Add(pipe);               
+
+                pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref hwTest, ref swInstall);
+                pipe.AddFireTrigger(OrderStatus.HardwareCorrect);
+                this._pipes.Add(pipe);
+
+                pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref swInstall, ref swTest);
+                this._pipes.Add(pipe);
+
+                pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref hwTest, ref hwAssemble);
+                pipe.AddFireTrigger(OrderStatus.HardwareErrors);
+                this._pipes.Add(pipe);
+
+                pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref swTest, ref swInstall);
+                pipe.AddFireTrigger(OrderStatus.SoftwareErrors);
+                this._pipes.Add(pipe);
+
+                pipe = this._pfFac.CreatePipe();
+                pipe.Connect(ref swTest, ref storage);
+                pipe.AddFireTrigger(OrderStatus.SoftwareCorrect);
+                this._pipes.Add(pipe);
+
+                //this._pipes.Add(new Pipe(ref hwAssemble, ref hwTest));
+                //this._pipes.Add(new Pipe(ref hwTest, ref swInstall, new List<OrderStatus> { OrderStatus.HardwareCorrect }));
+                //this._pipes.Add(new Pipe(ref swInstall, ref swTest));
+                //this._pipes.Add(new Pipe(ref hwTest, ref hwAssemble, new List<OrderStatus> { OrderStatus.HardwareErrors }));
+                //this._pipes.Add(new Pipe(ref swTest, ref swInstall, new List<OrderStatus> { OrderStatus.SoftwareErrors }));
+                //this._pipes.Add(new Pipe(ref swTest, ref storage, new List<OrderStatus> { OrderStatus.SoftwareCorrect }));
+
+                #endregion
 
                 // open formulieren
-                OrderInputWindow oiw = new OrderInputWindow(ref hwAssemble);
-                oiw.Show();
-                AssemblyWindow ass = new AssemblyWindow(ref hwAssemble);
-                ass.Show();
-                HardwareTestWindow htw = new HardwareTestWindow(ref hwTest);
-                htw.Show();
-                SoftwareInstallWindow siw = new SoftwareInstallWindow(ref swInstall);
-                siw.Show();
-                SoftwareTestWindow stw = new SoftwareTestWindow(ref swTest);
-                stw.Show();
-                StorageWindow sw = new StorageWindow(ref storage);
-                sw.Show();
+                OrderInputWindow oiw = new OrderInputWindow(ref hwAssemble); oiw.Show();
+                AssemblyWindow ass = new AssemblyWindow(ref hwAssemble); ass.Show();
+                HardwareTestWindow htw = new HardwareTestWindow(ref hwTest); htw.Show();
+                SoftwareInstallWindow siw = new SoftwareInstallWindow(ref swInstall); siw.Show();
+                SoftwareTestWindow stw = new SoftwareTestWindow(ref swTest); stw.Show();
+                StorageWindow sw = new StorageWindow(ref storage); sw.Show();
 
                 this._filters.Add("hwAssemble", hwAssemble);
                 this._filters.Add("hwTest", hwTest);
                 this._filters.Add("swInstall", swInstall);
                 this._filters.Add("swTest", swTest);
                 this._filters.Add("storage", storage);
-
-                // initialiseer timer voor pipes
-                //this._pipeTimer = new System.Timers.Timer(3000);
-                //this._pipeTimer.Enabled = true;
-                //this._pipeTimer.Elapsed += new ElapsedEventHandler(this.FirePipes);
 
                 this._running = true;
             }
