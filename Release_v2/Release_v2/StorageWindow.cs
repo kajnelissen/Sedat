@@ -33,21 +33,12 @@ namespace Release_v2
 
         public override void UpdateForm()
         {
-            //alle orders in input naar output verplaatsen
-            foreach (KeyValuePair<int, AbstractOrder> a in storage.Input)
-            {
-                storage.Process(a.Value.OrderId);
-            }
+            
+            lb_orders.Items.Clear();
 
-            //todo: alles orders ophalen met status END
-            orders = storage.Output;
-
-            //alle orders worden in de listbox gezet
-            int index = 0;
-            while (orders.Count > index)
+            foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
-                lb_orders.Items.Add(orders[index]);
-                index++;
+                lb_orders.Items.Add(kvp.Value.ToString());
             }
         }
 
