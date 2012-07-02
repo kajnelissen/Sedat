@@ -49,9 +49,13 @@
     <Compile Include="Desktop.cs" />
     <Compile Include="InvalidOrderException.cs" />
     <Compile Include="IOrderFactory.cs" />
+    <Compile Include="ISoftware.cs" />
     <Compile Include="Laptop.cs" />
+    <Compile Include="OfficeSuite.cs" />
+    <Compile Include="OperatingSystem.cs" />
     <Compile Include="OrderStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoftwareFactory.cs" />
     <Compile Include="SSD.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

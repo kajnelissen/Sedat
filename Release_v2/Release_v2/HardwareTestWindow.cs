@@ -29,11 +29,6 @@ namespace Release_v2
         {
             lb_HWtest.Items.Clear();
 
-            //for (int index = 0; index < Filter.Input.Count; index++)
-            //{
-            // lb_HWtest.Items.Add(Filter.Input[index]).ToString();
-            //}
-
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
                 lb_HWtest.Items.Add(kvp.Value.ToString());
@@ -95,7 +90,6 @@ namespace Release_v2
                     objects = tests.Split(',', ':');
                     int id = Convert.ToInt32(objects[1]);
 
-
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)
                     Filter.Approve(id, true);
                     cbl_HWtestcomponenten.Items.Clear();
@@ -120,7 +114,6 @@ namespace Release_v2
                     string[] objects;
                     objects = tests.Split(',', ':');
                     int id = Convert.ToInt32(objects[1]);
-
 
                     //id meegeven en meegeven of het goedkeurd(true) of afgekeerd moet worden(false)
                     Filter.Approve(id, false);

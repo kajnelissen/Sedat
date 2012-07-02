@@ -48,6 +48,15 @@ namespace Order
         }
 
         /// <summary>
+        /// Bestelde software.
+        /// </summary>
+        protected List<ISoftware> _apps;
+        public List<ISoftware> Apps
+        {
+            get { return this._apps; }
+        }
+
+        /// <summary>
         /// Creëert een order met meegegeven ID en zet
         /// status op <c>Start</c>.
         /// </summary>
@@ -57,6 +66,7 @@ namespace Order
             this._orderId = orderId;
             this._status = OrderStatus.Start;
             this._components = new List<IComponent>();
+            this._apps = new List<ISoftware>();
         }
 
         /// <summary>
@@ -70,6 +80,7 @@ namespace Order
             this._orderId = orderId;
             this._status = os;
             this._components = new List<IComponent>();
+            this._apps = new List<ISoftware>();
         }
 
         /// <summary>
@@ -84,6 +95,23 @@ namespace Order
             this._orderId = orderId;
             this._status = os;
             this._components = components;
+            this._apps = new List<ISoftware>();
+        }
+
+        /// <summary>
+        /// Creëert een order met meegegeven ID en zet
+        /// status op meegegeven status.
+        /// </summary>
+        /// <param name="orderId">Identifier voor order</param>
+        /// <param name="os">Beginstatus van order</param>
+        /// <param name="components">Lijst van componenten</param>
+        /// <param name="apps">Lijst van software</param>
+        public AbstractOrder(int orderId, OrderStatus os, List<IComponent> components, List<ISoftware> apps)
+        {
+            this._orderId = orderId;
+            this._status = os;
+            this._components = components;
+            this._apps = apps;
         }
 
         /// <summary>
@@ -112,6 +140,24 @@ namespace Order
         public void AddComponentList(List<IComponent> comps)
         {
             this._components = comps;
+        }
+
+        /// <summary>
+        /// Voegt meegegeven software toe aan order.
+        /// </summary>
+        /// <param name="s">Softwareprogramma</param>
+        public void AddSoftware(ISoftware s)
+        {
+            this._apps.Add(s);
+        }
+
+        /// <summary>
+        /// Voegt lijst van applicaties toe aan order.
+        /// </summary>
+        /// <param name="apps">Lijst met applicaties</param>
+        public void AddSoftwareList(List<ISoftware> apps)
+        {
+            this._apps = apps;
         }
 
         /// <summary>
