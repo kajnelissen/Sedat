@@ -31,6 +31,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Implementation_Diagram.classdiagram</DependentUpon>
     </Content>
+    <Content Include="specificatiediagram_nieuw.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="specificatiediagram_nieuw.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>specificatiediagram_nieuw.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Specification_Diagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -51,6 +58,13 @@
     <Content Include="UMLComponentDiagram1.componentdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="architectuur2.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="architectuur2.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>architectuur2.componentdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Diagrams.uml">
