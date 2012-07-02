@@ -10,7 +10,6 @@ A simple implementation of a computer production line in which hardware is assem
 
 * Filters
 * Pipes
-* Simulation
 * Gui
 * Order
 * Pipe-filter factory
