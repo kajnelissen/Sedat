@@ -11,15 +11,10 @@ namespace Order
     public class CPU : IComponent
     {
         /// <summary>
-        /// Type van CPU.
-        /// </summary>
-        private string _type;
-
-        /// <summary>
         /// Construeert nieuwe CPU met een bepaald type.
         /// </summary>
         /// <param name="type">Type CPU</param>
-        public CPU(string type)
+        public CPU(string type) : base(type)
         {
             this._type = type;
         }

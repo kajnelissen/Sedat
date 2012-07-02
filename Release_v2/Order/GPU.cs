@@ -19,7 +19,7 @@ namespace Order
         /// Construeert nieuwe GPU met een bepaald type.
         /// </summary>
         /// <param name="type">Type GPU</param>
-        public GPU(string type)
+        public GPU(string type) : base(type)
         {
             this._type = type;
         }

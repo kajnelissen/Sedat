@@ -19,7 +19,7 @@ namespace Order
         /// Construeert nieuwe SSD met een bepaald type.
         /// </summary>
         /// <param name="type">Type SSD</param>
-        public SSD(string type)
+        public SSD(string type) : base(type)
         {
             this._type = type;
         }
