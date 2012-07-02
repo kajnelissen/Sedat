@@ -66,7 +66,7 @@ namespace Release_v2
                     {
                         try
                         {
-                            string tests = cbl_ComponentenInstall.SelectedItem.ToString();
+                            string tests = lb_OrderToInstall.SelectedItem.ToString();
                             string[] objects;
                             objects = tests.Split(',', ':');
                             int id = Convert.ToInt32(objects[1]);
@@ -104,17 +104,19 @@ namespace Release_v2
             objects = obj.Split(',', ':');
             int id = Convert.ToInt32(objects[1]);
 
-            for (int index = 0; index < Filter.Input.Count; index++)
-            {
-                if (Filter.Input[index].OrderId == id)
+            cbl_ComponentenInstall.Items.Clear();
+                foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
                 {
-                    cbl_ComponentenInstall.Items.Clear();
-                    for (int index2 = 0; index2 < Filter.Input[index].Components.Count; index2++)
+                    if (Filter.Input[kvp.Key].OrderId == id)
                     {
-                        cbl_ComponentenInstall.Items.Add(Filter.Input[index].Components[index2]);
+                        
+                        for (int index2 = 0; index2 < Filter.Input[kvp.Key].Components.Count; index2++)
+                        {
+                            cbl_ComponentenInstall.Items.Add(Filter.Input[kvp.Key].Components[index2]);
+                        }
                     }
                 }
-            }
+            
         }
     }
 }

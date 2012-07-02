@@ -81,6 +81,7 @@ namespace Release_v2
                 if (cbl_HWtestcomponenten.GetItemCheckState(index) == CheckState.Unchecked)
                 {
                     isChecked = false;
+                    MessageBox.Show("Niet alle componenten zijn aangevinkt");
                 }
             }
 
@@ -89,7 +90,7 @@ namespace Release_v2
             {
                 try
                 {
-                    string tests = cbl_HWtestcomponenten.SelectedItem.ToString();
+                    string tests = lb_HWtest.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
                     int id = Convert.ToInt32(objects[1]);
@@ -115,7 +116,7 @@ namespace Release_v2
             {
                 try
                 {
-                    string tests = cbl_HWtestcomponenten.SelectedItem.ToString();
+                    string tests = lb_HWtest.SelectedItem.ToString();
                     string[] objects;
                     objects = tests.Split(',', ':');
                     int id = Convert.ToInt32(objects[1]);

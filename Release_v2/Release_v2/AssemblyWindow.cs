@@ -100,10 +100,12 @@ namespace Release_v2
             objects = obj.Split(',', ':');
             int id = Convert.ToInt32(objects[1]);
 
+            cbl_AssemblageComponenten.Items.Clear();
             foreach (KeyValuePair<int, AbstractOrder> kvp in Filter.Input)
             {
                 if (Filter.Input[kvp.Key].OrderId == id)
                 {
+                    
                     for (int index2 = 0; index2 < Filter.Input[kvp.Key].Components.Count; index2++)
                     {
                         cbl_AssemblageComponenten.Items.Add(Filter.Input[kvp.Key].Components[index2]);
