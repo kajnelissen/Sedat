@@ -226,6 +226,44 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6a4a837-8efe-4e44-b5b8-11545fbb9815" name="Dictionary&lt;string" direction="In" isUnique="false">
+                  <elementDefinition Id="daf1cf14-1062-48cc-909a-f545e3a3d1bb" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c8ae21c-7cdc-4c5e-a7df-a437a9cc851a" name="string&gt; software" direction="In" isUnique="false">
+                  <elementDefinition Id="80c1ae58-1d47-496f-8b37-697b43a2e051" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8445f783-de4c-4d6c-94e7-eba6762c5b60" name="CreateOrder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f694f597-44d5-450e-981a-fe3ac85ea3fa" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e3e8046f-f3d6-4f72-96fa-9c97f2be0745" name="String type" direction="In" isUnique="false">
+                  <elementDefinition Id="f9a66d10-9602-4379-ba53-acb56edc56ba" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b474419c-e484-476a-b051-d59afac5a67b" name="Dictionary&lt;String" direction="In" isUnique="false">
+                  <elementDefinition Id="27273456-d971-4ece-a14d-d8d95874184b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a0b3f876-fda3-4dd5-b825-453832ce5b0e" name="String&gt; components" direction="In" isUnique="false">
+                  <elementDefinition Id="e3585439-25f8-459e-80ca-c334c7245b3b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="11960638-3a56-44b7-8a20-55336a405045" direction="Return" isUnique="false">
+                  <elementDefinition Id="6ea8f9e0-23b8-4bba-ac20-e75c95d4621a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ea581003-2997-44df-9da0-ce4db9d298dc" LastKnownName="AbstractOrder" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
@@ -701,27 +739,27 @@
       <class Id="3620d659-00d4-48f0-93a2-f78093a5187e" name="PipeFilterFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3c03493e-7ef0-47a5-8cd9-ef284cdb3e72" />
         <suppliersInternal>
-          <dependency Id="a26e8989-2251-4a6d-a2d3-3cd856289e0a" name="Instantieert">
+          <dependency Id="a26e8989-2251-4a6d-a2d3-3cd856289e0a" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="d1072792-3288-4211-8238-f55bdb64f26f" LastKnownName="SWTest" />
             <elementDefinition Id="cf78da68-3e00-4daa-babe-3626d3c6e079" />
           </dependency>
-          <dependency Id="5f1b5d22-1718-46b4-9e19-d068613a3f83" name="Instantieert">
+          <dependency Id="5f1b5d22-1718-46b4-9e19-d068613a3f83" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="34ce16fc-e46a-4c09-8a7a-30d817a212ae" LastKnownName="HWTest" />
             <elementDefinition Id="c0b7204a-9e1f-4ffc-8018-347817053f70" />
           </dependency>
-          <dependency Id="f6d4eded-e10e-43d2-b1ec-8ed617187980" name="Instantieert">
+          <dependency Id="f6d4eded-e10e-43d2-b1ec-8ed617187980" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="81a96ec1-2554-4a55-bc75-2fe8f02207fc" LastKnownName="HWAssemble" />
             <elementDefinition Id="12e2a483-cda1-4729-a02d-fc2b85a55768" />
           </dependency>
-          <dependency Id="f7e7451f-3c2a-42d9-9f8a-c6312cd0d6ca" name="Instantieert">
+          <dependency Id="f7e7451f-3c2a-42d9-9f8a-c6312cd0d6ca" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="efdd985e-1652-4049-b2bc-c7d2e40e2d8a" LastKnownName="SWInstall" />
             <elementDefinition Id="3b63f699-f5bb-4599-806c-8be0d9b2c1b5" />
           </dependency>
-          <dependency Id="28b0c6fa-326e-4eff-a703-b90a1b9dc554" name="Instantieert">
+          <dependency Id="28b0c6fa-326e-4eff-a703-b90a1b9dc554" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="7d57aeb9-89ad-451d-ae97-98f30e185d14" LastKnownName="Pipe" />
             <elementDefinition Id="227dd3f2-9106-4bc9-98b4-cab25c1730c8" />
           </dependency>
-          <dependency Id="b7789600-f713-496e-82a2-eb3ec2e8eed4" name="Instantieert">
+          <dependency Id="b7789600-f713-496e-82a2-eb3ec2e8eed4" name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker Id="fe051ba9-d552-47cf-acf1-5769f225e405" LastKnownName="Storage" />
             <description>Instantieert</description>
             <elementDefinition Id="ced0175c-c5ac-45bd-88e3-7b3125a3d3d6" />
@@ -1307,6 +1345,26 @@
         <ownedOperationsInternal>
           <operation Id="211f35fb-68bd-4c19-9fba-c49efb7ee7c3" name="CreateComponent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="18b80986-3541-4909-9b0b-9d2fcf9ae511" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="068609e7-97f5-48e9-87ca-ffaa424c7409" name="String device" direction="In" isUnique="false">
+                  <elementDefinition Id="bb21cc6c-3708-461f-86fd-e475ea743aa5" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="51878803-545b-4b11-8db0-bf9b06dfc3bd" name="String type" direction="In" isUnique="false">
+                  <elementDefinition Id="8dd2c482-7be7-4059-b1f5-01cedc8f7f2b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a83d16ab-cb97-4230-9c70-391ea05fb2a0" direction="Return">
+                  <elementDefinition Id="d63dc35b-9d01-486b-833b-90944002bec2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="914030d1-25b7-4de4-8494-70bacc03f9a7" LastKnownName="IComponent" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1432,7 +1490,7 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="75545e1a-f678-45a2-a2c4-87d289875e04" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="75545e1a-f678-45a2-a2c4-87d289875e04" name="ToString" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="78a191fb-9be4-4fbe-aa31-8b89d9243f30" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -1448,6 +1506,11 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="914030d1-25b7-4de4-8494-70bacc03f9a7" name="IComponent" isAbstract="false" isLeaf="false" cachedFullName="Diagrams::IComponent">
+        <elementDefinition Id="8fb975f3-f124-45aa-b11d-8b0a22038632" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="cfde82c5-6a5a-4b25-8623-8e24fcd49b45" name="Diagrams">
     <elementDefinition Id="64253cd8-9bec-4c7a-b756-d6667991616e" />

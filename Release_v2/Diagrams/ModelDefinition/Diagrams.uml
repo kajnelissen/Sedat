@@ -3663,6 +3663,65 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="daf1cf14-1062-48cc-909a-f545e3a3d1bb"
+                  name="Dictionary&lt;string"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80c1ae58-1d47-496f-8b37-697b43a2e051"
+                  name="string&gt; software"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f694f597-44d5-450e-981a-fe3ac85ea3fa"
+            name="CreateOrder"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9a66d10-9602-4379-ba53-acb56edc56ba"
+                  name="String type"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27273456-d971-4ece-a14d-d8d95874184b"
+                  name="Dictionary&lt;String"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e3585439-25f8-459e-80ca-c334c7245b3b"
+                  name="String&gt; components"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ea8f9e0-23b8-4bba-ac20-e75c95d4621a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1dfeecb6-3377-4d6f-a4eb-e0f7ef2b51c8"
+                      LastKnownName="AbstractOrder"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
         </ownedOperationsInternal>
@@ -4501,7 +4560,7 @@
         <suppliersInternal>
           <dependency
             Id="cf78da68-3e00-4daa-babe-3626d3c6e079"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="e8c9a70a-0072-4f00-8d09-af8a2e87cf07"
               LastKnownName="SWTest"
@@ -4509,7 +4568,7 @@
           </dependency>
           <dependency
             Id="c0b7204a-9e1f-4ffc-8018-347817053f70"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="c098137d-3208-4c4e-b099-90f83aa37da7"
               LastKnownName="HWTest"
@@ -4517,7 +4576,7 @@
           </dependency>
           <dependency
             Id="12e2a483-cda1-4729-a02d-fc2b85a55768"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="519fd4db-c3e4-4dfb-9d59-23856c463998"
               LastKnownName="HWAssemble"
@@ -4525,7 +4584,7 @@
           </dependency>
           <dependency
             Id="3b63f699-f5bb-4599-806c-8be0d9b2c1b5"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="51ab1156-b7b5-4643-a35b-81606cad6e49"
               LastKnownName="SWInstall"
@@ -4533,7 +4592,7 @@
           </dependency>
           <dependency
             Id="227dd3f2-9106-4bc9-98b4-cab25c1730c8"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="24c47ee9-58e3-4789-9479-41c7c19a7ba7"
               LastKnownName="Pipe"
@@ -4541,7 +4600,7 @@
           </dependency>
           <dependency
             Id="ced0175c-c5ac-45bd-88e3-7b3125a3d3d6"
-            name="Instantieert">
+            name="&lt;&lt;instantiates&gt;&gt;">
             <classMoniker
               Id="78b71a96-a0f7-4215-819e-e737cc4e71e8"
               LastKnownName="Storage"
@@ -7370,7 +7429,36 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bb21cc6c-3708-461f-86fd-e475ea743aa5"
+                  name="String device"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dd2c482-7be7-4059-b1f5-01cedc8f7f2b"
+                  name="String type"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d63dc35b-9d01-486b-833b-90944002bec2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="8fb975f3-f124-45aa-b11d-8b0a22038632"
+                      LastKnownName="IComponent"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -12262,7 +12350,7 @@
             name="ToString"
             isLeaf="false"
             isStatic="false"
-            isAbstract="false"
+            isAbstract="true"
             concurrency="Sequential"
             isQuery="false">
             <ownedParameters>
