@@ -28,6 +28,6 @@ namespace Order
         /// Retourneert een tekstuele weergave van deze component.
         /// </summary>
         /// <returns></returns>
-        string ToString();
+        public abstract override string ToString();
     }
 }

@@ -25,6 +25,6 @@ namespace Order
         /// Retourneert een string weergave van deze software.
         /// </summary>
         /// <returns></returns>
-        public abstract string ToString();
+        public abstract override string ToString();
     }
 }

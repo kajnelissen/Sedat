@@ -11,11 +11,6 @@ namespace Order
     public class SSD : IComponent
     {
         /// <summary>
-        /// Type van SSD.
-        /// </summary>
-        private string _type;
-
-        /// <summary>
         /// Construeert nieuwe SSD met een bepaald type.
         /// </summary>
         /// <param name="type">Type SSD</param>

@@ -11,11 +11,6 @@ namespace Order
     public class GPU : IComponent
     {
         /// <summary>
-        /// Type van GPU.
-        /// </summary>
-        private string _type;
-
-        /// <summary>
         /// Construeert nieuwe GPU met een bepaald type.
         /// </summary>
         /// <param name="type">Type GPU</param>
