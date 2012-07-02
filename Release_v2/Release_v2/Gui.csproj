@@ -120,6 +120,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SoftwareTestWindow.resx">
+      <DependentUpon>SoftwareTestWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StorageWindow.resx">
       <DependentUpon>StorageWindow.cs</DependentUpon>
     </EmbeddedResource>
